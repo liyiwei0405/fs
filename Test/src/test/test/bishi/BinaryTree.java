@@ -1,10 +1,10 @@
-package test;
+package test.bishi;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
 
-public class Test {
+public class BinaryTree {
 	Queue<BNode> queue = new LinkedList<BNode>();
 	
 	public class BNode{
