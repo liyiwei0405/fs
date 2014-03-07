@@ -5,14 +5,12 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-import com.funshion.search.utils.LogHelper;
 import com.funshion.search.utils.MysqlHelper;
 import com.funshion.ucs.Func;
 
 public class IpSegments {
 	private List<IpSegmentsRow> ipSegmentsList = new LinkedList<IpSegmentsRow>();
-	private final LogHelper log = new LogHelper("IpSegments");
-	
+
 	private IpSegments(){}
 	public static final IpSegments instance = new IpSegments();
 
@@ -24,10 +22,6 @@ public class IpSegments {
 				this.ipSegmentsList.add(new IpSegmentsRow(Func.ip2Long(rs.getString("ipstart")), Func.ip2Long(rs.getString("ipend")), rs.getInt("user_classid")));
 			}
 			this.ipSegmentsList = ipSegmentsListTmp;
-			if(log.logger.isInfoEnabled()){
-				log.info("loadIpSegments done, areaDataMap' s size: " + this.ipSegmentsList.size());
-				log.info(this.ipSegmentsList.toString());
-			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

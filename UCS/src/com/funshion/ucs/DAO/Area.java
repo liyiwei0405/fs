@@ -4,21 +4,17 @@ import java.sql.ResultSet;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.funshion.search.utils.LogHelper;
 import com.funshion.search.utils.MysqlHelper;
 import com.funshion.ucs.Func;
 
 public class Area {
-	private static final LogHelper log = new LogHelper("Area");
-	private static Map<String, Map<String, AreaRow>> areaDataMap = new HashMap<String, Map<String, AreaRow>>();
-	
+	private Map<String, Map<String, AreaRow>> areaDataMap = new HashMap<String, Map<String, AreaRow>>();
 	private Map<String, AreaRow> clientAreas = null;
 
-	public Area(String client){
-		this.setClientAreas(client);
-	}
+	private Area(){}
+	public static final Area instance = new Area();
 
-	public static void loadArea(MysqlHelper mysql) {
+	public void loadArea(MysqlHelper mysql) {
 		Map<String, Map<String, AreaRow>> areaDataMapTmp = new HashMap<String, Map<String, AreaRow>>();
 		try {
 			long timeStamp = System.currentTimeMillis() / 1000;
@@ -33,24 +29,18 @@ public class Area {
 				}
 				ctypeMap.put(rs.getString("name"), areaRow);
 			}
-			areaDataMap = areaDataMapTmp;
-			if(log.logger.isInfoEnabled()){
-				log.info("loadArea done, areaDataMap' s size: " + areaDataMap.size());
-				log.info(areaDataMap.toString());
-			}
+			this.areaDataMap = areaDataMapTmp;
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 
-	private void setClientAreas(String client){
+	public void setClientAreas(String client){
 		if(areaDataMap.containsKey("all")) {
-			this.clientAreas = areaDataMap.get("all");
-			if(areaDataMap.containsKey(client)) {
-				this.clientAreas.putAll(areaDataMap.get(client));
-			}
-		}else{
-			this.clientAreas = areaDataMap.get(client);
+			this.clientAreas = this.areaDataMap.get("all");
+		}
+		if(areaDataMap.containsKey(client)) {
+			this.clientAreas = this.areaDataMap.get(client);
 		}
 	}
 
@@ -60,9 +50,6 @@ public class Area {
 	 * @return string
 	 */
 	public int getAreaTacticByName(String area) {
-		if(this.clientAreas == null){
-			return 0;
-		}
 		int tactic = 0;
 		if(this.clientAreas.containsKey(area)) {
 			AreaRow areaRow = this.clientAreas.get(area);
@@ -71,8 +58,10 @@ public class Area {
 			} else {
 				tactic = areaRow.getTactic();
 			}
-		} 
-		//未命中地域则返回0
+		} else {
+			//未命中地域则返回0
+			tactic = 0;
+		}
 		return tactic;
 	}
 
@@ -81,9 +70,6 @@ public class Area {
 	 * @param AreaContainer areaContainer
 	 */
 	public AreaRow getAreaTacticObj(AreaContainer areaContainer){
-		if(this.clientAreas == null){
-			return null;
-		}
 		if (areaContainer.country.indexOf("香港") > -1) {
 			areaContainer.country = "HK";
 		}
@@ -101,31 +87,31 @@ public class Area {
 		}
 		areaContainer.country = areaContainer.country.toUpperCase();
 		//香港、澳门、台湾地区将国家设置为CN
-		if(areaContainer.country.equals("HK") || areaContainer.country.equals("TW") || areaContainer.country.equals("AM")) {
+		if(areaContainer.country == "HK" || areaContainer.country == "TW" || areaContainer.country == "AM") {
 			areaContainer.country = "CN";
 		}
 		//非国内、美国则将地区设置为海外
-		if(! areaContainer.country.equals("CN") && ! areaContainer.country.equals("US")) {
+		if(areaContainer.country != "CN" && areaContainer.country != "US") {
 			areaContainer.area = "海外";
 		}
 		//去掉省、市等后缀
 		areaContainer.province = Func.rtrim(areaContainer.province, '省');
 		areaContainer.city = Func.rtrim(areaContainer.city, '市');
-		if(areaContainer.country.equals("CN")) {
+		if(areaContainer.country == "CN") {
 			areaContainer.country = "中国";
 		}
-		if(areaContainer.country.equals("US")){
+		if(areaContainer.country == "US"){
 			areaContainer.country = "美国";
 		}
 
 		//依次判断选取地域对象
-		if(! areaContainer.city.isEmpty() && clientAreas.containsKey(areaContainer.city)) {
+		if(areaContainer.city != "" && clientAreas.containsKey(areaContainer.city)) {
 			return clientAreas.get(areaContainer.city);
-		} else if(! areaContainer.province.isEmpty() && clientAreas.containsKey(areaContainer.province)) {
+		} else if(areaContainer.province != "" && clientAreas.containsKey(areaContainer.province)) {
 			return clientAreas.get(areaContainer.province);
-		} else if(!areaContainer.country.isEmpty() && clientAreas.containsKey(areaContainer.country)) {
+		} else if(areaContainer.country != "" && clientAreas.containsKey(areaContainer.country)) {
 			return clientAreas.get(areaContainer.country);
-		} else if(! areaContainer.area.isEmpty() && clientAreas.containsKey(areaContainer.area)) {
+		} else if(areaContainer.area != "" && clientAreas.containsKey(areaContainer.area)) {
 			return clientAreas.get(areaContainer.area);
 		}
 		return null;

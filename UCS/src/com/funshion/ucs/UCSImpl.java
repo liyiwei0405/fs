@@ -5,22 +5,21 @@ import java.util.Map;
 
 import org.apache.thrift.TException;
 
-import com.funshion.ucs.Operator.AreaTagAndUCRec;
-import com.funshion.ucs.Operator.UserClassRec;
 import com.funshion.ucs.DAO.Area;
 import com.funshion.ucs.DAO.UserClass;
+import com.funshion.ucs.Operator.AreaTagAndUCRec;
+import com.funshion.ucs.Operator.UserClassRec;
 import com.funshion.ucs.thrift.AreaTacticResult;
-import com.funshion.ucs.thrift.RetCode;
 import com.funshion.ucs.thrift.Tactics;
 import com.funshion.ucs.thrift.UCS.Iface;
+import com.funshion.ucs.thrift.RetCode;
 import com.funshion.ucs.thrift.UcsCondition;
 import com.funshion.ucs.thrift.UcsObjectResult;
 import com.funshion.ucs.thrift.UcsStringResult;
 import com.funshion.ucs.thrift.UserClassResult;
 
 public class UCSImpl implements Iface{
-	public static Map<String, String> clientMap = new HashMap<String, String>(6);
-	//	public static Set<String> clientSet = new HashSet<String>(10);
+	public static Map<String, String> clientMap = new HashMap<String, String>();
 	static{
 		clientMap.put("ott", "apad");
 		clientMap.put("360app", "mweb");
@@ -28,37 +27,23 @@ public class UCSImpl implements Iface{
 		clientMap.put("jmapp", "mweb");
 		clientMap.put("91app", "mweb");
 		clientMap.put("wdjapp", "mweb");
-
-		//		clientSet.add("pc");
-		//		clientSet.add("web");
-		//		clientSet.add("mweb");
-		//		clientSet.add("ipad");
-		//		clientSet.add("iphone");
-		//		clientSet.add("apad");
-		//		clientSet.add("aphone");
-		//		clientSet.add("winpad");
-		//		clientSet.add("winphone");
-		//		clientSet.add("third_part");
 	}
-
+	
 	@Override
 	public UcsObjectResult getUcsObject(UcsCondition ucsCondition)
 			throws TException {
 		if(! UCSUpdateHelper.isReady()){
 			return new UcsObjectResult(RetCode.SrvUnavail, "service not ready", null);
 		}
-		if(! paramCondition(ucsCondition)){
-			return new UcsObjectResult(RetCode.BadReq, "bad request", null);
-		}
+		paramCondition(ucsCondition);
 		Operator operator = new Operator(ucsCondition);
 		AreaTagAndUCRec tagAndUCRec = operator.getAreaTagAndUCRec();
-
 		if(tagAndUCRec.getUcRec() == null){
 			tagAndUCRec.setUcRec(new UserClassRec("err", 1));
 		}
 		Tactics ucsObject = new Tactics(tagAndUCRec.getUcRec().getClassTag(), tagAndUCRec.getAreaTag(), tagAndUCRec.getUcRec().getUseTactic());
 		UcsObjectResult result = new UcsObjectResult(RetCode.OK, "OK", ucsObject);
-
+		
 		return result;
 	}
 
@@ -68,18 +53,14 @@ public class UCSImpl implements Iface{
 		if(! UCSUpdateHelper.isReady()){
 			return new UcsStringResult(RetCode.SrvUnavail, "service not ready", "");
 		}
-		if(! paramCondition(ucsCondition)){
-			return new UcsStringResult(RetCode.BadReq, "bad request", "");
-		}
-
+		paramCondition(ucsCondition);
 		Operator operator = new Operator(ucsCondition);
 		AreaTagAndUCRec tagAndUCRec = operator.getAreaTagAndUCRec();
-
 		if(tagAndUCRec.getUcRec() == null){
 			tagAndUCRec.setUcRec(new UserClassRec("err", 1));
 		}
 		UcsStringResult result = new UcsStringResult(RetCode.OK, "OK", getEncStr(tagAndUCRec));
-
+		
 		return result;
 	}
 
@@ -89,8 +70,8 @@ public class UCSImpl implements Iface{
 		if(! UCSUpdateHelper.isReady()){
 			return new UserClassResult(RetCode.SrvUnavail, "service not ready", "");
 		}
-		
-		UserClassRec ucRec = new UserClass(clientType).getUCByType(Operator.common.get("defaultTags").get("noClassMatch"));
+		UserClass.instance.setClientClasses(clientType);
+		UserClassRec ucRec = UserClass.instance.getUCByType(Operator.common.get("defaultTags").get("noClassMatch"));
 		String classTag = null;
 		if(ucRec != null){
 			classTag = ucRec.getClassTag();
@@ -106,7 +87,7 @@ public class UCSImpl implements Iface{
 		if(! UCSUpdateHelper.isReady()){
 			return new AreaTacticResult(RetCode.SrvUnavail, "service not ready", 0);
 		}
-		return new AreaTacticResult(RetCode.OK, "OK", new Area(clientType).getAreaTacticByName(area));
+		return new AreaTacticResult(RetCode.OK, "OK", Area.instance.getAreaTacticByName(area));
 	}
 
 	private String getEncStr(AreaTagAndUCRec tagAndUCRec) {
@@ -118,10 +99,10 @@ public class UCSImpl implements Iface{
 		result += getFiveChars() + tagAndUCRec.getAreaTag() + getFiveChars();
 		result += tagAndUCRec.getUcRec().getUseTactic() == 0 ? '0' : '1';
 		result += getFiveChars();
-
+		
 		return result;
 	}
-
+	
 	private String getFiveChars() {
 		int len = 5;
 		String chars = "abcdefhijkmnprstwxyz012345678";	// 默认去掉了容易混淆的字符oOLl,9gq,Vv,Uu,I1
@@ -133,16 +114,11 @@ public class UCSImpl implements Iface{
 		return pwd;
 	}
 
-	private boolean paramCondition(UcsCondition ucsCondition){
-		if(ucsCondition.clientType == null 
-				//				|| ! clientSet.contains(ucsCondition.clientType.trim())
-				){
-			return false;
+	private void paramCondition(UcsCondition ucsCondition){
+		if(ucsCondition.clientType != null && clientMap.containsKey(ucsCondition.clientType)){
+			ucsCondition.clientType = clientMap.get(ucsCondition.clientType);
 		}else{
-			if(clientMap.containsKey(ucsCondition.clientType)){
-				ucsCondition.clientType = clientMap.get(ucsCondition.clientType);
-			}
-			ucsCondition.clientType = ucsCondition.clientType.trim();
+			ucsCondition.clientType = "";
 		}
 		if(ucsCondition.mac != null){
 			ucsCondition.mac = ucsCondition.mac.toUpperCase();
@@ -150,7 +126,6 @@ public class UCSImpl implements Iface{
 		if(ucsCondition.ipaddr == null){
 			ucsCondition.ipaddr = "";
 		}
-		return true;
 	}
 
 }

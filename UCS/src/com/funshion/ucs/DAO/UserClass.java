@@ -8,25 +8,20 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-import com.funshion.search.utils.LogHelper;
 import com.funshion.search.utils.MysqlHelper;
 import com.funshion.ucs.Operator;
 import com.funshion.ucs.Operator.UserClassRec;
 
 public class UserClass {
-	private static final LogHelper log = new LogHelper("UserClass");
-	private static Map<String, Map<Integer, UserClassRow>> userClassesMap = new HashMap<String, Map<Integer, UserClassRow>>();
-	private static Map<String, Map<String, List<UserClassRow>>> typeClassesMap = new HashMap<String, Map<String, List<UserClassRow>>>();
-	
-	private Map<Integer, UserClassRow> clientUserClasses = null;
-	private Map<String, List<UserClassRow>> clientTypeClasses = null;
+	private Map<String, Map<Integer, UserClassRow>> userClassesMap = new HashMap<String, Map<Integer, UserClassRow>>();
+	private Map<String, Map<String, List<UserClassRow>>> typeClassesMap = new HashMap<String, Map<String, List<UserClassRow>>>();
+	private Map<Integer, UserClassRow> clientClasses = null;
+	private Map<String, List<UserClassRow>> typeClasses = null;
 
-	public UserClass(String client){
-		this.setClientUserClasses(client);
-		this.setClientTypeClasses(client);
-	}
+	private UserClass(){}
+	public static final UserClass instance = new UserClass();
 
-	public static void loadUserClasses(MysqlHelper mysql) {
+	public void loadUserClasses(MysqlHelper mysql) {
 		Map<String, Map<Integer, UserClassRow>> userClassesMapTmp = new HashMap<String, Map<Integer, UserClassRow>>();
 		Map<String, Map<String, List<UserClassRow>>> typeClassesMapTmp = new HashMap<String, Map<String, List<UserClassRow>>>();
 		try {
@@ -60,81 +55,68 @@ public class UserClass {
 				}
 				ucRowList.add(ucRow);
 			}
-			userClassesMap = userClassesMapTmp;
-			typeClassesMap = typeClassesMapTmp;
-			if(log.logger.isInfoEnabled()){
-				log.info("loadUserClasses done, userClassesMap' s size: " + userClassesMap.size() + ", typeClassesMap' s size: " + typeClassesMap.size());
-				log.info(userClassesMap.toString());
-				log.info(typeClassesMap.toString());
-			}
+			this.userClassesMap = userClassesMapTmp;
+			this.typeClassesMap = typeClassesMapTmp;
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
-
+	
 	/**
-	 * 根据当前客户端的分类集合
+	 * 根据整体当前客户端的分类集合
 	 * @param string client
-	 * @throws ClientSetException 
 	 */
-	private void setClientUserClasses(String client) {
-		if (userClassesMap.containsKey("all")) {
-			this.clientUserClasses = userClassesMap.get("all");
-			if(userClassesMap.containsKey(client)) {
-				this.clientUserClasses.putAll(userClassesMap.get(client));
-			} 
-		}else{
-			this.clientUserClasses = userClassesMap.get(client);
+	public void setClientClasses(String client) {
+		if (this.userClassesMap.containsKey("all")) {
+			this.clientClasses = this.userClassesMap.get("all");
 		}
+		if(this.userClassesMap.containsKey(client)) {
+			this.clientClasses = this.userClassesMap.get(client);
+		} 
 	}
-
-	private void setClientTypeClasses(String client) {
-		if (typeClassesMap.containsKey("all")) {
-			this.clientTypeClasses = typeClassesMap.get("all");
-			if(typeClassesMap.containsKey(client)) {
-				this.clientTypeClasses.putAll(typeClassesMap.get(client));
-			} 
-		}else{
-			this.clientTypeClasses = typeClassesMap.get(client);
+	
+	public void setTypeClasses(String client) {
+		if (this.typeClassesMap.containsKey("all")) {
+			this.typeClasses = this.typeClassesMap.get("all");
 		}
+		if(this.typeClassesMap.containsKey(client)) {
+			this.typeClasses = this.typeClassesMap.get(client);
+		} 
 	}
-
+	
 	/**
 	 * 根据类型获取用户分类标识
 	 */
 	public UserClassRec getUCByType(String type) {
-		if(this.clientTypeClasses == null || ! this.clientTypeClasses.containsKey(type)){
+		if(this.typeClasses == null || ! this.typeClasses.containsKey(type)){
 			return null;
 		}
 		List<Integer> userClassIdArray = new ArrayList<Integer>();
-		for(UserClassRow row : this.clientTypeClasses.get(type)){
+		for(UserClassRow row : this.typeClasses.get(type)){
 			userClassIdArray.add(row.getClassId());
 		}
 		return getMaxWeightUC(userClassIdArray);
 	}
-
+	
 	/**
 	 * 计算传入分类ID数组中对应用户分类集合的最大权重分类，并返回分类标识
 	 * @param array classIdArray
 	 * @return string
 	 */
 	public Operator.UserClassRec getMaxWeightUC(List<Integer> classIdArray) {
-		if(this.clientUserClasses == null){
-			return null;
-		}
 		if(classIdArray == null) {
-			classIdArray = new ArrayList<Integer>(this.clientUserClasses.keySet().size());
-			classIdArray.addAll(this.clientUserClasses.keySet());
+			classIdArray = new ArrayList<Integer>(this.clientClasses.keySet().size());
+			classIdArray.addAll(this.clientClasses.keySet());
 		}
 		int curWeight = -1;
 		UserClassRow finalUCRow = null;
 		for(Integer cid : classIdArray) {
-			if(! this.clientUserClasses.containsKey(cid)) {
+			if(! this.clientClasses.containsKey(cid)) {
 				continue;
 			}
-			if(this.clientUserClasses.get(cid).getWeight() > curWeight) {
-				curWeight = this.clientUserClasses.get(cid).getWeight();
-				finalUCRow = this.clientUserClasses.get(cid);
+			if(this.clientClasses.get(cid).getWeight() > curWeight) {
+				curWeight = this.clientClasses.get(cid).getWeight();
+				finalUCRow = this.clientClasses.get(cid);
 			}
 		}
 		if(finalUCRow != null){
@@ -142,7 +124,7 @@ public class UserClass {
 		}
 		return null;
 	}
-
+	
 	public UserClassRec getUCByRFMSecWithIdArray(int rfm,
 			List<Integer> classIdArray) {
 		List<Integer> classIds = new LinkedList<Integer>();
@@ -171,23 +153,20 @@ public class UserClass {
 		if(classId == 0) {
 			return null;
 		}
-		if(this.clientUserClasses == null || ! clientUserClasses.containsKey(classId)) {
+		if(this.clientClasses == null || ! clientClasses.containsKey(classId)) {
 			return null;
 		}
-		return clientUserClasses.get(classId);
+		return clientClasses.get(classId);
 	}
-
+	
 	/**
 	 * 根据渠道ID获取用户分类标识
 	 * @param int channelid
 	 * @return mixed 分类失败时返回null,否则返回对应分类标识
 	 */
 	public UserClassRec getUCByChannelId(int channelid) {
-		if(this.clientUserClasses == null){
-			return null;
-		}
 		List<Integer> userClassIdArray = new ArrayList<Integer>();
-		for(UserClassRow row : this.clientUserClasses.values()){
+		for(UserClassRow row : this.clientClasses.values()){
 			if(row.getChannelIds().contains(channelid)){
 				userClassIdArray.add(row.getClassId());
 			}
@@ -197,7 +176,7 @@ public class UserClass {
 		}
 		return getMaxWeightUC(userClassIdArray);
 	}
-
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 

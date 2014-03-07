@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<project name="httpCounter" default="jar" basedir=".">
+	<property name="jar_name" value="httpCounter.jar"></property>
+	<property name="src_dir" value="src" />
+	<property name="build_dir" value="build" />
+	<property name="build_classdir" value="${build_dir}/classes" />
+
+	<path id="build_libs">
+		<fileset dir="lib">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+	
+	<target name="init">
+        <delete dir="${build_dir}"/>
+		<mkdir dir ="${build_classdir}"/>
+    </target>
+        
+    <target name="jar"  depends ="init">
+		<echo message ="starting build httpCounter" />
+	    <javac destdir ="${build_classdir}">
+			<src path="${src_dir}/httpCounter" />
+			<classpath refid="build_libs" />
+		</javac>
+		
+		<jar destfile="./${jar_name}" basedir="${build_classdir}" />
+    </target>
+</project>

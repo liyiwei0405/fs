@@ -1,0 +1,1 @@
+nohup java -Dfile.encoding=utf-8 -cp .:lib/* -Xms4g -Xmx8g com.funshion.videoMerge.VideoMergeHelper &

@@ -6,13 +6,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.funshion.search.utils.LogHelper;
 import com.funshion.search.utils.MysqlHelper;
 
 public class Mac {
 	private Map<String, List<Integer>> macsMap = new HashMap<String, List<Integer>>();
-	private final LogHelper log = new LogHelper("Mac");
-	
+
 	private Mac(){}
 	public static final Mac instance = new Mac();
 
@@ -29,10 +27,6 @@ public class Mac {
 				userClassidList.add(rs.getInt("user_classid"));
 			}
 			this.macsMap = macsMapTmp;
-			if(log.logger.isInfoEnabled()){
-				log.info("loadMACs done, areaDataMap' s size: " + this.macsMap.size());
-				log.info(this.macsMap.toString());
-			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

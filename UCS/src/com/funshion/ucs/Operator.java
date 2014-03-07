@@ -12,12 +12,14 @@ import com.funshion.ucs.DAO.IpSegments;
 import com.funshion.ucs.DAO.Mac;
 import com.funshion.ucs.DAO.MacRfm;
 import com.funshion.ucs.DAO.UserClass;
-import com.funshion.ucs.exceptions.ErrorIpFormatException;
 import com.funshion.ucs.thrift.UcsCondition;
 
 public class Operator {
+	private long ipLong;
+	private final UcsCondition ucsCondition;
 	private static final LogHelper log = new LogHelper("Operator");
 	private static final long channelValidTime = 86400 * 3;
+
 	public static final Map<String, Map<String, String>> common = new HashMap<String, Map<String, String>>();
 	static{
 		Map<String, String> defaultTags = new HashMap<String, String>(4);
@@ -25,14 +27,7 @@ public class Operator {
 		defaultTags.put("noClassMatch", "default");
 		defaultTags.put("noMacMatch", "black");
 		defaultTags.put("noAreaMatch", "loyal");
-		common.put("defaultTags", defaultTags);
 	}
-	
-	private final UcsCondition ucsCondition;
-	private long ipLong;
-	private Area area;
-	private UserClass userClass;
-	private AreaUserClass areaUserClass;
 
 	public Operator(final UcsCondition ucsCondition){
 		this.ucsCondition = ucsCondition;
@@ -42,29 +37,27 @@ public class Operator {
 			log.error(e.getMessage());
 			this.ipLong = -1;
 		}
-		this.area = new Area(ucsCondition.clientType);
-		this.userClass = new UserClass(ucsCondition.clientType);
-		this.areaUserClass = new AreaUserClass(ucsCondition.clientType);
 	}
 
-	public AreaTagAndUCRec getAreaTagAndUCRec(){
+	public AreaTagAndId getAreaTagAndId(){
 		IpLocation.IpSection ipSection = null;
 		if(this.ipLong > 0){
 			ipSection = IpLocation.instance.getIpSection(this.ipLong);
-			if(ipSection.isValid == false){
+			if(ipSection == null){
 				ipSection = IpLocation.instance.getForeignIpInfo(this.ipLong);
 			}
 		}
 
 		Area.AreaContainer areaContainer = null;
-		if(ipSection.isValid == false){
+		if(ipSection == null){
 			areaContainer = new Area.AreaContainer("CN", "北京", "北京", "");
 		}else{
 			areaContainer = new Area.AreaContainer(ipSection.country, ipSection.province, ipSection.city, "");
 		}
 
-		int areaTag = 0, areaId = 0;
-		AreaRow areaRow = this.area.getAreaTacticObj(areaContainer);
+		int areaTag, areaId;
+		Area.instance.setClientAreas(this.ucsCondition.clientType);
+		AreaRow areaRow = Area.instance.getAreaTacticObj(areaContainer);
 		if(areaRow == null) {
 			//未命中地域则返回0
 			areaTag = 0;
@@ -77,9 +70,18 @@ public class Operator {
 			}
 			areaId = areaRow.getAreaId();
 		}
+		return new AreaTagAndId(areaTag, areaId);
+	}
+
+	public AreaTagAndUCRec getAreaTagAndUCRec(){
+		AreaTagAndId tagAndId = this.getAreaTagAndId();
+
+		int areaTag = tagAndId.getAreaTag();
+		int areaId = tagAndId.getAreaId();
 
 		// 以下开始依次尝试从不同维度获取用户的分类
 		UserClassRec userClassRec = null;
+		UserClass.instance.setClientClasses(this.ucsCondition.clientType);
 
 		// 尝试从MAC地址获取
 		userClassRec = getMacUC();
@@ -114,37 +116,37 @@ public class Operator {
 		}
 
 		// 均失败则按默认处理
-		userClassRec = this.userClass.getUCByType(common.get("defaultTags").get("noClassMatch"));
+		userClassRec = UserClass.instance.getUCByType(common.get("defaultTags").get("noClassMatch"));
 		// 如果未发现默认策略，返回错误
 		if (userClassRec == null) {
 			userClassRec = new UserClassRec("err", 1);
 		}
-
+		
 		return new AreaTagAndUCRec(areaTag, userClassRec);
 	}
 
 	/**
 	 * 根据用户所在地区获取用户分类
 	 * @param int areaId 用户地区ID
-	 * @throws ClientSetException 
 	 * @returns mixed 分类成功时返回用户标识，否则返回null
 	 */
 	private UserClassRec getAreaUC(int areaId, int userRfm) {
 		// areaId为0，表示其他地区，返回忠实用户分类
 		if (areaId == 0) {
-			return this.userClass.getUCByType(common.get("defaultTags").get("noAreaMatch"));
+			UserClass.instance.setTypeClasses(this.ucsCondition.clientType);
+			return UserClass.instance.getUCByType(common.get("defaultTags").get("noAreaMatch"));
 		}
 		// 获取地区对应的用户分类ID数组
-		List<Integer> userClassIdArray = this.areaUserClass.getUserClassIdArray(areaId);
+		List<Integer> userClassIdArray = AreaUserClass.instance.getUserClassIdArray(areaId);
 		// 无匹配数据则返回false
-		if(userClassIdArray == null || userClassIdArray.size() < 1){
+		if(userClassIdArray.size() < 1){
 			return null;
 		}
 
 		if(userRfm >= 0){
-			return this.userClass.getUCByRFMSecWithIdArray(userRfm, userClassIdArray);
+			return UserClass.instance.getUCByRFMSecWithIdArray(userRfm, userClassIdArray);
 		}else{
-			return this.userClass.getMaxWeightUC(userClassIdArray);
+			return UserClass.instance.getMaxWeightUC(userClassIdArray);
 		}
 	}
 
@@ -164,7 +166,7 @@ public class Operator {
 			return null;
 		}
 		// 分类ID不为空则获取用户分类TAG并返回
-		return this.userClass.getMaxWeightUC(userClassIdArray);
+		return UserClass.instance.getMaxWeightUC(userClassIdArray);
 	}
 
 	/**
@@ -176,7 +178,7 @@ public class Operator {
 		if(userClassIdArray == null){
 			return null;
 		}
-		return this.userClass.getMaxWeightUC(userClassIdArray);
+		return UserClass.instance.getMaxWeightUC(userClassIdArray);
 	}
 
 	/**
@@ -189,15 +191,14 @@ public class Operator {
 		try{
 			channel = Integer.parseInt(this.ucsCondition.channel);
 		}catch(Exception e){
-			log.error(e.getMessage());
 			return null;
 		}
-		// 安装超出3天则返回null,渠道失效
+		// 超出3天则返回null,渠道失效
 		if(this.ucsCondition.installtime <= 0 
 				|| (this.ucsCondition.installtime != 0 && this.ucsCondition.installtime < (System.currentTimeMillis() / 1000 - channelValidTime))){
 			return null;
 		}
-		return this.userClass.getUCByChannelId(channel);
+		return UserClass.instance.getUCByChannelId(channel);
 	}
 
 	/**
@@ -298,7 +299,6 @@ public class Operator {
 			this.ucRec = ucRec;
 		}
 	}
-
 	/**
 	 * @param args
 	 */

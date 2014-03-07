@@ -1,0 +1,1 @@
+nohup java -Dfile.encoding=utf-8 -cp .:lib/* -Xms2g -Xmx4g com.funshion.flushVideoSpecial.VideoSpecial &

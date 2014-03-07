@@ -6,20 +6,16 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.funshion.search.utils.LogHelper;
 import com.funshion.search.utils.MysqlHelper;
 
 public class AreaUserClass {
-	private static final LogHelper log = new LogHelper("AreaUserClass");
-	private static Map<String, Map<Integer, List<Integer>>> areaUserClassesMap = new HashMap<String, Map<Integer, List<Integer>>>();
-	
-	private Map<Integer, List<Integer>> clientAreaUserClasses = null;
-	
-	public  AreaUserClass(String client){
-		this.setClientAreaUserClasses(client);
-	}
+	private Map<String, Map<Integer, List<Integer>>> areaUserClassesMap = new HashMap<String, Map<Integer, List<Integer>>>();
+	private Map<Integer, List<Integer>> clientAreaClasses = null;
 
-	public static void loadAreaUserClasses(MysqlHelper mysql) {
+	private AreaUserClass(){}
+	public static final AreaUserClass instance = new AreaUserClass();
+
+	public void loadAreaUserClasses(MysqlHelper mysql) {
 		Map<String, Map<Integer, List<Integer>>> areaUserClassesMapTmp = new HashMap<String, Map<Integer, List<Integer>>>();
 		try {
 			ResultSet rs = mysql.getCursor("SELECT a.user_classid,a.areaid,b.client FROM fs_user_class_area_relation a LEFT JOIN fs_area_info b ON a.areaid = b.areaid");
@@ -36,34 +32,25 @@ public class AreaUserClass {
 				}
 				userClassidList.add(rs.getInt("user_classid"));
 			}
-			areaUserClassesMap = areaUserClassesMapTmp;
-			if(log.logger.isInfoEnabled()){
-				log.info("loadAreaUserClasses done, areaUserClassesMap' s size: " + areaUserClassesMap.size());
-				log.info(areaUserClassesMap.toString());
-			}
+			this.areaUserClassesMap = areaUserClassesMapTmp;
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
-
-	private void setClientAreaUserClasses(String client) {
-		if (areaUserClassesMap.containsKey("all")) {
-			this.clientAreaUserClasses = areaUserClassesMap.get("all");
-			if(areaUserClassesMap.containsKey(client)) {
-				this.clientAreaUserClasses.putAll(areaUserClassesMap.get(client));
-			} 
-		}else{
-			this.clientAreaUserClasses = areaUserClassesMap.get(client);
+	
+	public void setTypeClasses(String client) {
+		if (this.areaUserClassesMap.containsKey("all")) {
+			this.clientAreaClasses = this.areaUserClassesMap.get("all");
 		}
+		if(this.areaUserClassesMap.containsKey(client)) {
+			this.clientAreaClasses = this.areaUserClassesMap.get(client);
+		} 
 	}
-
+	
 	public List<Integer> getUserClassIdArray(int areaId){
-		if(this.clientAreaUserClasses == null){
-			return null;
-		}
-		return this.clientAreaUserClasses.get(areaId);
+		return this.clientAreaClasses.get(areaId);
 	}
-
+	
 	/**
 	 * @param args
 	 */

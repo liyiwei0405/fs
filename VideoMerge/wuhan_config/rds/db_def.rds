@@ -1,0 +1,22 @@
+#this is the resource file
+[var]
+my_url = jdbc:mysql://$host$:$port$/$database$?autoReconnect=true&charset=gbk&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true
+my_driver = com.mysql.jdbc.Driver
+
+
+[def]
+
+[src]
+#source define block, it should be defined at the end of main block
+SRC = corsair_0
+
+
+#source detail define
+[corsair_0]
+host = 192.168.16.161
+port = 3306
+user = root
+password = 123456
+database = corsair_0
+driver = $my_driver$
+url = $my_url$

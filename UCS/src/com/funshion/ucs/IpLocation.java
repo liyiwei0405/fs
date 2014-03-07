@@ -7,17 +7,21 @@ import java.util.List;
 
 import com.funshion.search.utils.LineReader;
 import com.funshion.search.utils.LogHelper;
-import com.funshion.ucs.exceptions.ErrorIpFormatException;
 
 public class IpLocation {
-	private final LogHelper log = new LogHelper("IpLocation");
-	private final File localIpFile = new File("./data/funshion.city.dat");
-	private final File foreignIpFile= new File("./data/funshion.country.dat");
-	
+	private final LogHelper log;
+	private final File localIpFile;
+	private final File foreignIpFile;
 	private List<IpSection> ipTable; 
 	private List<IpSection> ipForeignTable;
 
-	private IpLocation(){}
+	private IpLocation(){
+		this.log = new LogHelper("IpLocation");
+		this.localIpFile = new File("./data/funshion.city.dat");
+		this.foreignIpFile= new File("./data/funshion.country.dat");
+		this.ipTable = loadIPData(false);
+		this.ipForeignTable = loadIPData(true);
+	}
 	public static final IpLocation instance = new IpLocation();
 	
 	/**
@@ -25,11 +29,11 @@ public class IpLocation {
 	 * @param isForeign
 	 * @throws Exception 
 	 */
-	public void loadIPData(boolean isForeign){
+	public List<IpSection> loadIPData(boolean isForeign){
 		List<IpSection> ipTable = new ArrayList<IpSection>();
 		LineReader lr = null;
 		try {
-			if (! isForeign) {
+			if (!isForeign) {
 				lr = new LineReader(localIpFile, "utf-8");
 			}else{
 				lr = new LineReader(foreignIpFile, "utf-8");
@@ -47,15 +51,6 @@ public class IpLocation {
 					log.error(".dat has fields smaller than 5, pass");
 				}
 			}
-			if(! isForeign){
-				this.ipTable = ipTable;
-				log.info("load localIpFile done, size: " + this.ipTable.size());
-				System.out.println(this.ipTable.get(10));
-			}else{
-				this.ipForeignTable = ipTable;
-				log.info("load foreignIpFile done, size: " + this.ipForeignTable.size());
-				System.out.println(this.ipForeignTable.get(11));
-			}
 		} catch (IOException e) {
 			log.fatal(e.getMessage());
 			e.printStackTrace();
@@ -65,6 +60,7 @@ public class IpLocation {
 				lr.close();
 			}
 		}
+		return ipTable;
 	}
 
 	/**
@@ -129,11 +125,6 @@ public class IpLocation {
 		}
 		public IpSection(boolean isValid){
 			this.isValid = isValid;
-		}
-		
-		@Override
-		public String toString(){
-			return "isValid:" + String.valueOf(this.isValid) + ",ipStart:" + String.valueOf(this.ipStart) + ",ipEnd:" + String.valueOf(this.ipEnd) + ",country:" + this.country + ",province:" + this.province + ",city:" + this.city + ",isp:" + this.isp;
 		}
 	}
 
