@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="gbk"?> 
+<project name="project" default="jar_videolet" basedir=".">
+    <description>  description  </description>
+
+	<property name="src_utils.dir" value="./src/utils"></property>
+	<property name="src_videolet.dir" value="./src/videolet"></property>
+	<!--app build directory-->
+	<property name="build.dir" value="./build/"></property>
+	<property name="build.classes.dir" value="${build.dir}/classes"></property>
+	<!--app dist directory-->
+	<property name="dist.dir" value="./dist/"></property>
+	<property name="lib.dir" value="./lib/"></property>
+	<!--app doc directory-->
+	<property name="doc.dir" value="doc"></property>
+	
+	
+	<!--configure directory-->
+	<property name="conf.dir" value="conf"></property>
+
+	<property name="dest.conf.dir" value="${dist.dir}/conf"></property>
+
+	<path id="master-classpath">
+		<fileset dir="${lib.dir}">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+	<!--usage-->
+	<target name="usage">
+		<echo message="------------------------------"/>
+		<echo message="library in ${lib.dir}"/>
+		<echo message="build ${src.dir} => ${build.classes.dir}"/>
+		<echo message="jar ${build.classes.dir} => ${dist.dir}"/>
+		<echo message="javadoc => ${doc.dir}"/>
+		<echo message="------------------------------"/>
+	</target>
+	
+	<!--init-->
+	<target name="init">
+		<echo message ="delete dist dir" />
+		<delete dir="${build.dir}" />
+		<echo message ="delete build dir" />
+		<delete dir="${build.dir}" />
+		<echo message ="make dist dir" />
+		<mkdir dir="${dist.dir}"/>
+		<echo message ="make build dir" />
+		<mkdir dir="${build.dir}"/>
+	</target>
+
+	<!-- build html-htmlps -->
+	<target name="jar_videolet" depends="init" description="Build the source file">
+
+		<echo message ="starting build videolet" />
+		<javac srcdir="${src_videolet.dir}" destdir="${build.dir}"  deprecation=""  classpath="" target="1.6" encoding = "utf-8">
+			<classpath refid="master-classpath"/>
+		</javac>
+		
+		<jar destfile="${dist.dir}/videolet-collect1.0.jar" basedir="${build.dir}" />
+		<echo message = "build util ok" />
+	
+	</target>
+	
+
+</project>
+

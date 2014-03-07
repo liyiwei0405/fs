@@ -1,0 +1,1 @@
+java -Dfile.encoding=utf-8 -cp .:lib/* com.funshion.videoService.test.TestVideoServiceClient

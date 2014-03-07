@@ -1,0 +1,67 @@
+class@com.funshion.gamma.atdd.vodInfo.thrift.PlayInfoList @Return{
+	int retCode: 200
+	string retMsg: OK
+	list data
+	[
+		class@com.funshion.gamma.atdd.vodInfo.thrift.PlayInfoRec {
+			int playInfoID: 803387
+			int mediaID: 101293
+			int serialID: 0
+			string hashID: @Null
+			string cID: 第5集
+			string editorTaskName: @Null
+			string taskName: 顺藤而上的你|第5集
+			string localFilePath: high-dvd
+			string torrentFiles: @Null
+			string fileFormat: 
+			long fileSize: 0
+			int timeLength: 0
+			string clarity: fsp://8105de802600d33f39ff63a063d52d85ca807e1a|auto=4|vt=1|c=|m=101293|ts=375837118|td=3749046|crt=0|torrent=http://www.btstream.org/fsp/2012-11-23/macross_1353647072_108.fsp
+			string subtitle: |mn=%E7%AC%AC5%E9%9B%86|fn=%E9%A1%BA%E8%97%A4%E8%80%8C%E4%B8%8A%E7%9A%84%E4%BD%A0|sz=375837118|idx=4|jm=@_101293|jv=1377208140
+			short byteRate: 0
+			string dubOne: @Null
+			string dubTwo: @Null
+		}
+		class@com.funshion.gamma.atdd.vodInfo.thrift.PlayInfoRec {
+			int playInfoID: 0
+			int mediaID: 0
+			int serialID: 0
+			string hashID: @Null
+			string cID: @Null
+			string editorTaskName: @Null
+			string taskName: @Null
+			string localFilePath: @Null
+			string torrentFiles: @Null
+			string fileFormat: @Null
+			long fileSize: 0
+			int timeLength: 0
+			string clarity: @Null
+			string subtitle: @Null
+			short byteRate: 0
+			string dubOne: @Null
+			string dubTwo: @Null
+		}
+		class@com.funshion.gamma.atdd.vodInfo.thrift.PlayInfoRec {
+			int playInfoID: 803388
+			int mediaID: 101293
+			int serialID: 0
+			string hashID: @Null
+			string cID: 第17集
+			string editorTaskName: @Null
+			string taskName: 顺藤而上的你|第17集
+			string localFilePath: high-dvd
+			string torrentFiles: @Null
+			string fileFormat: 
+			long fileSize: 0
+			int timeLength: 0
+			string clarity: fsp://8f7a6997b2ebf69328989055ede66bcc89f9f7fa|auto=4|vt=1|c=|m=101293|ts=380497524|td=3795463|crt=0|torrent=http://www.btstream.org/fsp/2012-11-23/macross_1353647073_264.fsp
+			string subtitle: |mn=%E7%AC%AC17%E9%9B%86|fn=%E9%A1%BA%E8%97%A4%E8%80%8C%E4%B8%8A%E7%9A%84%E4%BD%A0|sz=380497524|idx=16|jm=@_101293|jv=1377208140
+			short byteRate: 0
+			string dubOne: @Null
+			string dubTwo: @Null
+		}
+	]
+}
+
+
+##

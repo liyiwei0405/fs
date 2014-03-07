@@ -1,0 +1,475 @@
+class@com.funshion.gamma.atdd.thrift.MediaListV2 @Return{
+	int retCode: @Igr
+	string retMsg: @Igr
+	int sum: @Igr
+	list pageRet
+	[
+		class@com.funshion.gamma.atdd.thrift.MediaV2 {
+			int mediaId: @Igr
+			string nameCN: @Igr
+			string nameEN: @Igr
+			string nameOT: @Igr
+			string displayType: @Igr
+			string language: @Igr
+			string mediaLength: @Igr
+			string country: @Igr
+			string releaseDate: @Igr
+			string releaseInfo: @Igr
+			string createDate: @Igr
+			string modifyDate: @Igr
+			string website: @Igr
+			string pinyinCN: @Igr
+			string karma: @Igr
+			int cutPic: @Igr
+			string fspStatus: @Igr
+			string clarity: @Igr
+			string adWord: @Igr
+			int coverPic: @Igr
+			short programType: @Igr
+			string webClarity: @Igr
+			bool isplay: @Igr
+			list relateVideos: @Igr
+			list mediaClasses
+			[
+				int : @Igr
+				int : @Igr
+				int : @Igr
+				int : @Igr
+				int : @Igr
+				int : @Igr
+			]
+			string mediaTactics: @Igr
+			bool deleted: @Igr
+			string tag4editor: @Igr
+			int voteNumber: @Igr
+			long playAfterNumber: @Igr
+			string issue: @Igr
+			short copyright: @Igr
+			string TVstation: @Igr
+			string fspLangStatus: @Igr
+			string fspOriginalStatus: @Igr
+			string fspInfo: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.MediaV2 {
+			int mediaId: @Igr
+			string nameCN: @Igr
+			string nameEN: @Igr
+			string nameOT: @Igr
+			string displayType: @Igr
+			string language: @Igr
+			string mediaLength: @Igr
+			string country: @Igr
+			string releaseDate: @Igr
+			string releaseInfo: @Igr
+			string createDate: @Igr
+			string modifyDate: @Igr
+			string website: @Igr
+			string pinyinCN: @Igr
+			string karma: @Igr
+			int cutPic: @Igr
+			string fspStatus: @Igr
+			string clarity: @Igr
+			string adWord: @Igr
+			int coverPic: @Igr
+			short programType: @Igr
+			string webClarity: @Igr
+			bool isplay: @Igr
+			list relateVideos: @Igr
+			list mediaClasses
+			[
+				int : @Igr
+				int : @Igr
+				int : @Igr
+				int : @Igr
+				int : @Igr
+				int : @Igr
+			]
+			string mediaTactics: @Igr
+			bool deleted: @Igr
+			string tag4editor: @Igr
+			int voteNumber: @Igr
+			long playAfterNumber: @Igr
+			string issue: @Igr
+			short copyright: @Igr
+			string TVstation: @Igr
+			string fspLangStatus: @Igr
+			string fspOriginalStatus: @Igr
+			string fspInfo: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.MediaV2 {
+			int mediaId: @Igr
+			string nameCN: @Igr
+			string nameEN: @Igr
+			string nameOT: @Igr
+			string displayType: @Igr
+			string language: @Igr
+			string mediaLength: @Igr
+			string country: @Igr
+			string releaseDate: @Igr
+			string releaseInfo: @Igr
+			string createDate: @Igr
+			string modifyDate: @Igr
+			string website: @Igr
+			string pinyinCN: @Igr
+			string karma: @Igr
+			int cutPic: @Igr
+			string fspStatus: @Igr
+			string clarity: @Igr
+			string adWord: @Igr
+			int coverPic: @Igr
+			short programType: @Igr
+			string webClarity: @Igr
+			bool isplay: @Igr
+			list relateVideos: @Igr
+			list mediaClasses
+			[
+				int : @Igr
+				int : @Igr
+				int : @Igr
+				int : @Igr
+				int : @Igr
+				int : @Igr
+			]
+			string mediaTactics: @Igr
+			bool deleted: @Igr
+			string tag4editor: @Igr
+			int voteNumber: @Igr
+			long playAfterNumber: @Igr
+			string issue: @Igr
+			short copyright: @Igr
+			string TVstation: @Igr
+			string fspLangStatus: @Igr
+			string fspOriginalStatus: @Igr
+			string fspInfo: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.MediaV2 {
+			int mediaId: @Igr
+			string nameCN: @Igr
+			string nameEN: @Igr
+			string nameOT: @Igr
+			string displayType: @Igr
+			string language: @Igr
+			string mediaLength: @Igr
+			string country: @Igr
+			string releaseDate: @Igr
+			string releaseInfo: @Igr
+			string createDate: @Igr
+			string modifyDate: @Igr
+			string website: @Igr
+			string pinyinCN: @Igr
+			string karma: @Igr
+			int cutPic: @Igr
+			string fspStatus: @Igr
+			string clarity: @Igr
+			string adWord: @Igr
+			int coverPic: @Igr
+			short programType: @Igr
+			string webClarity: @Igr
+			bool isplay: @Igr
+			list relateVideos: @Igr
+			list mediaClasses
+			[
+				int : @Igr
+				int : @Igr
+				int : @Igr
+				int : @Igr
+				int : @Igr
+				int : @Igr
+			]
+			string mediaTactics: @Igr
+			bool deleted: @Igr
+			string tag4editor: @Igr
+			int voteNumber: @Igr
+			long playAfterNumber: @Igr
+			string issue: @Igr
+			short copyright: @Igr
+			string TVstation: @Igr
+			string fspLangStatus: @Igr
+			string fspOriginalStatus: @Igr
+			string fspInfo: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.MediaV2 {
+			int mediaId: @Igr
+			string nameCN: @Igr
+			string nameEN: @Igr
+			string nameOT: @Igr
+			string displayType: @Igr
+			string language: @Igr
+			string mediaLength: @Igr
+			string country: @Igr
+			string releaseDate: @Igr
+			string releaseInfo: @Igr
+			string createDate: @Igr
+			string modifyDate: @Igr
+			string website: @Igr
+			string pinyinCN: @Igr
+			string karma: @Igr
+			int cutPic: @Igr
+			string fspStatus: @Igr
+			string clarity: @Igr
+			string adWord: @Igr
+			int coverPic: @Igr
+			short programType: @Igr
+			string webClarity: @Igr
+			bool isplay: @Igr
+			list relateVideos: @Igr
+			list mediaClasses
+			[
+				int : @Igr
+				int : @Igr
+				int : @Igr
+				int : @Igr
+				int : @Igr
+				int : @Igr
+			]
+			string mediaTactics: @Igr
+			bool deleted: @Igr
+			string tag4editor: @Igr
+			int voteNumber: @Igr
+			long playAfterNumber: @Igr
+			string issue: @Igr
+			short copyright: @Igr
+			string TVstation: @Igr
+			string fspLangStatus: @Igr
+			string fspOriginalStatus: @Igr
+			string fspInfo: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.MediaV2 {
+			int mediaId: @Igr
+			string nameCN: @Igr
+			string nameEN: @Igr
+			string nameOT: @Igr
+			string displayType: @Igr
+			string language: @Igr
+			string mediaLength: @Igr
+			string country: @Igr
+			string releaseDate: @Igr
+			string releaseInfo: @Igr
+			string createDate: @Igr
+			string modifyDate: @Igr
+			string website: @Igr
+			string pinyinCN: @Igr
+			string karma: @Igr
+			int cutPic: @Igr
+			string fspStatus: @Igr
+			string clarity: @Igr
+			string adWord: @Igr
+			int coverPic: @Igr
+			short programType: @Igr
+			string webClarity: @Igr
+			bool isplay: @Igr
+			list relateVideos: @Igr
+			list mediaClasses
+			[
+				int : @Igr
+				int : @Igr
+				int : @Igr
+				int : @Igr
+				int : @Igr
+				int : @Igr
+			]
+			string mediaTactics: @Igr
+			bool deleted: @Igr
+			string tag4editor: @Igr
+			int voteNumber: @Igr
+			long playAfterNumber: @Igr
+			string issue: @Igr
+			short copyright: @Igr
+			string TVstation: @Igr
+			string fspLangStatus: @Igr
+			string fspOriginalStatus: @Igr
+			string fspInfo: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.MediaV2 {
+			int mediaId: @Igr
+			string nameCN: @Igr
+			string nameEN: @Igr
+			string nameOT: @Igr
+			string displayType: @Igr
+			string language: @Igr
+			string mediaLength: @Igr
+			string country: @Igr
+			string releaseDate: @Igr
+			string releaseInfo: @Igr
+			string createDate: @Igr
+			string modifyDate: @Igr
+			string website: @Igr
+			string pinyinCN: @Igr
+			string karma: @Igr
+			int cutPic: @Igr
+			string fspStatus: @Igr
+			string clarity: @Igr
+			string adWord: @Igr
+			int coverPic: @Igr
+			short programType: @Igr
+			string webClarity: @Igr
+			bool isplay: @Igr
+			list relateVideos: @Igr
+			list mediaClasses
+			[
+				int : @Igr
+				int : @Igr
+				int : @Igr
+				int : @Igr
+				int : @Igr
+				int : @Igr
+			]
+			string mediaTactics: @Igr
+			bool deleted: @Igr
+			string tag4editor: @Igr
+			int voteNumber: @Igr
+			long playAfterNumber: @Igr
+			string issue: @Igr
+			short copyright: @Igr
+			string TVstation: @Igr
+			string fspLangStatus: @Igr
+			string fspOriginalStatus: @Igr
+			string fspInfo: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.MediaV2 {
+			int mediaId: @Igr
+			string nameCN: @Igr
+			string nameEN: @Igr
+			string nameOT: @Igr
+			string displayType: @Igr
+			string language: @Igr
+			string mediaLength: @Igr
+			string country: @Igr
+			string releaseDate: @Igr
+			string releaseInfo: @Igr
+			string createDate: @Igr
+			string modifyDate: @Igr
+			string website: @Igr
+			string pinyinCN: @Igr
+			string karma: @Igr
+			int cutPic: @Igr
+			string fspStatus: @Igr
+			string clarity: @Igr
+			string adWord: @Igr
+			int coverPic: @Igr
+			short programType: @Igr
+			string webClarity: @Igr
+			bool isplay: @Igr
+			list relateVideos: @Igr
+			list mediaClasses
+			[
+				int : @Igr
+				int : @Igr
+				int : @Igr
+				int : @Igr
+				int : @Igr
+				int : @Igr
+			]
+			string mediaTactics: @Igr
+			bool deleted: @Igr
+			string tag4editor: @Igr
+			int voteNumber: @Igr
+			long playAfterNumber: @Igr
+			string issue: @Igr
+			short copyright: @Igr
+			string TVstation: @Igr
+			string fspLangStatus: @Igr
+			string fspOriginalStatus: @Igr
+			string fspInfo: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.MediaV2 {
+			int mediaId: @Igr
+			string nameCN: @Igr
+			string nameEN: @Igr
+			string nameOT: @Igr
+			string displayType: @Igr
+			string language: @Igr
+			string mediaLength: @Igr
+			string country: @Igr
+			string releaseDate: @Igr
+			string releaseInfo: @Igr
+			string createDate: @Igr
+			string modifyDate: @Igr
+			string website: @Igr
+			string pinyinCN: @Igr
+			string karma: @Igr
+			int cutPic: @Igr
+			string fspStatus: @Igr
+			string clarity: @Igr
+			string adWord: @Igr
+			int coverPic: @Igr
+			short programType: @Igr
+			string webClarity: @Igr
+			bool isplay: @Igr
+			list relateVideos
+			[
+				int : @Igr
+			]
+			list mediaClasses
+			[
+				int : @Igr
+				int : @Igr
+				int : @Igr
+				int : @Igr
+				int : @Igr
+				int : @Igr
+			]
+			string mediaTactics: @Igr
+			bool deleted: @Igr
+			string tag4editor: @Igr
+			int voteNumber: @Igr
+			long playAfterNumber: @Igr
+			string issue: @Igr
+			short copyright: @Igr
+			string TVstation: @Igr
+			string fspLangStatus: @Igr
+			string fspOriginalStatus: @Igr
+			string fspInfo: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.MediaV2 {
+			int mediaId: @Igr
+			string nameCN: @Igr
+			string nameEN: @Igr
+			string nameOT: @Igr
+			string displayType: @Igr
+			string language: @Igr
+			string mediaLength: @Igr
+			string country: @Igr
+			string releaseDate: @Igr
+			string releaseInfo: @Igr
+			string createDate: @Igr
+			string modifyDate: @Igr
+			string website: @Igr
+			string pinyinCN: @Igr
+			string karma: @Igr
+			int cutPic: @Igr
+			string fspStatus: @Igr
+			string clarity: @Igr
+			string adWord: @Igr
+			int coverPic: @Igr
+			short programType: @Igr
+			string webClarity: @Igr
+			bool isplay: @Igr
+			list relateVideos: @Igr
+			list mediaClasses
+			[
+				int : @Igr
+				int : @Igr
+				int : @Igr
+				int : @Igr
+				int : @Igr
+				int : @Igr
+			]
+			string mediaTactics: @Igr
+			bool deleted: @Igr
+			string tag4editor: @Igr
+			int voteNumber: @Igr
+			long playAfterNumber: @Igr
+			string issue: @Igr
+			short copyright: @Igr
+			string TVstation: @Igr
+			string fspLangStatus: @Igr
+			string fspOriginalStatus: @Igr
+			string fspInfo: @Igr
+		}
+	]
+}
+
+
+
+##

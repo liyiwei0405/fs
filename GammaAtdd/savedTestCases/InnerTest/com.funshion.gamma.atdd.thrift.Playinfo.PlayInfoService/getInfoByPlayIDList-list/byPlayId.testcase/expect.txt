@@ -1,0 +1,25 @@
+class@com.funshion.gamma.atdd.thrift.Playinfo.PlayInfoRs @Return{
+	int retCode: 200
+	string retMsg: OK
+	list data
+	[
+		class@com.funshion.gamma.atdd.thrift.Playinfo.PlayInfoRec {
+			int playInfoID: 827552
+			int mediaID: 104165
+			string hashID: 53d3e3db0c906d36d4f75bd70d1c962fb8e65e1b
+			int serialNumber: 1
+			string serialName: 人再囧途之泰囧
+			int serialPicID: 0
+			string taskName: 人再囧途之泰囧
+			string clarity: dvd
+			string langType: chi
+			string soundTrackLang: 
+			int modifyDate: @Igr
+			string fspURL: @Igr
+			string fspExt: @Igr
+		}
+	]
+}
+
+
+##

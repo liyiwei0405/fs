@@ -1,0 +1,9 @@
+class@com.funshion.gamma.atdd.thrift.ResultI32 @Return{
+	int retCode: 200
+	string retMsg: OK
+	int result: 10
+}
+
+
+
+##

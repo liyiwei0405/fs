@@ -1,0 +1,461 @@
+class@com.funshion.gamma.atdd.thrift.Playinfo.PlayInfoRs @Return{
+	int retCode: 200
+	string retMsg: OK
+	list data
+	[
+		class@com.funshion.gamma.atdd.thrift.Playinfo.PlayInfoRec {
+			int playInfoID: 638368
+			int mediaID: 95992
+			string hashID: 4d08d4c1c6e56032d2aac6fd65068f19a73c85b9
+			int serialNumber: 1
+			string serialName: 第1集
+			int serialPicID: 750970
+			string taskName: 家的N次方|第1集
+			string clarity: high-dvd
+			string langType: chi
+			string soundTrackLang: 
+			int modifyDate: @Igr
+			string fspURL: @Igr
+			string fspExt: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.Playinfo.PlayInfoRec {
+			int playInfoID: 638369
+			int mediaID: 95992
+			string hashID: e839f34af24d25c98545537f6bf9c30f2d223107
+			int serialNumber: 2
+			string serialName: 第2集
+			int serialPicID: 751005
+			string taskName: 家的N次方|第2集
+			string clarity: high-dvd
+			string langType: chi
+			string soundTrackLang: 
+			int modifyDate: @Igr
+			string fspURL: @Igr
+			string fspExt: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.Playinfo.PlayInfoRec {
+			int playInfoID: 638370
+			int mediaID: 95992
+			string hashID: 423220bbe244f976f56fb6603ea13e887d544482
+			int serialNumber: 3
+			string serialName: 第3集
+			int serialPicID: 750973
+			string taskName: 家的N次方|第3集
+			string clarity: high-dvd
+			string langType: chi
+			string soundTrackLang: 
+			int modifyDate: @Igr
+			string fspURL: @Igr
+			string fspExt: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.Playinfo.PlayInfoRec {
+			int playInfoID: 638371
+			int mediaID: 95992
+			string hashID: 20458248c56f3f86775f60d6e36f620ecabcb083
+			int serialNumber: 4
+			string serialName: 第4集
+			int serialPicID: 751006
+			string taskName: 家的N次方|第4集
+			string clarity: high-dvd
+			string langType: chi
+			string soundTrackLang: 
+			int modifyDate: @Igr
+			string fspURL: @Igr
+			string fspExt: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.Playinfo.PlayInfoRec {
+			int playInfoID: 638372
+			int mediaID: 95992
+			string hashID: 1027c3291e18cb3faade3841681328d0bf93a8de
+			int serialNumber: 5
+			string serialName: 第5集
+			int serialPicID: 750974
+			string taskName: 家的N次方|第5集
+			string clarity: high-dvd
+			string langType: chi
+			string soundTrackLang: 
+			int modifyDate: @Igr
+			string fspURL: @Igr
+			string fspExt: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.Playinfo.PlayInfoRec {
+			int playInfoID: 638373
+			int mediaID: 95992
+			string hashID: 07d60fc09e8d43756c6f991573ec01e266822fb5
+			int serialNumber: 6
+			string serialName: 第6集
+			int serialPicID: 750993
+			string taskName: 家的N次方|第6集
+			string clarity: high-dvd
+			string langType: chi
+			string soundTrackLang: 
+			int modifyDate: @Igr
+			string fspURL: @Igr
+			string fspExt: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.Playinfo.PlayInfoRec {
+			int playInfoID: 638374
+			int mediaID: 95992
+			string hashID: 50594f0b1deac1730e3b69b7d5e28e6451e9ade6
+			int serialNumber: 7
+			string serialName: 第7集
+			int serialPicID: 750995
+			string taskName: 家的N次方|第7集
+			string clarity: high-dvd
+			string langType: chi
+			string soundTrackLang: 
+			int modifyDate: @Igr
+			string fspURL: @Igr
+			string fspExt: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.Playinfo.PlayInfoRec {
+			int playInfoID: 638375
+			int mediaID: 95992
+			string hashID: 7c5fa3a30335041656c2cf06c5e1882e99c0aeb9
+			int serialNumber: 8
+			string serialName: 第8集
+			int serialPicID: 750996
+			string taskName: 家的N次方|第8集
+			string clarity: high-dvd
+			string langType: chi
+			string soundTrackLang: 
+			int modifyDate: @Igr
+			string fspURL: @Igr
+			string fspExt: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.Playinfo.PlayInfoRec {
+			int playInfoID: 638376
+			int mediaID: 95992
+			string hashID: 0bf663e85543d0028dd87aea35def933398b7030
+			int serialNumber: 9
+			string serialName: 第9集
+			int serialPicID: 750997
+			string taskName: 家的N次方|第9集
+			string clarity: high-dvd
+			string langType: chi
+			string soundTrackLang: 
+			int modifyDate: @Igr
+			string fspURL: @Igr
+			string fspExt: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.Playinfo.PlayInfoRec {
+			int playInfoID: 638377
+			int mediaID: 95992
+			string hashID: 3a6225c0828124f2d122a4731676408fa97fc436
+			int serialNumber: 10
+			string serialName: 第10集
+			int serialPicID: 750998
+			string taskName: 家的N次方|第10集
+			string clarity: high-dvd
+			string langType: chi
+			string soundTrackLang: 
+			int modifyDate: @Igr
+			string fspURL: @Igr
+			string fspExt: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.Playinfo.PlayInfoRec {
+			int playInfoID: 638378
+			int mediaID: 95992
+			string hashID: c9591ab2dc55ec2b7bfde6331a0143bd1a5c79bf
+			int serialNumber: 11
+			string serialName: 第11集
+			int serialPicID: 750999
+			string taskName: 家的N次方|第11集
+			string clarity: high-dvd
+			string langType: chi
+			string soundTrackLang: 
+			int modifyDate: @Igr
+			string fspURL: @Igr
+			string fspExt: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.Playinfo.PlayInfoRec {
+			int playInfoID: 638379
+			int mediaID: 95992
+			string hashID: 5304e40498ec48087cb36c3395449f4a5f3ac7ff
+			int serialNumber: 12
+			string serialName: 第12集
+			int serialPicID: 751000
+			string taskName: 家的N次方|第12集
+			string clarity: high-dvd
+			string langType: chi
+			string soundTrackLang: 
+			int modifyDate: @Igr
+			string fspURL: @Igr
+			string fspExt: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.Playinfo.PlayInfoRec {
+			int playInfoID: 638380
+			int mediaID: 95992
+			string hashID: 84efa4f42236195dda888d9d8540a9d22489fc3e
+			int serialNumber: 13
+			string serialName: 第13集
+			int serialPicID: 751001
+			string taskName: 家的N次方|第13集
+			string clarity: high-dvd
+			string langType: chi
+			string soundTrackLang: 
+			int modifyDate: @Igr
+			string fspURL: @Igr
+			string fspExt: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.Playinfo.PlayInfoRec {
+			int playInfoID: 638381
+			int mediaID: 95992
+			string hashID: 0f37c53567be8427b3f8913d3a2455e2a67baf43
+			int serialNumber: 14
+			string serialName: 第14集
+			int serialPicID: 751002
+			string taskName: 家的N次方|第14集
+			string clarity: high-dvd
+			string langType: chi
+			string soundTrackLang: 
+			int modifyDate: @Igr
+			string fspURL: @Igr
+			string fspExt: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.Playinfo.PlayInfoRec {
+			int playInfoID: 638382
+			int mediaID: 95992
+			string hashID: abab775b18d3f62b3353c4cb774a29b5b4f086fd
+			int serialNumber: 15
+			string serialName: 第15集
+			int serialPicID: 751003
+			string taskName: 家的N次方|第15集
+			string clarity: high-dvd
+			string langType: chi
+			string soundTrackLang: 
+			int modifyDate: @Igr
+			string fspURL: @Igr
+			string fspExt: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.Playinfo.PlayInfoRec {
+			int playInfoID: 638383
+			int mediaID: 95992
+			string hashID: 66d578fa251eced6b0cb01de17d9d8873f945659
+			int serialNumber: 16
+			string serialName: 第16集
+			int serialPicID: 750160
+			string taskName: 家的N次方|第16集
+			string clarity: high-dvd
+			string langType: chi
+			string soundTrackLang: 
+			int modifyDate: @Igr
+			string fspURL: @Igr
+			string fspExt: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.Playinfo.PlayInfoRec {
+			int playInfoID: 638384
+			int mediaID: 95992
+			string hashID: 4797de00b4681043bdd4b3f79b0dfd4e30ba2a56
+			int serialNumber: 17
+			string serialName: 第17集
+			int serialPicID: 750158
+			string taskName: 家的N次方|第17集
+			string clarity: high-dvd
+			string langType: chi
+			string soundTrackLang: 
+			int modifyDate: @Igr
+			string fspURL: @Igr
+			string fspExt: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.Playinfo.PlayInfoRec {
+			int playInfoID: 638385
+			int mediaID: 95992
+			string hashID: 43cf0e6a72b7c8ff1f5bf70516681bdf55f7c54b
+			int serialNumber: 18
+			string serialName: 第18集
+			int serialPicID: 750157
+			string taskName: 家的N次方|第18集
+			string clarity: high-dvd
+			string langType: chi
+			string soundTrackLang: 
+			int modifyDate: @Igr
+			string fspURL: @Igr
+			string fspExt: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.Playinfo.PlayInfoRec {
+			int playInfoID: 638386
+			int mediaID: 95992
+			string hashID: 37c65ff1eecaedda4c7d02e436118fecc94aeed9
+			int serialNumber: 19
+			string serialName: 第19集
+			int serialPicID: 750154
+			string taskName: 家的N次方|第19集
+			string clarity: high-dvd
+			string langType: chi
+			string soundTrackLang: 
+			int modifyDate: @Igr
+			string fspURL: @Igr
+			string fspExt: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.Playinfo.PlayInfoRec {
+			int playInfoID: 638387
+			int mediaID: 95992
+			string hashID: 762eb0fc5439537b300f317a761aadc1922e5051
+			int serialNumber: 20
+			string serialName: 第20集
+			int serialPicID: 750152
+			string taskName: 家的N次方|第20集
+			string clarity: high-dvd
+			string langType: chi
+			string soundTrackLang: 
+			int modifyDate: @Igr
+			string fspURL: @Igr
+			string fspExt: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.Playinfo.PlayInfoRec {
+			int playInfoID: 638388
+			int mediaID: 95992
+			string hashID: 7344e74da62635f188b24198615b5a1a0779fb2a
+			int serialNumber: 21
+			string serialName: 第21集
+			int serialPicID: 750139
+			string taskName: 家的N次方|第21集
+			string clarity: high-dvd
+			string langType: chi
+			string soundTrackLang: 
+			int modifyDate: @Igr
+			string fspURL: @Igr
+			string fspExt: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.Playinfo.PlayInfoRec {
+			int playInfoID: 638389
+			int mediaID: 95992
+			string hashID: aa7f3d7bf8f8ce8fb3591276bd783fa3050b533e
+			int serialNumber: 22
+			string serialName: 第22集
+			int serialPicID: 750140
+			string taskName: 家的N次方|第22集
+			string clarity: high-dvd
+			string langType: chi
+			string soundTrackLang: 
+			int modifyDate: @Igr
+			string fspURL: @Igr
+			string fspExt: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.Playinfo.PlayInfoRec {
+			int playInfoID: 638390
+			int mediaID: 95992
+			string hashID: 3b885c4615ded1f03f5fcc5531b4579b7fa2285c
+			int serialNumber: 23
+			string serialName: 第23集
+			int serialPicID: 750141
+			string taskName: 家的N次方|第23集
+			string clarity: high-dvd
+			string langType: chi
+			string soundTrackLang: 
+			int modifyDate: @Igr
+			string fspURL: @Igr
+			string fspExt: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.Playinfo.PlayInfoRec {
+			int playInfoID: 638391
+			int mediaID: 95992
+			string hashID: 488e4c73dad422dd2bc248345b34d4db92b6855a
+			int serialNumber: 24
+			string serialName: 第24集
+			int serialPicID: 750142
+			string taskName: 家的N次方|第24集
+			string clarity: high-dvd
+			string langType: chi
+			string soundTrackLang: 
+			int modifyDate: @Igr
+			string fspURL: @Igr
+			string fspExt: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.Playinfo.PlayInfoRec {
+			int playInfoID: 638392
+			int mediaID: 95992
+			string hashID: 57dbe9d48b82aab285524ab7020efe75bcea5584
+			int serialNumber: 25
+			string serialName: 第25集
+			int serialPicID: 750145
+			string taskName: 家的N次方|第25集
+			string clarity: high-dvd
+			string langType: chi
+			string soundTrackLang: 
+			int modifyDate: @Igr
+			string fspURL: @Igr
+			string fspExt: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.Playinfo.PlayInfoRec {
+			int playInfoID: 638393
+			int mediaID: 95992
+			string hashID: eb9fdc1a63060bd98ef827d64e4428f0eadd0c48
+			int serialNumber: 26
+			string serialName: 第26集
+			int serialPicID: 750147
+			string taskName: 家的N次方|第26集
+			string clarity: high-dvd
+			string langType: chi
+			string soundTrackLang: 
+			int modifyDate: @Igr
+			string fspURL: @Igr
+			string fspExt: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.Playinfo.PlayInfoRec {
+			int playInfoID: 638394
+			int mediaID: 95992
+			string hashID: 184fdb0a32a9830931ef8c58a2b1243205615ae7
+			int serialNumber: 27
+			string serialName: 第27集
+			int serialPicID: 750148
+			string taskName: 家的N次方|第27集
+			string clarity: high-dvd
+			string langType: chi
+			string soundTrackLang: 
+			int modifyDate: @Igr
+			string fspURL: @Igr
+			string fspExt: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.Playinfo.PlayInfoRec {
+			int playInfoID: 638395
+			int mediaID: 95992
+			string hashID: 3952ee393c093b93c13c1c944224c095f7e94819
+			int serialNumber: 28
+			string serialName: 第28集
+			int serialPicID: 750149
+			string taskName: 家的N次方|第28集
+			string clarity: high-dvd
+			string langType: chi
+			string soundTrackLang: 
+			int modifyDate: @Igr
+			string fspURL: @Igr
+			string fspExt: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.Playinfo.PlayInfoRec {
+			int playInfoID: 638396
+			int mediaID: 95992
+			string hashID: e4e828fae6af643b5e59a0450c973d24ad8c4ea8
+			int serialNumber: 29
+			string serialName: 第29集
+			int serialPicID: 750150
+			string taskName: 家的N次方|第29集
+			string clarity: high-dvd
+			string langType: chi
+			string soundTrackLang: 
+			int modifyDate: @Igr
+			string fspURL: @Igr
+			string fspExt: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.Playinfo.PlayInfoRec {
+			int playInfoID: 638397
+			int mediaID: 95992
+			string hashID: 7ce5fcfeaa7fc8d75fa20af5e6c1fd00cd2b0222
+			int serialNumber: 30
+			string serialName: 第30集
+			int serialPicID: 750151
+			string taskName: 家的N次方|第30集
+			string clarity: high-dvd
+			string langType: chi
+			string soundTrackLang: 
+			int modifyDate: @Igr
+			string fspURL: @Igr
+			string fspExt: @Igr
+		}
+	]
+}
+
+
+
+##

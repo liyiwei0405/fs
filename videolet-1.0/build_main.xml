@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="gbk"?> 
+<project name="project" default="jar_videolet" basedir=".">
+    <description>  videolet-search-1.0 ant file  </description>
+	<property name="jar.name" value="videolet-collect1.0.jar"></property>	
+	<property name="project_dir" value="./project/"></property>
+	<property name="src_utils.dir" value="${project_dir}/src/utils"></property>
+	<property name="src_videolet.dir" value="${project_dir}/src/videolet"></property>
+	<!--app build directory-->
+	<property name="build.dir" value="${project_dir}/build/"></property>
+	<property name="build.classes.dir" value="${build.dir}/classes"></property>
+	<!--app dist directory-->
+	<property name="dist.dir" value="${project_dir}/dist/"></property>
+	<property name="lib.dir" value="${project_dir}/lib/"></property>
+
+	<property name="release.dir" value="videolet-deamon-release-1.0"></property>
+        <property name="release-template.dir" value="./bin-release-template/"></property>
+
+	<!--app doc directory-->
+
+	<property name="doc.dir" value="doc"></property>
+	
+	
+	<!--configure directory-->
+	<property name="conf.dir" value="conf"></property>
+
+	<property name="dest.conf.dir" value="${dist.dir}/conf"></property>
+	<property name="release.real.dir" value="${release.dir}/videolet-daemon-v2/"></property>
+  <property name="sphinx_log.dir" value="${release.real.dir}/logs-sphinx/"></property>
+
+	<path id="master-classpath">
+		<fileset dir="${lib.dir}">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+	<!--usage-->
+	<target name="usage">
+		<echo message="------------------------------"/>
+		<echo message="library in ${lib.dir}"/>
+		<echo message="build ${src.dir} => ${build.classes.dir}"/>
+		<echo message="jar ${build.classes.dir} => ${dist.dir}"/>
+		<echo message="javadoc => ${doc.dir}"/>
+		<echo message="------------------------------"/>
+	</target>
+	
+	<!--init-->
+	<target name="init">
+		<echo message ="delete dist dir" />
+		<delete dir="${build.dir}" />
+		<echo message ="delete build dir" />
+		<delete dir="${build.dir}" />
+		<echo message ="make dist dir" />
+		<mkdir dir="${dist.dir}"/>
+		<echo message ="make build dir" />
+		<mkdir dir="${build.dir}"/>
+	</target>
+
+	<!-- build html-htmlps -->
+	<target name="jar_videolet" depends="init" description="Build the source file">
+
+		<echo message ="starting build videolet" />
+		<javac srcdir="${src_videolet.dir}" destdir="${build.dir}"  deprecation=""  classpath="" target="1.6" encoding = "utf-8">
+			<classpath refid="master-classpath"/>
+		</javac>
+		
+		<jar destfile="${dist.dir}/${jar.name}" basedir="${build.dir}" />
+		<echo message = "build util ok" />
+
+		<echo message ="delete release dir" />
+                <delete dir="${release.dir}"/>
+
+		<echo message ="make release dir" />
+                <mkdir dir="${release.dir}"/>
+		
+		<copy todir = "${release.dir}/">
+			<fileset dir = "${release-template.dir}/">
+			</fileset>
+		</copy>
+
+		<echo message ="install jar file into ${release.real.dir}lib" />
+		<echo message ="delete old ${jar.name}" />
+                <delete file="${release.real.dir}/lib/${jar.name}"/>
+
+		<copy todir = "${release.real.dir}/lib/">
+			<fileset dir = "${dist.dir}">
+				<include name= "${jar.name}"/>
+			</fileset>
+		</copy>		
+		
+		<echo message="make sphinx_log_dir" />
+   		<mkdir dir="${sphinx_log.dir}"/>
+	
+	</target>
+	
+
+</project>
+

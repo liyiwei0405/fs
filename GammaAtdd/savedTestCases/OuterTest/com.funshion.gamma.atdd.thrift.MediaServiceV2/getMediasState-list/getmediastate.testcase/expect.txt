@@ -1,0 +1,95 @@
+class@com.funshion.gamma.atdd.thrift.MediaWithClientList @Return{
+	int retCode: @Igr
+	string retMsg: @Igr
+	list ret
+	[
+		class@com.funshion.gamma.atdd.thrift.MediaWithClient {
+			int mediaId: @Igr
+			string clientType: @Igr
+			int mediaLastNum: @Igr
+			string mediaLastReadableNum: @Igr
+			string mediaLastUpdateTime: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.MediaWithClient {
+			int mediaId: @Igr
+			string clientType: @Igr
+			int mediaLastNum: @Igr
+			string mediaLastReadableNum: @Igr
+			string mediaLastUpdateTime: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.MediaWithClient {
+			int mediaId: @Igr
+			string clientType: @Igr
+			int mediaLastNum: @Igr
+			string mediaLastReadableNum: @Igr
+			string mediaLastUpdateTime: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.MediaWithClient {
+			int mediaId: @Igr
+			string clientType: @Igr
+			int mediaLastNum: @Igr
+			string mediaLastReadableNum: @Igr
+			string mediaLastUpdateTime: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.MediaWithClient {
+			int mediaId: @Igr
+			string clientType: @Igr
+			int mediaLastNum: @Igr
+			string mediaLastReadableNum: @Igr
+			string mediaLastUpdateTime: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.MediaWithClient {
+			int mediaId: @Igr
+			string clientType: @Igr
+			int mediaLastNum: @Igr
+			string mediaLastReadableNum: @Igr
+			string mediaLastUpdateTime: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.MediaWithClient {
+			int mediaId: @Igr
+			string clientType: @Igr
+			int mediaLastNum: @Igr
+			string mediaLastReadableNum: @Igr
+			string mediaLastUpdateTime: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.MediaWithClient {
+			int mediaId: @Igr
+			string clientType: @Igr
+			int mediaLastNum: @Igr
+			string mediaLastReadableNum: @Igr
+			string mediaLastUpdateTime: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.MediaWithClient {
+			int mediaId: @Igr
+			string clientType: @Igr
+			int mediaLastNum: @Igr
+			string mediaLastReadableNum: @Igr
+			string mediaLastUpdateTime: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.MediaWithClient {
+			int mediaId: @Igr
+			string clientType: @Igr
+			int mediaLastNum: @Igr
+			string mediaLastReadableNum: @Igr
+			string mediaLastUpdateTime: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.MediaWithClient {
+			int mediaId: @Igr
+			string clientType: @Igr
+			int mediaLastNum: @Igr
+			string mediaLastReadableNum: @Igr
+			string mediaLastUpdateTime: @Igr
+		}
+		class@com.funshion.gamma.atdd.thrift.MediaWithClient {
+			int mediaId: @Igr
+			string clientType: @Igr
+			int mediaLastNum: @Igr
+			string mediaLastReadableNum: @Igr
+			string mediaLastUpdateTime: @Igr
+		}
+	]
+}
+
+
+
+##

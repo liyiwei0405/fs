@@ -1,0 +1,45 @@
+class@com.funshion.gamma.atdd.thrift.tacticFilter.MediaIdList @Return{
+	int retCode: 200
+	string retMsg: Ok
+	list mediaIds
+	[
+		int : 78099
+		int : 85577
+		int : 109769
+		int : 85412
+		int : 79377
+		int : 74104
+		int : 105398
+		int : 13547
+		int : 30277
+		int : 80709
+		int : 59553
+		int : 101465
+		int : 9828
+		int : 56355
+		int : 67785
+		int : 52307
+		int : 82418
+		int : 52658
+		int : 28031
+		int : 54422
+		int : 105573
+		int : 45833
+		int : 7042
+		int : 106694
+		int : 66726
+		int : 55625
+		int : 72214
+		int : 26659
+		int : 50221
+		int : 61662
+		int : 38950
+		int : 45407
+		int : 42466
+		int : 35987
+	]
+}
+
+
+
+##

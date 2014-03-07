@@ -1,0 +1,50 @@
+class@com.funshion.gamma.atdd.thrift.searchHint.HintResult @Return{
+	int retCode: 200
+	string retMsg: OK
+	list records
+	[
+		class@com.funshion.gamma.atdd.thrift.searchHint.HintRecord {
+			string hint: 我是特种兵2利刃出鞘
+			int id: 100273
+		}
+		class@com.funshion.gamma.atdd.thrift.searchHint.HintRecord {
+			string hint: 我是裸模
+			int id: 109840
+		}
+		class@com.funshion.gamma.atdd.thrift.searchHint.HintRecord {
+			string hint: 我是你的罗密欧
+			int id: 109674
+		}
+		class@com.funshion.gamma.atdd.thrift.searchHint.HintRecord {
+			string hint: 我是歌手
+			int id: 105965
+		}
+		class@com.funshion.gamma.atdd.thrift.searchHint.HintRecord {
+			string hint: 我是谁
+			int id: 85457
+		}
+		class@com.funshion.gamma.atdd.thrift.searchHint.HintRecord {
+			string hint: 我是传奇
+			int id: 99338
+		}
+		class@com.funshion.gamma.atdd.thrift.searchHint.HintRecord {
+			string hint: 我是大侦探
+			int id: 94394
+		}
+		class@com.funshion.gamma.atdd.thrift.searchHint.HintRecord {
+			string hint: 我是优优
+			int id: 95949
+		}
+		class@com.funshion.gamma.atdd.thrift.searchHint.HintRecord {
+			string hint: 我是农民
+			int id: 66240
+		}
+		class@com.funshion.gamma.atdd.thrift.searchHint.HintRecord {
+			string hint: 我是大美人
+			int id: 94669
+		}
+	]
+}
+
+
+##

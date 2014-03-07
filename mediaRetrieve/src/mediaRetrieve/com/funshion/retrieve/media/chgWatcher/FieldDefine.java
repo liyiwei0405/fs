@@ -1,0 +1,146 @@
+package com.funshion.retrieve.media.chgWatcher;
+/**
+ * becareful! fieldName length must be 1
+ * @author liying
+ *
+ */
+public class FieldDefine{
+	public static final char FIELD_NAME_CHAR_UNIC_ID = 'a';
+	public static final char FIELD_NAME_CHAR_MTYPE = 'c';
+	public static final char FIELD_NAME_CHAR_MODIFYDATE = 'd';
+	public static final char FIELD_NAME_CHAR_WANTSEENUM = 'e';
+	public static final char FIELD_NAME_CHAR_VOTENUM = 'f';
+	public static final char FIELD_NAME_CHAR_KARMA = 'g';
+	public static final char FIELD_NAME_CHAR_ISCUTPIC = 'h';
+	public static final char FIELD_NAME_CHAR_ISHD = 'i';
+	public static final char FIELD_NAME_CHAR_FSP_STATUS = 'k';
+	public static final char FIELD_NAME_CHAR_FSP_LANG_STATUS = 'l'; 
+	public static final char FIELD_NAME_CHAR_FSP_ORIGINAL_STATUS = 'm';
+	public static final char FIELD_NAME_CHAR_FSP_INFO = 'n';
+	public static final char FIELD_NAME_CHAR_ADWORD = 'o';
+	public static final char FIELD_NAME_CHAR_ISRANK = 'p';
+	public static final char FIELD_NAME_CHAR_PERIOD = 'q';
+	public static final char FIELD_NAME_CHAR_RELEASEDATE = 'r';
+	public static final char FIELD_NAME_CHAR_PLAYNUM = 's';
+	public static final char FIELD_NAME_CHAR_ORDERING = 't';
+	public static final char FIELD_NAME_CHAR_UPDATEFLAG = 'u';
+	public static final char FIELD_NAME_CHAR_ISHOT = 'v';
+	public static final char FIELD_NAME_CHAR_ISCLASSIC = 'w';
+	public static final char FIELD_NAME_CHAR_ISBLACK = 'x';
+	public static final char FIELD_NAME_CHAR_COPYRIGHT = 'y';
+	public static final char FIELD_NAME_CHAR_ZONE_1 = 'z';
+	public static final char FIELD_NAME_CHAR_ZONE_2 = 'A';
+	public static final char FIELD_NAME_CHAR_ZONE_3 = 'B';
+	public static final char FIELD_NAME_CHAR_ZONE_4 = 'C';
+	public static final char FIELD_NAME_CHAR_ZONE_5 = 'D';
+	public static final char FIELD_NAME_CHAR_ZONE_6 = 'E';
+	public static final char FIELD_NAME_CHAR_ZONE_7 = 'F';
+	public static final char FIELD_NAME_CHAR_ZONE_8 = 'G';
+	public static final char FIELD_NAME_CHAR_ZONE_9 = 'H';
+	public static final char FIELD_NAME_CHAR_Z1HOUR = 'I';
+	public static final char FIELD_NAME_CHAR_Z2HOUR = 'J';
+	public static final char FIELD_NAME_CHAR_Z3HOUR = 'K';
+	public static final char FIELD_NAME_CHAR_Z4HOUR = 'L';
+	public static final char FIELD_NAME_CHAR_Z5HOUR = 'M';
+	public static final char FIELD_NAME_CHAR_Z6HOUR = 'N';
+	public static final char FIELD_NAME_CHAR_Z7HOUR = 'O';
+	public static final char FIELD_NAME_CHAR_Z8HOUR = 'P';
+	public static final char FIELD_NAME_CHAR_Z9HOUR = 'Q';
+	public static final char FIELD_NAME_CHAR_Z1WEEK = 'R';
+	public static final char FIELD_NAME_CHAR_Z2WEEK = 'S';
+	public static final char FIELD_NAME_CHAR_Z3WEEK = 'T';
+	public static final char FIELD_NAME_CHAR_Z4WEEK = 'U';
+	public static final char FIELD_NAME_CHAR_Z5WEEK = 'V';
+	public static final char FIELD_NAME_CHAR_Z6WEEK = 'W';
+	public static final char FIELD_NAME_CHAR_Z7WEEK = 'X';
+	public static final char FIELD_NAME_CHAR_Z8WEEK = 'Y';
+	public static final char FIELD_NAME_CHAR_Z9WEEK = 'Z';
+	public static final char FIELD_NAME_CHAR_PEERNUM = '1';
+	public static final char FIELD_NAME_CHAR_NATION = '2';
+	public static final char FIELD_NAME_CHAR_YEAR = '3';
+	public static final char FIELD_NAME_CHAR_ISSUE = '4';
+	public static final char FIELD_NAME_CHAR_TA = '5'; 
+	public static final char FIELD_NAME_CHAR_DAYNUM = '6'; 
+	public static final char FIELD_NAME_CHAR_WEEKNUM = '7'; 
+	public static final char FIELD_NAME_CHAR_PLAYAFTERNUM = '8'; 
+	public static final char FIELD_NAME_CHAR_PROGRAM_TYPE = '9';
+	public static final char FIELD_NAME_CHAR_CATEGORY = '0'; 
+	public static final char FIELD_NAME_CHAR_TAG = 'b'; 
+	public static final char FIELD_NAME_CHAR_COUNTRY = 'j'; 
+	public static final char FIELD_NAME_CHAR_REGION = '!'; 
+	public static final char FIELD_NAME_CHAR_MEDIA_CLASSID = '@'; 
+	public static final char FIELD_NAME_CHAR_TACTIC = '#'; 
+
+	
+	public static final String FIELD_NAME_UNIC_ID = toString(FIELD_NAME_CHAR_UNIC_ID);
+	public static final String FIELD_NAME_MTYPE = toString(FIELD_NAME_CHAR_MTYPE);
+	public static final String FIELD_NAME_MODIFYDATE = toString(FIELD_NAME_CHAR_MODIFYDATE);
+	public static final String FIELD_NAME_WANTSEENUM = toString(FIELD_NAME_CHAR_WANTSEENUM);
+	public static final String FIELD_NAME_VOTENUM = toString(FIELD_NAME_CHAR_VOTENUM);
+	public static final String FIELD_NAME_KARMA = toString(FIELD_NAME_CHAR_KARMA);
+	public static final String FIELD_NAME_ISCUTPIC = toString(FIELD_NAME_CHAR_ISCUTPIC);
+	public static final String FIELD_NAME_ISHD = toString(FIELD_NAME_CHAR_ISHD);
+	public static final String FIELD_NAME_FSP_STATUS = toString(FIELD_NAME_CHAR_FSP_STATUS);
+	public static final String FIELD_NAME_FSP_LANG_STATUS = toString(FIELD_NAME_CHAR_FSP_LANG_STATUS);
+	public static final String FIELD_NAME_FSP_ORIGINAL_STATUS = toString(FIELD_NAME_CHAR_FSP_ORIGINAL_STATUS);
+	public static final String FIELD_NAME_FSP_INFO = toString(FIELD_NAME_CHAR_FSP_INFO);
+	public static final String FIELD_NAME_ADWORD = toString(FIELD_NAME_CHAR_ADWORD);
+	public static final String FIELD_NAME_ISRANK = toString(FIELD_NAME_CHAR_ISRANK);
+	public static final String FIELD_NAME_PERIOD = toString(FIELD_NAME_CHAR_PERIOD);
+	public static final String FIELD_NAME_RELEASEDATE = toString(FIELD_NAME_CHAR_RELEASEDATE);
+	public static final String FIELD_NAME_PLAYNUM = toString(FIELD_NAME_CHAR_PLAYNUM);
+	public static final String FIELD_NAME_ORDERING = toString(FIELD_NAME_CHAR_ORDERING);
+	public static final String FIELD_NAME_UPDATEFLAG = toString(FIELD_NAME_CHAR_UPDATEFLAG);
+	public static final String FIELD_NAME_ISHOT = toString(FIELD_NAME_CHAR_ISHOT);
+	public static final String FIELD_NAME_ISCLASSIC = toString(FIELD_NAME_CHAR_ISCLASSIC);
+	public static final String FIELD_NAME_ISBLACK = toString(FIELD_NAME_CHAR_ISBLACK);
+	public static final String FIELD_NAME_COPYRIGHT = toString(FIELD_NAME_CHAR_COPYRIGHT);
+	public static final String FIELD_NAME_ZONE_1 = toString(FIELD_NAME_CHAR_ZONE_1);
+	public static final String FIELD_NAME_ZONE_2 = toString(FIELD_NAME_CHAR_ZONE_2);
+	public static final String FIELD_NAME_ZONE_3 = toString(FIELD_NAME_CHAR_ZONE_3);
+	public static final String FIELD_NAME_ZONE_4 = toString(FIELD_NAME_CHAR_ZONE_4);
+	public static final String FIELD_NAME_ZONE_5 = toString(FIELD_NAME_CHAR_ZONE_5);
+	public static final String FIELD_NAME_ZONE_6 = toString(FIELD_NAME_CHAR_ZONE_6);
+	public static final String FIELD_NAME_ZONE_7 = toString(FIELD_NAME_CHAR_ZONE_7);
+	public static final String FIELD_NAME_ZONE_8 = toString(FIELD_NAME_CHAR_ZONE_8);
+	public static final String FIELD_NAME_ZONE_9 = toString(FIELD_NAME_CHAR_ZONE_9);
+	public static final String FIELD_NAME_Z1HOUR = toString(FIELD_NAME_CHAR_Z1HOUR);
+	public static final String FIELD_NAME_Z2HOUR = toString(FIELD_NAME_CHAR_Z2HOUR);
+	public static final String FIELD_NAME_Z3HOUR = toString(FIELD_NAME_CHAR_Z3HOUR);
+	public static final String FIELD_NAME_Z4HOUR = toString(FIELD_NAME_CHAR_Z4HOUR);
+	public static final String FIELD_NAME_Z5HOUR = toString(FIELD_NAME_CHAR_Z5HOUR);
+	public static final String FIELD_NAME_Z6HOUR = toString(FIELD_NAME_CHAR_Z6HOUR);
+	public static final String FIELD_NAME_Z7HOUR = toString(FIELD_NAME_CHAR_Z7HOUR);
+	public static final String FIELD_NAME_Z8HOUR = toString(FIELD_NAME_CHAR_Z8HOUR);
+	public static final String FIELD_NAME_Z9HOUR = toString(FIELD_NAME_CHAR_Z9HOUR);
+	public static final String FIELD_NAME_Z1WEEK = toString(FIELD_NAME_CHAR_Z1WEEK);
+	public static final String FIELD_NAME_Z2WEEK = toString(FIELD_NAME_CHAR_Z2WEEK);
+	public static final String FIELD_NAME_Z3WEEK = toString(FIELD_NAME_CHAR_Z3WEEK);
+	public static final String FIELD_NAME_Z4WEEK = toString(FIELD_NAME_CHAR_Z4WEEK);
+	public static final String FIELD_NAME_Z5WEEK = toString(FIELD_NAME_CHAR_Z5WEEK);
+	public static final String FIELD_NAME_Z6WEEK = toString(FIELD_NAME_CHAR_Z6WEEK);
+	public static final String FIELD_NAME_Z7WEEK = toString(FIELD_NAME_CHAR_Z7WEEK);
+	public static final String FIELD_NAME_Z8WEEK = toString(FIELD_NAME_CHAR_Z8WEEK);
+	public static final String FIELD_NAME_Z9WEEK = toString(FIELD_NAME_CHAR_Z9WEEK);
+	public static final String FIELD_NAME_PEERNUM = toString(FIELD_NAME_CHAR_PEERNUM);
+	public static final String FIELD_NAME_NATION = toString(FIELD_NAME_CHAR_NATION);
+	public static final String FIELD_NAME_YEAR = toString(FIELD_NAME_CHAR_YEAR);
+	public static final String FIELD_NAME_ISSUE = toString(FIELD_NAME_CHAR_ISSUE);
+	public static final String FIELD_NAME_TA = toString(FIELD_NAME_CHAR_TA);
+	public static final String FIELD_NAME_DAYNUM = toString(FIELD_NAME_CHAR_DAYNUM);
+	public static final String FIELD_NAME_WEEKNUM = toString(FIELD_NAME_CHAR_WEEKNUM);
+	public static final String FIELD_NAME_PLAYAFTERNUM = toString(FIELD_NAME_CHAR_PLAYAFTERNUM);
+	public static final String FIELD_NAME_PROGRAM_TYPE = toString(FIELD_NAME_CHAR_PROGRAM_TYPE);
+	public static final String FIELD_NAME_CATEGORY = toString(FIELD_NAME_CHAR_CATEGORY);
+	public static final String FIELD_NAME_TAG = toString(FIELD_NAME_CHAR_TAG);
+	public static final String FIELD_NAME_COUNTRY = toString(FIELD_NAME_CHAR_COUNTRY);
+	public static final String FIELD_NAME_REGION = toString(FIELD_NAME_CHAR_REGION);
+	public static final String FIELD_NAME_MEDIA_CLASSID = toString(FIELD_NAME_CHAR_MEDIA_CLASSID);
+	public static final String FIELD_NAME_TACTIC = toString(FIELD_NAME_CHAR_TACTIC);
+
+	private static String toString(char c) {
+		return ((Character)c).toString();
+	}
+	
+//	public static final String INNER_EMP_VALUE = "INNEREMPVALUE";
+}

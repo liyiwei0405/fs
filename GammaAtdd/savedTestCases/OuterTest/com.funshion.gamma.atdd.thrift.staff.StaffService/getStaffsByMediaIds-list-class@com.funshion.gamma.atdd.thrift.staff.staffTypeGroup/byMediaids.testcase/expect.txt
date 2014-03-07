@@ -1,0 +1,47 @@
+class@com.funshion.gamma.atdd.thrift.staff.MediaStaffsResult @Return{
+	int retCode: @Igr
+	string retMsg: @Igr
+	list mediaStaffs
+	[
+		class@com.funshion.gamma.atdd.thrift.staff.MediaStaffs {
+			int mediaId: @Igr
+			list staffs
+			[
+				class@com.funshion.gamma.atdd.thrift.staff.StaffMediaRole {
+					int staffId: @Igr
+					string nameCn: @Igr
+					string job: @Igr
+					string roleName: @Igr
+				}
+				class@com.funshion.gamma.atdd.thrift.staff.StaffMediaRole {
+					int staffId: @Igr
+					string nameCn: @Igr
+					string job: @Igr
+					string roleName: @Igr
+				}
+				class@com.funshion.gamma.atdd.thrift.staff.StaffMediaRole {
+					int staffId: @Igr
+					string nameCn: @Igr
+					string job: @Igr
+					string roleName: @Igr
+				}
+				class@com.funshion.gamma.atdd.thrift.staff.StaffMediaRole {
+					int staffId: @Igr
+					string nameCn: @Igr
+					string job: @Igr
+					string roleName: @Igr
+				}
+			]
+		}
+		class@com.funshion.gamma.atdd.thrift.staff.MediaStaffs {
+			int mediaId: @Igr
+			list staffs
+			[
+			]
+		}
+	]
+}
+
+
+
+##

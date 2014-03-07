@@ -1,0 +1,7 @@
+videoid>1000000|| score>0 order by playnum limit 9
+title like '的' && timeLen>=0 order by timeLen limit 2,5
+timelen <=100 order by videoid limit 5
+class='news' && modifyDate>0 order by createdate limit 3,8
+tags='美女' || tagids>0 order by modifyDate limit 5
+types='focus' && source='fs' order by ordering limit 5
+lastIndex>0 && picTitleModifydate>0 order by dayNum limit 3

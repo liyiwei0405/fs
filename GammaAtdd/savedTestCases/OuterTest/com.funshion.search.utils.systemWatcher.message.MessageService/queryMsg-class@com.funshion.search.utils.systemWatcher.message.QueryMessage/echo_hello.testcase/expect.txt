@@ -1,0 +1,12 @@
+class@com.funshion.search.utils.systemWatcher.message.AnswerMessage @Return{
+	short answerStatus: 0
+	int actionStatus: 1
+	long serverSeq: @Igr
+	list answerBody
+	[
+		string : hello
+	]
+}
+
+
+##

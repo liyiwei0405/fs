@@ -1,0 +1,37 @@
+<<<<<<< HEAD
+videoid>1000000|| score>0 order by playnum limit 9
+title like '��' && timeLen<=0 order by timeLen limit 2,5
+timelen <=100 order by videoid limit 5
+class='news' && modifyDate>0 order by createdate limit 3,8
+tags='��Ů' || tagids>0 order by modifyDate limit 5
+types='focus' && source='fs' order by ordering limit 5
+lastIndex>0 && picTitleModifydate>0 order by dayNum limit 3
+=======
+(videoid=1000080)||((score<5)&&(score>3)) order by playnum limit 9
+timelen <=100 order by videoid limit 5
+not(timeLen>50) || videoid > 0 order by timeLen limit 2
+videoid > 0 order by timeLen limit 2
+class='news' && modifyDate>3 order by title limit 3,8
+timeLen>50 && videoid = 0 order by timeLen limit 2
+score like 5 order by videoid limit 5
+not(score>=10) || timelen<100 order by timelen desc limit 10
+not(score>=10) || playNum<100 order by timelen desc limit 10
+tags='宝贝' order by videoid limit 5
+title search '男' && tagids=232 order and videoid>1000000 order by createdate limit 5
+title search '男' && tagids=232 and videoid>1000000 order by createdate limit 5
+tagids=232 and videoid>1000000 order by createdate limit 5
+title search '超' && tagids=232 and videoid>1000000 order by createdate limit 5
+types='focus' && !(source='fs') order by videoid limit 5
+not(source='fs') && (types='focus') order by videoid limit 5
+(types='focus') && (playnum>800) order by videoid limit 3
+types='m_kandian' && playnum>800 order by videoid limit 3
+videoid=2001125 && types='focus' && playnum>800 order by videoid limit 3
+tags='兄弟' order by videoid limit 5
+timelen>50 && tags='寒战' order by videoid limit 5
+not(source='fs'||source='tvm') && tags='寒战' order by videoid limit 1
+not(source='fs'||source='tvm') && videoid>0 order by score limit 10
+title like '怒火' order by videoid limit 3
+not(source='fs'||source='tvm') && title search'怒火' order by videoid limit 3
+score > 0 order by playnum limit 50
+title = '空' order by videoid limit 2
+>>>>>>> d1a0adf016c5294f0d064d1e4e7941af8d593bd4

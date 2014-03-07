@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<project name="search" default="junit" basedir=".">
+	<property name="jar_name" value="search.jar"></property>
+	<property name="src_dir" value="src" />
+	<property name="build_dir" value="build" />
+	<property name="build_classdir" value="${build_dir}/classes" />
+	<property name="tmpdir" value="search"></property>
+	<property name="report_dir" value="unitReports" />
+	
+	<path id="build_libs">
+		<fileset dir="${tmpdir}/lib">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+	
+	<target name="init">
+        <delete dir="${build_dir}"/>
+		<mkdir dir ="${build_classdir}"/>
+	<delete file="./success.xml" />
+	<delete file="./fail.xml" />
+	<delete file="${report_dir}/TEST-*" />
+    </target>
+        
+    <target name="jar_search"  depends ="init">
+		<echo message ="starting build media" />
+	    <javac destdir ="${build_classdir}">
+			<src path="${src_dir}/mediaSearch" />
+			<src path="${src_dir}/mediaSearch-tdd" />
+			<src path="${src_dir}/mediaSearch-atdd" />
+			<classpath refid="build_libs" />
+		</javac>
+		
+		<jar destfile="${tmpdir}/lib/${jar_name}" basedir="${build_classdir}" />
+    </target>
+	
+	<target name="junit" depends="jar_search">
+		<junit printsummary="true" failureproperty="hasFailed" fork="yes" maxmemory="512m">
+			<classpath>
+				<pathelement path="${build_classdir}"/>
+				<path refid="build_libs" />
+			</classpath>
+			<batchtest todir="${report_dir}">
+				<fileset dir="${build_classdir}">
+					<include name="**/*Test.class" />
+					<exclude name="**/MediaSearchThriftClientTest.class" />
+					<exclude name="**/MediaSearchAtddTest.class" />
+					<exclude name="**/MediaSearchThriftClient4NewTacticsTest.class" />
+				</fileset>
+				<formatter type="plain" />
+				<formatter type="xml" />
+			</batchtest>
+		</junit>
+		<antcall target="successAndReport" />
+		<antcall target="failAndReport" />
+	</target>
+	
+	<target name="successAndReport" unless="hasFailed">
+		<junitreport tofile="./success.xml"></junitreport>
+	</target>
+	
+	<target name="failAndReport" if="hasFailed">
+		<junitreport tofile="./fail.xml"></junitreport>
+	</target>
+</project>

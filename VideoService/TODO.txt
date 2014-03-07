@@ -1,0 +1,10 @@
+单独not报错
+retcode 500?200?
+
+types=m_kandian？ videoid=2001125 && types='m_kandian' && playnum>800 order by videoid limit 3
+title不能=
+
+
+整理fsql
+
+增量功能手动测试

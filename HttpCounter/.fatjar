@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Wed Jan 15 15:03:52 CST 2014
+onejar.license.required=true
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=HttpCounter_fat.jar
+manifest.mergeall=true
+manifest.mainclass=com.funshion.rpcserver.CounterDaemon
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=
+includes=

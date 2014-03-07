@@ -1,0 +1,50 @@
+class@com.funshion.gamma.atdd.thrift.searchHint.HintResult @Return{
+        int retCode: 200
+        string retMsg: OK
+        list records
+        [
+                class@com.funshion.gamma.atdd.thrift.searchHint.HintRecord {
+                        string hint: @Igr
+                        int id: @Igr
+                }
+                class@com.funshion.gamma.atdd.thrift.searchHint.HintRecord {
+                        string hint: @Igr
+                        int id: @Igr
+                }
+                class@com.funshion.gamma.atdd.thrift.searchHint.HintRecord {
+                        string hint: @Igr
+                        int id: @Igr
+                }
+                class@com.funshion.gamma.atdd.thrift.searchHint.HintRecord {
+                        string hint: @Igr
+                        int id: @Igr
+                }
+                class@com.funshion.gamma.atdd.thrift.searchHint.HintRecord {
+                        string hint: @Igr
+                        int id: @Igr
+                }
+                class@com.funshion.gamma.atdd.thrift.searchHint.HintRecord {
+                        string hint: @Igr
+                        int id: @Igr
+                }
+                class@com.funshion.gamma.atdd.thrift.searchHint.HintRecord {
+                        string hint: @Igr
+                        int id: @Igr
+                }
+                class@com.funshion.gamma.atdd.thrift.searchHint.HintRecord {
+                        string hint: @Igr
+                        int id: @Igr
+                }
+                class@com.funshion.gamma.atdd.thrift.searchHint.HintRecord {
+                        string hint: @Igr
+                        int id: @Igr
+                }
+                class@com.funshion.gamma.atdd.thrift.searchHint.HintRecord {
+                        string hint: @Igr
+                        int id: @Igr
+                }
+        ]
+}
+
+
+##

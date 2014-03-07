@@ -1,0 +1,1 @@
+nohup java -Dfile.encoding=utf-8 -cp .:lib/* -Xms4g -Xmx4g -XX:+UseG1GC -XX:MaxGCPauseMillis=50 com.funshion.videoService.search.VideoRetrieveDaemon &

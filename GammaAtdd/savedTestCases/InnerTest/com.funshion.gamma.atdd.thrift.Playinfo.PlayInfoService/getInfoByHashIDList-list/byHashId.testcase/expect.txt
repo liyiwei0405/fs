@@ -1,0 +1,25 @@
+class@com.funshion.gamma.atdd.thrift.Playinfo.PlayInfoRs @Return{
+	int retCode: 200
+	string retMsg: OK
+	list data
+	[
+		class@com.funshion.gamma.atdd.thrift.Playinfo.PlayInfoRec {
+			int playInfoID: 481389
+			int mediaID: 33570
+			string hashID: 6442ba7a21a5d694acac11644ba535cd0433c7b1
+			int serialNumber: 1
+			string serialName: 疯狂的石头
+			int serialPicID: 0
+			string taskName: 疯狂的石头
+			string clarity: dvd
+			string langType: chi
+			string soundTrackLang: 
+			int modifyDate: @Igr
+			string fspURL: @Igr
+			string fspExt: @Igr
+		}
+	]
+}
+
+
+##

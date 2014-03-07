@@ -1,0 +1,9 @@
+int @Para1: 102606674
+
+class@com.funshion.gamma.atdd.thrift.CommentTarget @Para2{
+	class@com.funshion.gamma.atdd.thrift.CommentType type: MEDIA_COMMENT
+	int targetId: 96441
+}
+
+
+##

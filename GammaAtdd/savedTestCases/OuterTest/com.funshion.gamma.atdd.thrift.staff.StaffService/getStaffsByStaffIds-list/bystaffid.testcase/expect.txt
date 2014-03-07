@@ -1,0 +1,23 @@
+class@com.funshion.gamma.atdd.thrift.staff.StaffInfoResult @Return{
+	int retCode: 200
+	string retMsg: Ok
+	list staffInfos
+	[
+		class@com.funshion.gamma.atdd.thrift.staff.StaffInfo {
+			int staffId: 12012
+			string nameCn: Marshall Plouffe
+			short quality: @Igr
+			int midNum: 0
+		}
+		class@com.funshion.gamma.atdd.thrift.staff.StaffInfo {
+			int staffId: 202976
+			string nameCn: 杨幂
+			short quality: @Igr
+			int midNum: 40
+		}
+	]
+}
+
+
+
+##

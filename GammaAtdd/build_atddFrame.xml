@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="gbk"?> 
+<project name="project" default="jar_baseFrame" basedir=".">
+    <description>  description  </description>
+
+	<property name="src_baseFrame.dir" value="./src/baseFrame"></property>
+	<!--app build directory-->
+	<property name="build.dir" value="./build/"></property>
+	<property name="dist.dir" value="./dist/"></property>
+	<property name="build.classes.dir" value="${build.dir}/classes"></property>
+	<!--app dist directory-->
+	<property name="lib.dir" value="./lib/"></property>
+	<!--app doc directory-->
+	<property name="doc.dir" value="doc"></property>
+	
+	
+	<!--configure directory-->
+	<property name="conf.dir" value="conf"></property>
+
+	<property name="dest.conf.dir" value="${dist.dir}/conf"></property>
+
+	<path id="master-classpath">
+		<fileset dir="${lib.dir}">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+	<!--usage-->
+	<target name="usage">
+		<echo message="------------------------------"/>
+		<echo message="library in ${lib.dir}"/>
+		<echo message="build ${src.dir} => ${build.classes.dir}"/>
+		<echo message="jar ${build.classes.dir} => ${dist.dir}"/>
+		<echo message="javadoc => ${doc.dir}"/>
+		<echo message="------------------------------"/>
+	</target>
+	
+	<!--init-->
+	<target name="init">
+		<echo message ="delete dist dir" />
+		<delete dir="${build.dir}" />
+		<echo message ="delete build dir" />
+		<delete dir="${build.dir}" />
+		<echo message ="make dist dir" />
+		<mkdir dir="${dist.dir}"/>
+		<echo message ="make build dir" />
+		<mkdir dir="${build.dir}"/>
+	</target>
+	
+	<!-- build jar_baseFrame -->
+	<target name="jar_baseFrame" depends="init" description="Build the source file">
+		<echo message ="delete build dir" />
+		<delete dir="${build.dir}" />
+		<echo message ="delete gammaThriftAtdd.jar" />
+		<delete file="${dist.dir}/gammaThriftAtdd.jar" />
+		<echo message ="make build dir" />
+		<mkdir dir="${build.dir}"/>
+		
+		<echo message ="starting build baseFrame" />
+		<javac srcdir="${src_baseFrame.dir}" destdir="${build.dir}" 
+			classpath="" target="1.6" encoding = "utf-8">
+			<classpath refid="master-classpath"/>
+		</javac>
+		<echo message ="finish build jar_baseFrame" />
+		<jar destfile="${dist.dir}/gammaThriftAtdd.jar" basedir="${build.dir}">
+		</jar>
+		<copy
+			verbose = "true"
+			overwrite = "ture"
+			tofile = "thriftWorkspace/gammaAtddFrameWorkLibs/gammaThriftAtdd.jar"
+			file = "${dist.dir}/gammaThriftAtdd.jar">
+		</copy>	
+	</target>
+
+	
+</project>
+

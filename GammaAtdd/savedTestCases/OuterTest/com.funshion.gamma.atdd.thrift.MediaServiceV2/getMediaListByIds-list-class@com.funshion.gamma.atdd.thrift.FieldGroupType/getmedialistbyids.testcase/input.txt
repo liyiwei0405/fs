@@ -1,0 +1,9 @@
+list @Para1
+[
+	int : 40
+]
+
+class@com.funshion.gamma.atdd.thrift.FieldGroupType @Para2: all
+
+
+##

@@ -1,0 +1,1608 @@
+class@com.funshion.gamma.atdd.thrift.fstop.FunshionTop @Return{
+	int retCode: @Igr
+	string retMsg: @Igr
+	class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaGroup fs250{
+		string groupName: @Igr
+		list data
+		[
+			class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaTab {
+				string tabName: @Igr
+				list data
+				[
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+				]
+			}
+			class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaTab {
+				string tabName: @Igr
+				list data
+				[
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+				]
+			}
+		]
+	}
+	class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaGroup movieClassic50{
+		string groupName: @Igr
+		list data
+		[
+			class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaTab {
+				string tabName: @Igr
+				list data
+				[
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+				]
+			}
+			class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaTab {
+				string tabName: @Igr
+				list data
+				[
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+				]
+			}
+			class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaTab {
+				string tabName: @Igr
+				list data
+				[
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+				]
+			}
+		]
+	}
+	class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaGroup chinaClassic10{
+		string groupName: @Igr
+		list data
+		[
+			class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaTab {
+				string tabName: @Igr
+				list data
+				[
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+				]
+			}
+			class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaTab {
+				string tabName: @Igr
+				list data
+				[
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+				]
+			}
+			class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaTab {
+				string tabName: @Igr
+				list data
+				[
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+				]
+			}
+		]
+	}
+	class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaGroup cinemaChinaMov{
+		string groupName: @Igr
+		list data
+		[
+			class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaTab {
+				string tabName: @Igr
+				list data
+				[
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+				]
+			}
+			class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaTab {
+				string tabName: @Igr
+				list data
+				[
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+				]
+			}
+			class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaTab {
+				string tabName: @Igr
+				list data
+				[
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieKarmaItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string karma: @Igr
+					}
+				]
+			}
+		]
+	}
+	class@com.funshion.gamma.atdd.thrift.fstop.MovieExpectGroup movExpect{
+		string groupName: @Igr
+		list data
+		[
+			class@com.funshion.gamma.atdd.thrift.fstop.MovieExpectTab {
+				string tabName: @Igr
+				list data
+				[
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieExpectItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string releaseDate: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieExpectItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string releaseDate: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieExpectItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string releaseDate: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieExpectItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string releaseDate: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieExpectItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string releaseDate: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieExpectItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string releaseDate: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieExpectItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string releaseDate: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieExpectItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string releaseDate: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieExpectItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string releaseDate: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieExpectItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string releaseDate: @Igr
+					}
+				]
+			}
+			class@com.funshion.gamma.atdd.thrift.fstop.MovieExpectTab {
+				string tabName: @Igr
+				list data
+				[
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieExpectItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string releaseDate: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieExpectItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string releaseDate: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieExpectItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string releaseDate: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieExpectItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string releaseDate: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieExpectItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string releaseDate: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieExpectItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string releaseDate: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieExpectItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string releaseDate: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieExpectItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string releaseDate: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieExpectItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string releaseDate: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieExpectItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string releaseDate: @Igr
+					}
+				]
+			}
+			class@com.funshion.gamma.atdd.thrift.fstop.MovieExpectTab {
+				string tabName: @Igr
+				list data
+				[
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieExpectItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string releaseDate: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieExpectItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string releaseDate: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieExpectItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string releaseDate: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieExpectItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string releaseDate: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieExpectItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string releaseDate: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieExpectItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string releaseDate: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieExpectItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string releaseDate: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieExpectItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string releaseDate: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieExpectItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string releaseDate: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieExpectItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						string releaseDate: @Igr
+					}
+				]
+			}
+		]
+	}
+	class@com.funshion.gamma.atdd.thrift.fstop.MovieTicketGroup movTicket{
+		string groupName: @Igr
+		list data
+		[
+			class@com.funshion.gamma.atdd.thrift.fstop.MovieTicketTab {
+				string tabName: @Igr
+				list data
+				[
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieTicketItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						int weekTicket: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieTicketItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						int weekTicket: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieTicketItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						int weekTicket: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieTicketItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						int weekTicket: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieTicketItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						int weekTicket: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieTicketItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						int weekTicket: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieTicketItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						int weekTicket: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieTicketItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						int weekTicket: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieTicketItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						int weekTicket: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieTicketItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						int weekTicket: @Igr
+					}
+				]
+			}
+			class@com.funshion.gamma.atdd.thrift.fstop.MovieTicketTab {
+				string tabName: @Igr
+				list data
+				[
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieTicketItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						int weekTicket: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieTicketItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						int weekTicket: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieTicketItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						int weekTicket: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieTicketItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						int weekTicket: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieTicketItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						int weekTicket: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieTicketItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						int weekTicket: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieTicketItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						int weekTicket: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieTicketItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						int weekTicket: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieTicketItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						int weekTicket: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieTicketItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						int weekTicket: @Igr
+					}
+				]
+			}
+			class@com.funshion.gamma.atdd.thrift.fstop.MovieTicketTab {
+				string tabName: @Igr
+				list data
+				[
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieTicketItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						int weekTicket: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieTicketItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						int weekTicket: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieTicketItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						int weekTicket: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieTicketItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						int weekTicket: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieTicketItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						int weekTicket: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieTicketItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						int weekTicket: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieTicketItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						int weekTicket: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieTicketItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						int weekTicket: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieTicketItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						int weekTicket: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MovieTicketItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						int weekTicket: @Igr
+					}
+				]
+			}
+		]
+	}
+	class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexGroup movIndex{
+		string groupName: @Igr
+		list data
+		[
+			class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexTab {
+				string tabName: @Igr
+				list data
+				[
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+				]
+			}
+			class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexTab {
+				string tabName: @Igr
+				list data
+				[
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+				]
+			}
+			class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexTab {
+				string tabName: @Igr
+				list data
+				[
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+				]
+			}
+		]
+	}
+	class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexGroup tvIndex{
+		string groupName: @Igr
+		list data
+		[
+			class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexTab {
+				string tabName: @Igr
+				list data
+				[
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+				]
+			}
+			class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexTab {
+				string tabName: @Igr
+				list data
+				[
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+				]
+			}
+			class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexTab {
+				string tabName: @Igr
+				list data
+				[
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+				]
+			}
+		]
+	}
+	class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexGroup varietyIndex{
+		string groupName: @Igr
+		list data
+		[
+			class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexTab {
+				string tabName: @Igr
+				list data
+				[
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+				]
+			}
+			class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexTab {
+				string tabName: @Igr
+				list data
+				[
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+				]
+			}
+			class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexTab {
+				string tabName: @Igr
+				list data
+				[
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+					class@com.funshion.gamma.atdd.thrift.fstop.MediaIndexItem {
+						int mediaId: @Igr
+						string nameCN: @Igr
+						short trend: @Igr
+						int index: @Igr
+					}
+				]
+			}
+		]
+	}
+}
+
+
+
+##

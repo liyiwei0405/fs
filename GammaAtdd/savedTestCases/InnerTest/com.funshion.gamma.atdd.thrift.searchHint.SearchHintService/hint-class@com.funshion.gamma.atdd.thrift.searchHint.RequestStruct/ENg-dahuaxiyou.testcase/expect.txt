@@ -1,0 +1,30 @@
+class@com.funshion.gamma.atdd.thrift.searchHint.HintResult @Return{
+	int retCode: 200
+	string retMsg: OK
+	list records
+	[
+		class@com.funshion.gamma.atdd.thrift.searchHint.HintRecord {
+			string hint: 大话西游之月光宝盒
+			int id: 87008
+		}
+		class@com.funshion.gamma.atdd.thrift.searchHint.HintRecord {
+			string hint: 大话西游后传
+			int id: 62835
+		}
+		class@com.funshion.gamma.atdd.thrift.searchHint.HintRecord {
+			string hint: 大话西游3
+			int id: 106305
+		}
+		class@com.funshion.gamma.atdd.thrift.searchHint.HintRecord {
+			string hint: 大话西游之情天大圣
+			int id: 20420
+		}
+		class@com.funshion.gamma.atdd.thrift.searchHint.HintRecord {
+			string hint: 大话西游之除魔传奇
+			int id: 105188
+		}
+	]
+}
+
+
+##

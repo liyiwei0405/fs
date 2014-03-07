@@ -1,0 +1,26 @@
+class@com.funshion.gamma.atdd.thrift.Playinfo.PlayInfoRs @Return{
+	int retCode: @Igr
+	string retMsg: @Igr
+	list data
+	[
+		class@com.funshion.gamma.atdd.thrift.Playinfo.PlayInfoRec {
+			int playInfoID: @Igr
+			int mediaID: @Igr
+			string hashID: @Igr
+			int serialNumber: @Igr
+			string serialName: @Igr
+			int serialPicID: @Igr
+			string taskName: @Igr
+			string clarity: @Igr
+			string langType: @Igr
+			string soundTrackLang: @Igr
+			int modifyDate: @Igr
+			string fspURL: @Igr
+			string fspExt: @Igr
+		}
+	]
+}
+
+
+
+##

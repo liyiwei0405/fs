@@ -1,0 +1,278 @@
+
+prompt = stdin("thrift file path to read:");
+//echo(prompt);
+tFile = new(File, prompt);
+
+if(!exist(tFile)){
+	echo("no file exists:" ~ tFile);
+	exit 0;
+}
+if(isDir(tFile)){
+	echo("is DIR!" ~ tFile);
+	exit 0;
+}
+
+tNamespace = "";
+tService = "";
+
+tReader = new(LineReader, tFile);
+sp1 = ".{0,}namespace[ \t]{1,}java[ \t](.+)";
+sp2 = ".{0,}service[ \t]{1,}([a-zA-Z0-9\_]+)[ \t]{0,}.{0,}";
+foreach(tReader as tline){
+	tline = call(tline, "trim");
+	
+	if(call(tline, "startsWith", "//")){
+		continue;
+	}
+	if(call(tline, "startsWith", "/*")){
+		continue;
+	}
+	if(len(tNamespace) == 0){
+		m1 = match(tline, sp1);
+		if(lsize(m1) == 1){
+			tNamespace = lget(m1, 0); 
+			tNamespace = tNamespace[0];
+		}
+	}
+	
+	if(len(tService) == 0){
+		m1 = match(tline, sp2);
+		if(lsize(m1) == 1){
+			tService = lget(m1, 0, 0);
+			tService = tService[0]; 
+		}
+	}
+}
+	
+echo("namespace: " ~ tNamespace);
+if(len(tNamespace) == 0){
+	exit("namespace not found! expect file starts with 'namespace java NAMESPACE'");
+}
+
+echo("service: " ~ tService);
+if(len(tService) == 0){
+	exit("service not found!");
+}
+;
+;
+svcname = trim(tNamespace) ~ "." ~ trim(tService)
+echo("SERVICE CLASS IS : " ~ svcname);
+if(!confirm("SERVICE CLASS IS is OK? ")){
+	exit("thrift file may be error ! ");
+}
+
+genDir = new (File, "./gen-dir/");
+cmpDir = new (File, "./cmp-javas/");
+classJarFile = new (File, genDir ~ "/" ~ fileName(tFile) ~ ".jar");
+javasJarFile = new (File, genDir ~ "/" ~ fileName(tFile) ~ ".src.jar");
+//echo("classJarFile:" ~ fileName(classJarFile) ~ " " ~ classJarFile);
+//echo("javasJarFile:" ~ fileName(javasJarFile) ~ " " ~ javasJarFile);
+//echo("classJarFile:" ~ fileName(tFile) ~ " " ~ tFile);
+
+besureExistAndEmpty = function(toCheck){
+	if(!exists(toCheck)){
+		echo("mkdir " ~ toCheck);
+		mkdir(toCheck);
+	}
+	files = ll(toCheck);
+	foreach(files as file){
+		echo("del file " ~ file);
+		del(file);
+	}
+};
+
+besureExistAndEmpty(genDir);
+besureExistAndEmpty(cmpDir);
+
+
+echo("thrift gen...");
+
+//ret = exec("thrift-0.9.1.exe -o gen-dir --gen java " ~ tFile);
+echo(toStr(tFile));
+ret = exec("thrift-0.9.1.exe -v -o " ~ genDir ~ " --gen java " ~ tFile);
+
+comFile = new(File, genDir, "gen-java/com/funshion/");
+if(!exist(comFile)){
+	echo("not exist file! gen fail or not set package to com.funshion.xxxxxx ? " ~ comFile );
+	exit(false);
+}
+javas = new (File, genDir ~ "/javafiles.txt");
+echo("search java files to " ~ javas);
+
+findFiles = function(dir){
+	files = ll(dir);
+	sb = new(StringBuilder);
+	foreach(files as javaf){
+		if(isDir(javaf)){
+			findFiles(javaf);
+		}else{
+			fileName = toStr(javaf);
+			if(call(fileName, "endsWith", ".java")){
+				appendLine(sb, absPath(fileName));
+			}
+		}
+	}
+};
+
+fileNames = findFiles(comFile);
+lw = new(LineWriter, javas, false);
+call(lw, "write", fileNames);
+close(lw);
+
+echo("find javas ok");
+echo("javac compiling ...");
+
+javac = "javac -g -cp .;thriftLibs\* -d " ~ cmpDir ~ " " ~ "@"~javas;
+exec(javac);
+
+echo(cmpDir);
+echo("jar... " ~ classJarFile);
+zip(
+	ll(cmpDir), classJarFile);
+
+echo("jar... " ~ javasJarFile);
+zip(
+	ll(genDir ~ "/gen-java/"), javasJarFile);
+
+echo("cleaning " ~ cmpDir);
+del(cmpDir);
+echo("cleaning " ~ genDir);
+del(genDir ~ "/gen-java");
+del(javas);
+
+
+projectDir = new (File, "./OUT.dir/" ~ call(tFile, "getName") ~ ".project");
+del(ll(projectDir));
+mkdir(projectDir);
+
+toRename = new(File, projectDir, "lib");
+
+if(exists(toRename)){
+	allowDel = confirm("!!! DELETE OLD FILES IN " ~ toRename ~ " ? " );
+	if(!allowDel){
+		exit("NOT FINISH SUCCESSFULLY");
+	}
+	del(toRename);
+}
+
+
+echo("renaming " ~ genDir ~ " to " ~ toRename);
+renameOk = call(genDir, "renameTo", toRename);
+if(!renameOk){
+	exit("rename FAIL");
+}
+
+echo("Building PROJECT for " ~ tFile ~ " ...");
+copy(ll("thriftLibs"), toRename);
+echo("copy libs ok");
+
+copy(ll("gammaAtddFrameWorkLibs"), toRename);
+echo("copy framwork libs ok");
+
+newfile = new(File, toRename, fileName(classJarFile))
+
+l = List();
+
+var = catch{
+	load(svcname, newfile)
+	return load(svcname ~ "$Iface", newfile);;
+}
+if(isException(var)){
+	exit("jar file not found! in jar file " ~ newfile ~ ", got exception " ~  getException(var));
+}
+
+tmpDir = new(File, projectDir, "templateGen");
+del(ll(tmpDir));
+
+templateGen = new("com.funshion.gamma.atdd.serialize.shell.ParameterTemplateGen", var);
+set(templateGen, "templatesGenDir", projectDir);
+call(templateGen, "exe");
+
+configGen =   new("com.funshion.gamma.atdd.serialize.shell.ConfigTemplateGen", var);
+set(configGen, "templatesGenDir", projectDir);
+call(configGen, "exe");
+
+
+
+confDir = mkdir(projectDir ~ "/config/")
+//sleep(1000);
+echo("confDir: " ~ confDir);
+
+
+ltmp = ll(projectDir);
+
+tmplt = "";
+foreach(ltmp as tmp){
+	fname = fileName(tmp);
+	echo(fname);
+	if(endsWith(fname, ")")){
+		lls = ll(tmp);
+		foreach(lls as llss){
+			echo("lst:" ~ llss);
+			if(endsWith(fileName(llss), ".cfg.template")){
+				tmplt = llss;
+				break;
+			}
+		}
+		echo(tmplt ~ "~~~");
+		if(instanceof(tmplt, File)){
+			break;
+		}
+	}
+}
+
+newName = replaceAll(fileName(tmplt), "\(.+", ".conf") ;
+
+newCfg = new(File, confDir ~ "/" ~ newName);
+rename(tmplt, newCfg)
+
+lr = new(LineReader, newCfg);
+list = [];
+foreach(lr as line){
+	if(startsWith(line, "[") &&
+		endsWith(line, "]")){
+		line = replace(replace(line, "[", ""), "]", "")
+		ladd(list, line);
+	}
+}
+
+echo("FOUND Section in config:" ~ list);
+
+shellsToCopy = new (File, "shellsToCopy");
+lls = ll(shellsToCopy);
+
+foreach(lls as tmp){
+	//copyTo = projectDir ~ "/" ~ tService ~ "." ~ fileName(tmp)
+	//echo("copy to " ~ copyTo);
+	copy(tmp, projectDir);
+	name = fileName(tmp);
+	if(equals(name,"atddRunnor.bat")){
+		foreach(list as kkk){
+			lr2 = new(LineReader, tmp);
+			lw2 = new(LineWriter, projectDir ~ "/" ~ replace(name, ".bat", "-" ~ kkk ~ ".bat"), false);
+			foreach(lr2 as cmd){
+				if(startsWith(cmd, "java")){
+					cmd = cmd ~ " -c" ~ "config/" ~ fileName(newCfg) ~ " -s" ~ kkk;
+				}
+				writeLine(lw2, cmd);
+			}
+			close(lr2);
+			close(lw2);
+		}
+	}else if(equals(name,"thriftShell.bat")){
+		foreach(list as kkk){
+			lr2 = new(LineReader, tmp);
+			lw2 = new(LineWriter, projectDir ~ "/" ~ replace(name, ".bat", "-" ~ kkk ~ ".bat"), false);
+			foreach(lr2 as cmd){
+				if(startsWith(cmd, "java")){
+					cmd = cmd ~ " -c" ~ "config/" ~ fileName(newCfg) ~ " -s" ~ kkk;
+				}
+				writeLine(lw2, cmd);
+			}
+			close(lr2);
+			close(lw2);
+		}
+	}
+}
+
+echo("atdd project pre-gen at: " ~ absFile(projectDir));

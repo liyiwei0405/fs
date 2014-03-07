@@ -1,0 +1,14 @@
+#fs_video's mongodb config
+[fs_video]
+ip = 192.168.16.161
+port = 27017
+database = corsair_video
+table = fs_video
+
+
+#fs_video_ugc's mongodb config
+[fs_video_ugc]
+ip = 192.168.16.161
+port = 27017
+database = corsair_ugc
+table = fs_video_ugc

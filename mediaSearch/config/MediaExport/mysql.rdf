@@ -1,0 +1,6 @@
+#fs_media's mysql config
+[fs_media]
+url = jdbc:mysql://192.168.8.121:3306/corsair_0
+user = dbs
+password = R4XBfuptAH
+

@@ -1,0 +1,2155 @@
+fsql: (title search '一')&&(playnum>10) order by score limit 10
+retCode: 200
+usedTime: 273.261
+fsql: (videoid=1000080)||((score<5)%%(score>3) order by playnum limit 9
+retCode: 500
+retMsg: null:Unexpected '%' character @position 30
+total: 0
+usedTime: 0.0
+fsql: (videoid=1000080)||((score<5)&&(score>3) order by playnum limit 9
+retCode: 500
+retMsg: null:Expecting type @) but got order at col 47
+total: 0
+usedTime: 0.0
+fsql: (videoid=1000080)||((score<5)&&(score>3)) order by playnum limit 9
+retCode: 200
+retMsg: OK
+total: 569
+usedTime: 131.318
+fsql: not(timeLen<=5) order by timeLen limit 2,5
+retCode: 200
+retMsg: OK
+total: 0
+usedTime: 39.51
+fsql: not(timeLen<=50) order by timeLen limit 2,5
+retCode: 200
+retMsg: OK
+total: 0
+usedTime: 3.78
+fsql: not(timeLen>50) order by timeLen limit 2,5
+retCode: 200
+retMsg: OK
+total: 0
+usedTime: 21.492
+fsql: not(timeLen>50) order by timeLen limit 2
+retCode: 200
+retMsg: OK
+total: 0
+usedTime: 26.554
+fsql: timelen <=100 order by videoid limit 5
+retCode: 200
+retMsg: OK
+total: 19811
+usedTime: 83.863
+fsql: not(timeLen>50) || videoid > 0 order by timeLen limit 2
+retCode: 200
+retMsg: OK
+total: 10677
+usedTime: 26.257
+fsql: not(timeLen>50) order by timeLen limit 2
+retCode: 200
+retMsg: OK
+total: 0
+usedTime: 13.129
+fsql: videoid > 0 order by timeLen limit 2
+retCode: 200
+retMsg: OK
+total: 624496
+usedTime: 12.746
+fsql: not(timeLen>50) order by timeLen limit 2
+retCode: 200
+retMsg: OK
+total: 0
+usedTime: 13.308
+fsql: not(timeLen>50 && videoid = 0) order by timeLen limit 2
+retCode: 200
+retMsg: OK
+total: 0
+usedTime: 6.26
+fsql: score like 5 order by videoid limit 5
+retCode: 500
+retMsg: null:when compile to BooleanQuery, INT store not support OperType @like
+total: 0
+usedTime: 0.0
+fsql: not(score>=10) || timelen<100 order by timelen desc limit 10
+retCode: 200
+retMsg: OK
+total: 18330
+usedTime: 3.809
+VideoletInfo(videoId:2001220, mapId:2001220, vId:2b1ce871f9b825cbeaf80d5fe2f51f23, source:fs, cls:ugc, title:WCS2013第三赛季全球总决赛决赛 Soulkey vs Dear-2, picturePath:3168571, timeLen:959590, plots:WCS2013第三赛季全球总决赛决赛 Soulkey vs Dear-2 稍后补充视频简介
+                  , types:[游戏], tags:[原创, 游戏], files:[FileStruct(hashId:399948796D68B8220F4C124E61ED719D322781E2, fileName:417123_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:34856825), FileStruct(hashId:399948796D68B8220F4C124E61ED719D322781E2, fileName:417123_standard.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:68497842)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:5, monthNum:3, playNum:77, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:0.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1383042801, modifyDate:1384204024, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:71, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:荆玉, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1668561, mapId:331, vId:8b91d7875d812767dfd3b0a85c1dd953, source:kankan, cls:news, title:习近平离京访问土哈乌吉四国并出席G20第八次峰会、上合成员国元首理事会第十三次会议, picturePath:2954442, timeLen:56600, plots:习近平离京访问土库曼斯坦、哈萨克斯坦、乌兹别克斯坦、吉尔吉斯斯坦并出席二十国集团领导人第八次峰会、上海合作组织成员国元首理事会第十三次会议
+retCode: 500
+retMsg: null:Unexpected '' character @position 60
+total: 0
+usedTime: 0.0
+fsql: , types:[国内], tags:[习近平, 北京, 土库曼斯坦, 哈萨克斯坦], files:[FileStruct(hashId:56C02CB158DEE75B39E2CBA9D839D0FDBDA1CEB7, fileName:178054_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:2026000), FileStruct(hashId:56C02CB158DEE75B39E2CBA9D839D0FDBDA1CEB7, fileName:178054_high.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:5794759), FileStruct(hashId:56C02CB158DEE75B39E2CBA9D839D0FDBDA1CEB7, fileName:178054_standard.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:3988253)], relateVideoIds:[], relateSpecialIds:[8478], videoEventIds:[], score:9.6, scoreNum:5, commentNum:0, dayNum:0, weekNum:0, monthNum:0, playNum:64, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:134.0, videoIndexes:, showAd:0, votable:1, ordering:0, publishFlag:published, createDate:1378794769, modifyDate:1378951302, lastNum:64, lastIndex:134, isVideo:1, recommend:1, isRank:1, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateM
+retCode: 500
+retMsg: null:Unknown token type @,
+total: 0
+usedTime: 0.0
+fsql: ediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:2001206, mapId:2001206, vId:7796452289c5969d213f871dbb36996d, source:fs, cls:ugc, title:郑多燕减肥操五天瘦八斤郑多燕减肥舞中文版全套, picturePath:3168540, timeLen:1586670, plots:郑多燕减肥操五天瘦八斤郑多燕减肥舞中文版全套 郑多燕减肥操五天瘦八斤郑多燕减肥舞中文版全套
+                  , types:[时尚], tags:[郑多燕, 减肥操], files:[FileStruct(hashId:99A63A82FDAE6064850F80A57D5663D6A6935611, fileName:416750_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:56431451), FileStruct(hashId:99A63A82FDAE6064850F80A57D5663D6A6935611, fileName:416750_standard.mp4, fileFormat:mp4, bitRateKbps:491520, clarity:dvd, fileSizeByte:110552410)], rela
+retCode: 500
+retMsg: null:Unexpected ':' character @position 8
+total: 0
+usedTime: 0.0
+fsql: teVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:3, weekNum:7, monthNum:3, playNum:146, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:0.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1383042083, modifyDate:1384381266, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:111, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:倪民, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:2000742, mapId:165, vId:fe2dfd63b17486b21fec027075a7e486, source:kankan, cls:news, title:KMS[1.2.198] Lv.201 Mech Solo Zakum, picturePath:1058213, timeLen:21860, plots:KMS[1.2.198] Lv.201 Mech Solo Zakum 
+                  , types:[游戏], tags:[KMS, MapleStory, 冒险岛, 1.2.198, Mech, Zakum
+retCode: 500
+retMsg: null:Unexpected ':' character @position 11
+total: 0
+usedTime: 0.0
+fsql: , 机械师, 扎昆], files:[FileStruct(hashId:838690934EE66E9EFF9DC86581D27091DD840A08, fileName:b4c337d509852ee4e149c9dabf3044cbaeb417b4.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:1712754), FileStruct(hashId:838690934EE66E9EFF9DC86581D27091DD840A08, fileName:c08a5079f9a01c3b965feacad1496b3f367fd8a7.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:815843)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:8.666666666666666, scoreNum:3, commentNum:0, dayNum:0, weekNum:0, monthNum:0, playNum:86, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:0.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1378362121, modifyDate:1383142791, lastNum:180, lastIndex:0, isVideo:1, recommend:1, isRank:1, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{},
+retCode: 500
+retMsg: null:Unexpected '机' character @position 3
+total: 0
+usedTime: 0.0
+fsql: tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:2001117, mapId:2001117, vId:9b9805051878b655b600ddb71064aef9, source:fs, cls:ugc, title:婚礼, picturePath:3168270, timeLen:277660, plots:婚礼
+                  , types:[婚嫁], tags:[原创, 婚礼], files:[FileStruct(hashId:E21B9656B678E2047602929C247C19DBF254DA79, fileName:283981_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:10064178), FileStruct(hashId:E21B9656B678E2047602929C247C19DBF254DA79, fileName:283981_standard.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:20774172)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:1, monthNum:1, playNum:144, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:0.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1383037514, modifyDate:1383514864, lastNum:0, lastIndex:0, isVideo:0, recomme
+retCode: 500
+retMsg: null:Unexpected ':' character @position 7
+total: 0
+usedTime: 0.0
+fsql: nd:0, isRank:0, playNumInit:110, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:莘志鑫, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1668509, mapId:279, vId:7b55af070c69f71de7420e2b5e18f467, source:kankan, cls:news, title:开门办食堂：学生舒心  家长放心, picturePath:2953197, timeLen:221730, plots:开门办食堂：学生舒心  家长放心 
+                  , types:[国内], tags:[国内新闻, 食堂, 学生, 家长], files:[FileStruct(hashId:C91CE34492E68A547CDFF406A211525844C683FA, fileName:178246_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:7943216), FileStruct(hashId:C91CE34492E68A547CDFF406A211525844C683FA, fileName:178246_high.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:22474151), FileStruct(ha
+retCode: 500
+retMsg: null:Unexpected ':' character @position 3
+total: 0
+usedTime: 0.0
+fsql: shId:C91CE34492E68A547CDFF406A211525844C683FA, fileName:178246_standard.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:15593875)], relateVideoIds:[], relateSpecialIds:[8478], videoEventIds:[], score:8.0, scoreNum:2, commentNum:0, dayNum:0, weekNum:0, monthNum:0, playNum:67, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:140.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1378793993, modifyDate:1378804610, lastNum:67, lastIndex:140, isVideo:1, recommend:1, isRank:1, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1668492, mapId:401, vId:9fcf8b0059afb14f319eaa91d1cda72c, source:kankan, cls:news, title:二三线城市房地产市场冷清  楼盘空
+retCode: 500
+retMsg: null:Unexpected ':' character @position 5
+total: 0
+usedTime: 0.0
+fsql: 置率较高, picturePath:2955299, timeLen:171690, plots:二三线城市房地产市场冷清  楼盘空置率较高 
+                  , types:[财经], tags:[城市, 房地产市场, 楼盘, 空置率], files:[FileStruct(hashId:55862D73D2A52C4F64D5DA5484A2F290C4A66DF0, fileName:178131_high.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:17567182), FileStruct(hashId:55862D73D2A52C4F64D5DA5484A2F290C4A66DF0, fileName:178131_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:6227273), FileStruct(hashId:55862D73D2A52C4F64D5DA5484A2F290C4A66DF0, fileName:178131_standard.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:12197361)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:8.0, scoreNum:1, commentNum:0, dayNum:0, weekNum:0, monthNum:0, playNum:62, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:130.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1378795153, modifyDate:1378868926,
+retCode: 500
+retMsg: null:Unexpected '置' character @position 1
+total: 0
+usedTime: 0.0
+fsql: lastNum:62, lastIndex:130, isVideo:1, recommend:1, isRank:1, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1668576, mapId:356, vId:5b6f74871c23ba5299f24eee3f1e85e9, source:kankan, cls:news, title:视频：42岁女子恋爱称23岁 闺蜜索封口费遭锤杀, picturePath:2954741, timeLen:67930, plots:视频：42岁女子恋爱称23岁 闺蜜索封口费遭锤杀
+                  , types:[社会], tags:[闺蜜, 封口费], files:[FileStruct(hashId:5C69EAC05642993A66E6287F59006F2385BF873E, fileName:178070_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:2194911)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:8.0, scoreNum:1, commentNum:0, dayNum:0, weekNum:0, monthNum:0,
+retCode: 500
+retMsg: null:Unexpected ':' character @position 8
+total: 0
+usedTime: 0.0
+fsql: playNum:43, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:90.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1378794892, modifyDate:1378884640, lastNum:43, lastIndex:90, isVideo:1, recommend:1, isRank:1, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1668499, mapId:414, vId:9e30eecab48032b619a606a3e69deca4, source:kankan, cls:news, title:现货坚挺宏观向好  贴水连塑下跌空间有限, picturePath:2955600, timeLen:73280, plots:现货坚挺宏观向好  贴水连塑下跌空间有限 
+                  , types:[财经], tags:[现货, 宏观, 贴水连塑, 空间], files:[FileStruct(hashId:D885F6F68395B54112A3CA1C1435620326F3B093, fileName:178137_high.mp4, fil
+retCode: 500
+retMsg: null:Unexpected ':' character @position 8
+total: 0
+usedTime: 0.0
+fsql: eFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:7169267), FileStruct(hashId:D885F6F68395B54112A3CA1C1435620326F3B093, fileName:178137_standard.mp4, fileFormat:mp4, bitRateKbps:491520, clarity:dvd, fileSizeByte:5032454), FileStruct(hashId:D885F6F68395B54112A3CA1C1435620326F3B093, fileName:178137_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:2595649)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:8.0, scoreNum:1, commentNum:0, dayNum:0, weekNum:0, monthNum:0, playNum:13, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:27.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1378795331, modifyDate:1378885081, lastNum:13, lastIndex:27, isVideo:1, recommend:1, isRank:1, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copy
+retCode: 500
+retMsg: null:Unexpected ':' character @position 8
+total: 0
+usedTime: 0.0
+fsql: right:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1668446, mapId:351, vId:ac0d9d14264f0024dfbc9708eeaecebc, source:kankan, cls:news, title:南方基金：补库存需求带动经济数据回暖, picturePath:2954724, timeLen:190920, plots:南方基金：补库存需求带动经济数据回暖 
+                  , types:[财经], tags:[南方基金, 经济数据], files:[FileStruct(hashId:4FA6361F69FFB032762EE5F1E89374228D5EFD3B, fileName:178113_high.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:19387143), FileStruct(hashId:4FA6361F69FFB032762EE5F1E89374228D5EFD3B, fileName:178113_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:6774240), FileStruct(hashId:4FA6361F69FFB032762EE5F1E89374228D5EFD3B, fileName:178113_standard.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:13420499)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:8.0, scoreNum:1, commentNum:0, dayNum:0, weekNu
+retCode: 500
+retMsg: null:Unexpected ':' character @position 6
+total: 0
+usedTime: 0.0
+fsql: m:0, monthNum:0, playNum:12, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:25.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1378794922, modifyDate:1378886756, lastNum:12, lastIndex:25, isVideo:1, recommend:1, isRank:1, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1668573, mapId:343, vId:97e0760bb9bc0dff0c8668b381884d72, source:kankan, cls:news, title:搞笑视频：主人给猫咪挠痒后,猫咪的奇怪反应！, picturePath:2954507, timeLen:56400, plots:主人给猫咪挠痒后,猫咪的奇怪反应.哈哈哈哈~~这个BGM搭配得真是应景!!戳中笑点~~
+                  , types:[直播], tags:[搞笑视频, E锅汇, 搞笑视频, 猫咪, 挠痒, 萌宠],
+retCode: 500
+retMsg: null:Unexpected ':' character @position 2
+total: 0
+usedTime: 0.0
+fsql: files:[FileStruct(hashId:4973EB2D425C8509E6456565ED77542282452BE3, fileName:178931_high.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:4784877), FileStruct(hashId:4973EB2D425C8509E6456565ED77542282452BE3, fileName:178931_standard.mp4, fileFormat:mp4, bitRateKbps:491520, clarity:dvd, fileSizeByte:3711962), FileStruct(hashId:4973EB2D425C8509E6456565ED77542282452BE3, fileName:178931_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:1927872)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:8.0, scoreNum:1, commentNum:0, dayNum:0, weekNum:0, monthNum:0, playNum:76, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:159.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1378794639, modifyDate:1379311368, lastNum:76, lastIndex:159, isVideo:1, recommend:1, isRank:1, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, is
+retCode: 500
+retMsg: null:Unexpected ':' character @position 6
+total: 0
+usedTime: 0.0
+fsql: BottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1668587, mapId:431, vId:c4cbab4081f65610c311a96ebcc1c22e, source:kankan, cls:news, title:北京治堵再出“限字诀” 近三成网民呼吁“先拿公车开刀”, picturePath:2958011, timeLen:72330, plots:9月2日，一则短短的消息迅速聚拢公众目光：北京环保局“清洁空气行动计划”要求，市交通委和环保局牵头研究制定征收“交通拥堵费”政策，并将于2013年底前，研究出台小客车分区域、分时段的“限行”政策。
+                  , types:[国内], tags:[中国青年报, 北京, 限字诀, 网民, 公车], files:[FileStruct(hashId:4D502EC30AABBBD0B28B8779D43DFB86EF002EA3, fileName:178176_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:2590473), FileStruct(hashId:4D502EC30AABBBD0B28B8779D43DFB86EF002EA3, fileName:1
+retCode: 500
+retMsg: null:Unexpected ':' character @position 16
+total: 0
+usedTime: 0.0
+fsql: 78176_high.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:7350132), FileStruct(hashId:4D502EC30AABBBD0B28B8779D43DFB86EF002EA3, fileName:178176_standard.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:5083329)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:8.0, scoreNum:2, commentNum:0, dayNum:0, weekNum:0, monthNum:0, playNum:11, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:23.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1378805682, modifyDate:1379314061, lastNum:11, lastIndex:23, isVideo:1, recommend:1, isRank:1, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1668444, mapId:349, vId:c2d05cda7f54b
+retCode: 500
+retMsg: null:Unknown token type @num
+total: 0
+usedTime: 0.0
+fsql: a3766ea71ba4d07f2f5, source:kankan, cls:news, title:莫言贴边走红毯  坦言不想被称大师, picturePath:2954719, timeLen:190610, plots:莫言贴边走红毯  坦言不想被称大师 
+                  , types:[社会], tags:[莫言, 红毯, 大师], files:[FileStruct(hashId:5DDE7C9D014A2359E72D51E9DDF6A0E3E50E495D, fileName:178094_standard.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:13434660), FileStruct(hashId:5DDE7C9D014A2359E72D51E9DDF6A0E3E50E495D, fileName:178094_high.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:19289421), FileStruct(hashId:5DDE7C9D014A2359E72D51E9DDF6A0E3E50E495D, fileName:178094_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:6880630)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:8.0, scoreNum:1, commentNum:0, dayNum:0, weekNum:0, monthNum:0, playNum:92, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:193.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:pu
+retCode: 500
+retMsg: null:Unexpected ':' character @position 28
+total: 0
+usedTime: 0.0
+fsql: blished, createDate:1378794933, modifyDate:1381550384, lastNum:92, lastIndex:193, isVideo:1, recommend:1, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1668447, mapId:352, vId:4e0edd348f14f879570eea69c7879b80, source:kankan, cls:news, title:申银万国证券：个股继续分化  市场小步上行, picturePath:2954725, timeLen:102530, plots:申银万国证券：个股继续分化  市场小步上行 
+                  , types:[财经], tags:[申银万国证券, 个股, 市场], files:[FileStruct(hashId:4FA6361F69FFB032762EE5F1E89374228D5EFD3B, fileName:178111_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:3666568), FileStruct(hashId:4FA6361F69FFB032762EE5F1E89374228D5EFD3B,
+retCode: 500
+retMsg: null:Unexpected ':' character @position 20
+total: 0
+usedTime: 0.0
+fsql: fileName:178111_standard.mp4, fileFormat:mp4, bitRateKbps:491520, clarity:dvd, fileSizeByte:7140065), FileStruct(hashId:4FA6361F69FFB032762EE5F1E89374228D5EFD3B, fileName:178111_high.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:10271510)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:8.0, scoreNum:1, commentNum:0, dayNum:0, weekNum:0, monthNum:0, playNum:97, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:203.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1378794922, modifyDate:1381721499, lastNum:97, lastIndex:203, isVideo:1, recommend:1, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1668498, mapId:409, vId:ff399
+retCode: 500
+retMsg: null:Unexpected ':' character @position 9
+total: 0
+usedTime: 0.0
+fsql: 723a22faa24086d2d0ac5ded7ea, source:kankan, cls:news, title:开学荒唐事 国外留学生暑假赶着做人流, picturePath:2955575, timeLen:156130, plots:大学生暑假做人流早已经不是什么新闻了，但是国外留学生偏要凑热闹。有同学赶在开学前，专程坐飞机回国，做完人流当天又飞回去开学。
+                  , types:[社会], tags:[开学荒唐事, 人流, 留学生], files:[FileStruct(hashId:81FD1B56A4DCF37EC5793756A00522624AFC448E, fileName:178066_standard.mp4, fileFormat:mp4, bitRateKbps:491520, clarity:dvd, fileSizeByte:10889875), FileStruct(hashId:81FD1B56A4DCF37EC5793756A00522624AFC448E, fileName:178066_high.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:15207298), FileStruct(hashId:81FD1B56A4DCF37EC5793756A00522624AFC448E, fileName:178066_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:5522326)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:8.0, scoreNum:1, commentNum:0, dayNum:0, w
+retCode: 500
+retMsg: null:Unknown token type @num
+total: 0
+usedTime: 0.0
+fsql: eekNum:0, monthNum:0, playNum:99, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:207.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1378795393, modifyDate:1381721532, lastNum:99, lastIndex:207, isVideo:1, recommend:1, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1668490, mapId:399, vId:8c5abd87e464458e93b5654cf29a5c08, source:kankan, cls:news, title:安徽蚌埠小伙8辆卡车接新娘 路人称特酷特帅气, picturePath:2955291, timeLen:93360, plots:前些天，安徽蚌埠市街头的一队婚车吸引了路人的眼光。这队婚车不是奔驰宝马，而是八辆大卡车。原来，新郎张先生是在一辆卡车销售店里工作，为了给女
+retCode: 500
+retMsg: null:Unexpected ':' character @position 7
+total: 0
+usedTime: 0.0
+fsql: 友一个惊喜，就想到了用八辆红色卡车去接新娘。不尽如此，这对新人还利用卡车作为背景拍摄了一套结婚照。
+                  , types:[社会], tags:[接新娘, 卡车, 安徽蚌埠], files:[FileStruct(hashId:B85797FA77D4E15256DEFA9D9329D36A23FC457F, fileName:178060_high.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:7742401), FileStruct(hashId:B85797FA77D4E15256DEFA9D9329D36A23FC457F, fileName:178060_standard.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:6576073), FileStruct(hashId:B85797FA77D4E15256DEFA9D9329D36A23FC457F, fileName:178060_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:3369550)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:8.0, scoreNum:1, commentNum:0, dayNum:0, weekNum:0, monthNum:0, playNum:13, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:27.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1378795193, modifyD
+retCode: 500
+retMsg: null:Unexpected '友' character @position 1
+total: 0
+usedTime: 0.0
+fsql: ate:1382844003, lastNum:13, lastIndex:27, isVideo:1, recommend:1, isRank:1, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1695626, mapId:27542, vId:f68556be99ca8fba969a3e719508cbe0, source:kankan, cls:news, title:上海早晨:《新快报》：就陈永洲收钱发失实报道致歉, picturePath:http://115.238.189.7:6532/ugc/416472/pictures/pictures6/smooth/416472_smooth_2.jpg, timeLen:20480, plots:, types:[国内], tags:[新快报, 陈永洲], files:[FileStruct(hashId:58F058B517010BEE59430A3685DD393B370CBF51, fileName:416472_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:725944), FileStruct(hashId:58F058B517010BEE59430A3685DD393B370CBF51, fileName:416472_standard.mp4, fileFormat:mp4, bi
+retCode: 500
+retMsg: null:Unexpected ':' character @position 4
+total: 0
+usedTime: 0.0
+fsql: tRateKbps:491520, clarity:dvd, fileSizeByte:1384075)], relateVideoIds:[], relateSpecialIds:[9441, 9440], videoEventIds:[], score:8.0, scoreNum:1, commentNum:1, dayNum:0, weekNum:0, monthNum:0, playNum:10, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:21.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1382925929, modifyDate:1383005634, lastNum:10, lastIndex:21, isVideo:1, recommend:1, isRank:1, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1695403, mapId:27480, vId:9c58adae14ccabbbc3265f4347261426, source:kankan, cls:news, title:看东方:伊拉克首都系列爆炸致56死94伤, picturePath:3152987, timeLen:57870, plots:, types:[国际], tags:[伊拉克首都系列爆
+retCode: 500
+retMsg: null:Unexpected ':' character @position 10
+total: 0
+usedTime: 0.0
+fsql: 炸事件], files:[FileStruct(hashId:4EB3F7FA1ADC34F7D6BCB0B665886FA1FF9AE70D, fileName:416357_standard.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:4232333), FileStruct(hashId:4EB3F7FA1ADC34F7D6BCB0B665886FA1FF9AE70D, fileName:416357_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:2137074)], relateVideoIds:[], relateSpecialIds:[9441], videoEventIds:[], score:8.0, scoreNum:1, commentNum:1, dayNum:0, weekNum:0, monthNum:0, playNum:76, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:159.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1382924068, modifyDate:1383005791, lastNum:76, lastIndex:159, isVideo:1, recommend:1, isRank:1, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~
+retCode: 500
+retMsg: null:Unexpected '炸' character @position 1
+total: 0
+usedTime: 0.0
+fsql: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1695507, mapId:27585, vId:0b34cfcf1dfbb324a3aa06344d682f3d, source:kankan, cls:news, title:上海早晨:WTA年终总决赛：“海峡组合”夺女双冠军  创亚洲选手新纪录, picturePath:3153629, timeLen:32670, plots:, types:[国际], tags:[WTA年终总决赛, 海峡组合, 女双冠军, 亚洲选手], files:[FileStruct(hashId:298A1C430F7DCC8D6CBA74190EFEF50E7E3E677F, fileName:416443_standard.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:2605459), FileStruct(hashId:298A1C430F7DCC8D6CBA74190EFEF50E7E3E677F, fileName:416443_high.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:3173801), FileStruct(hashId:298A1C430F7DCC8D6CBA74190EFEF50E7E3E677F, fileName:416443_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:1300923)], relateVideoIds:[], relateSpecialIds:[9439], videoEventIds:[], score:8.0, scoreNum:1, commentNum:1, dayNum:0, weekNum:0, monthNum:0, playNum:57, dayIndex:0.0,
+retCode: 500
+retMsg: null:Unexpected '~' character @position 1
+total: 0
+usedTime: 0.0
+fsql: weekIndex:0.0, monthIndex:0.0, playIndex:119.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1382926215, modifyDate:1383006689, lastNum:57, lastIndex:119, isVideo:1, recommend:1, isRank:1, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:2000655, mapId:2000655, vId:9ab29345193ad05baa67c147954210c2, source:fs, cls:ugc, title:生活计仔多第184期, picturePath:3165242, timeLen:1200750, plots:生活计仔多第184期 1.艾灸养生法 2.巧做玻尿酸爽肤水
+                  , types:[生活], tags:[生活小妙招, 生活], files:[FileStruct(hashId:5F6F6FCB171BC7CA53757CE3F34D0BD9B4E58DFA, fileName:280346_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeBy
+retCode: 500
+retMsg: null:Unexpected ':' character @position 10
+total: 0
+usedTime: 0.0
+fsql: te:48862894)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:0, monthNum:0, playNum:26, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:0.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1383012095, modifyDate:1383516280, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:4, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:燕华荣, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:2001017, mapId:2001017, vId:1aa2dbce2191187af7efe94ff131ce9e, source:fs, cls:normal, title:英超第9轮官方五佳扑救, picturePath:3167916, timeLen:103580, plots:, types:[sport], tags:[internat_football, 英超], files:[FileStruct(hashId:72479FD5DCEC7DEF208108E7F8C1F3D7D3
+retCode: 500
+retMsg: null:Unexpected ':' character @position 3
+total: 0
+usedTime: 0.0
+fsql: AD648B, fileName:1BF4222BBAE78F44FE792C33C71ACD9B2E450251.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:3682315), FileStruct(hashId:72479FD5DCEC7DEF208108E7F8C1F3D7D3AD648B, fileName:3203883D8EEC7A644B34DEEEE789392E82D4C6E1.mp4, fileFormat:mp4, bitRateKbps:1105920, clarity:super-dvd, fileSizeByte:17788064), FileStruct(hashId:72479FD5DCEC7DEF208108E7F8C1F3D7D3AD648B, fileName:33384E584C104D9D8C50BA594057249E48D82D32.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:10383192), FileStruct(hashId:72479FD5DCEC7DEF208108E7F8C1F3D7D3AD648B, fileName:A4F535D5CCA39891D462DB5FC752CA11F8C35DBF.mp4, fileFormat:mp4, bitRateKbps:491520, clarity:dvd, fileSizeByte:6422439)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:2, monthNum:13, playNum:304, dayIndex:2.0, weekIndex:4.0, monthIndex:27.0, playIndex:638.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1383030543, modifyDate:1384
+retCode: 500
+retMsg: null:Unexpected ':' character @position 17
+total: 0
+usedTime: 0.0
+fsql: 130786, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:[ ], picTitleModifydate:1383030543, extend:[ ])
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:2001216, mapId:2001216, vId:5b6044455ed10f87ee482a4dfa17143d, source:fs, cls:ugc, title:陈婉萍pinky 美女模特 华南第一 美少女, picturePath:3168567, timeLen:194530, plots: 陈婉萍pinky 美女模特 华南第一 美少女
+                  , types:[美女], tags:[陈婉萍pinky, 美女模特], files:[FileStruct(hashId:399948796D68B8220F4C124E61ED719D322781E2, fileName:417034_standard.mp4, fileFormat:mp4, bitRateKbps:491520, clarity:dvd, fileSizeByte:12503213), FileStruct(hashId:399948796D68B8220F4C124E61ED719D322781E2, fileName:417034_smooth.mp4, fileFormat:mp4, bitRateKbps:
+retCode: 500
+retMsg: null:Unknown token type @num
+total: 0
+usedTime: 0.0
+fsql: 327680, clarity:tv, fileSizeByte:6409515)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:3, monthNum:3, playNum:55, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:0.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1383042800, modifyDate:1383514818, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:87, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:穆蕾, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:2006260, mapId:2006260, vId:066adbbc44730a0cba10e8f56627ade6, source:kankan, cls:news, title:看东方:长沙：昨天多个进出港航班遭爆炸物威胁, picturePath:http://61.155.217.6:6532/ugc/419468/pictures/pictures6/smooth/419468_smooth_2.j
+retCode: 500
+retMsg: null:Unknown token type @num
+total: 0
+usedTime: 0.0
+fsql: pg, timeLen:60240, plots:, types:[国内], tags:[长沙, 航班, 爆炸物], files:[FileStruct(hashId:2D5E38895D44EE226E0EEA23DE1B8ED2CD10A423, fileName:419468_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:2309251), FileStruct(hashId:2D5E38895D44EE226E0EEA23DE1B8ED2CD10A423, fileName:419468_standard.mp4, fileFormat:mp4, bitRateKbps:491520, clarity:dvd, fileSizeByte:4199457)], relateVideoIds:[], relateSpecialIds:[9585], videoEventIds:[], score:8.0, scoreNum:1, commentNum:1, dayNum:0, weekNum:0, monthNum:0, playNum:98, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:205.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1383271889, modifyDate:1383289752, lastNum:98, lastIndex:205, isVideo:1, recommend:1, isRank:1, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[
+retCode: 500
+retMsg: null:Unexpected ':' character @position 12
+total: 0
+usedTime: 0.0
+fsql: ], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:2005974, mapId:2005974, vId:f238f4784f82eb06f54ab024349911ee, source:kankan, cls:news, title:看东方:甘肃1元“绿皮车”为山村民众出行供方便, picturePath:3177651, timeLen:144680, plots:, types:[国内], tags:[甘肃, 绿皮车, 山村, 民众], files:[FileStruct(hashId:036E77B62A42788AE93039876B8DD8AF0D243DFE, fileName:419452_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:5114902), FileStruct(hashId:036E77B62A42788AE93039876B8DD8AF0D243DFE, fileName:419452_standard.mp4, fileFormat:mp4, bitRateKbps:491520, clarity:dvd, fileSizeByte:10104149)], relateVideoIds:[], relateSpecialIds:[9612], videoEventIds:[], score:8.0, scoreNum:1, commentNum:1, dayNum:0, weekNum:0, monthNum:0, playNum:18, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:37.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1383270865, modifyDate:1383293
+retCode: 500
+retMsg: null:Unexpected ']' character @position 1
+total: 0
+usedTime: 0.0
+fsql: 196, lastNum:18, lastIndex:37, isVideo:1, recommend:1, isRank:1, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1687394, mapId:19273, vId:82990dff6e063b43ab47267deebe8f63, source:kankan, cls:news, title:东方11020130821：床单里的女人, picturePath:http://58.215.93.74:6532/ugc/297804/pictures/pictures6/high/297804_high_5.jpg, timeLen:1400130, plots:, types:[法制], tags:[东方110, 犯罪, 法制], files:[FileStruct(hashId:D09511EAB01D4CC4434BC372AA2366AD4A90F5B9, fileName:297804_high.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:137545369), FileStruct(hashId:D09511EAB01D4CC4434BC372AA2366AD4A90F5B9, fileName:297804_standard.mp4, fileFormat:mp4, bitRateKbps:491520, clarity:dvd, fil
+retCode: 500
+retMsg: null:Unknown token type @num
+total: 0
+usedTime: 0.0
+fsql: eSizeByte:97443016), FileStruct(hashId:D09511EAB01D4CC4434BC372AA2366AD4A90F5B9, fileName:297804_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:49907640)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:8.0, scoreNum:1, commentNum:0, dayNum:0, weekNum:0, monthNum:0, playNum:92, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:193.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1379904804, modifyDate:1379919904, lastNum:92, lastIndex:193, isVideo:1, recommend:1, isRank:1, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1668567, mapId:337, vId:6530201f884e4ce4f3205071b076aa84, source:kankan, cls:news, title:视频：烧脚趾殴打
+retCode: 500
+retMsg: null:Unexpected ':' character @position 10
+total: 0
+usedTime: 0.0
+fsql: 少女被疑不忠遭男友虐待50小时浑身是伤, picturePath:2954472, timeLen:105680, plots:视频：烧脚趾殴打 少女被疑不忠遭男友虐待50小时浑身是伤
+                  , types:[社会], tags:[少女, 男友, 虐待], files:[FileStruct(hashId:DA797998934E7572ADD9AE35D4F2081AE39E741C, fileName:178033_standard.mp4, fileFormat:mp4, bitRateKbps:491520, clarity:dvd, fileSizeByte:7333175), FileStruct(hashId:DA797998934E7572ADD9AE35D4F2081AE39E741C, fileName:178033_high.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:8175367), FileStruct(hashId:DA797998934E7572ADD9AE35D4F2081AE39E741C, fileName:178033_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:3725899)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:8.0, scoreNum:1, commentNum:0, dayNum:0, weekNum:0, monthNum:0, playNum:21, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:44.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1378
+retCode: 500
+retMsg: null:Unexpected '少' character @position 1
+total: 0
+usedTime: 0.0
+fsql: 794699, modifyDate:1379920127, lastNum:21, lastIndex:44, isVideo:1, recommend:1, isRank:1, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1668426, mapId:408, vId:a689f0343118831aa8111b896ad2d945, source:kankan, cls:news, title:货车凌晨撞进便利店  所幸无人伤亡, picturePath:2955574, timeLen:99170, plots:货车凌晨撞进便利店  所幸无人伤亡 
+                  , types:[社会], tags:[货车, 便利店], files:[FileStruct(hashId:81FD1B56A4DCF37EC5793756A00522624AFC448E, fileName:178069_high.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:10091154), FileStruct(hashId:81FD1B56A4DCF37EC5793756A00522624AFC448E, fileName:178069_smooth.mp4, fileFormat:mp4, bitRateKbps:327680
+retCode: 500
+retMsg: null:Unknown token type @num
+total: 0
+usedTime: 0.0
+fsql: , clarity:tv, fileSizeByte:3523728), FileStruct(hashId:81FD1B56A4DCF37EC5793756A00522624AFC448E, fileName:178069_standard.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:6953067)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:8.0, scoreNum:1, commentNum:0, dayNum:0, weekNum:0, monthNum:0, playNum:15, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:31.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1378795394, modifyDate:1380083502, lastNum:15, lastIndex:31, isVideo:1, recommend:1, isRank:1, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1682966, mapId:14837, vId:77491ce0539f6603d5a8f825ccfa66d7, source:kankan, cls:news, title:�
+retCode: 500
+retMsg: null:Unknown token type @,
+total: 0
+usedTime: 0.0
+fsql: �徽：全省1500多万亩作物受旱, picturePath:3005768, timeLen:38670, plots:, types:[社会], tags:[安徽, 作物], files:[FileStruct(hashId:2A6703A30B0AB3922ECB803CDAF66B2613F32821, fileName:214378_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:1453049), FileStruct(hashId:2A6703A30B0AB3922ECB803CDAF66B2613F32821, fileName:214378_high.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:4217255), FileStruct(hashId:2A6703A30B0AB3922ECB803CDAF66B2613F32821, fileName:214378_standard.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:2860626)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:8.0, scoreNum:2, commentNum:0, dayNum:0, weekNum:0, monthNum:0, playNum:2, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:4.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1379621335, modifyDate:1380521405, lastNum:2, lastIndex:4, isVideo:1, recommend:1, isRank:1, playNumInit:0, commentNumFunsh
+retCode: 500
+retMsg: null:Unexpected '�' character @position 1
+total: 0
+usedTime: 0.0
+fsql: ion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:2000638, mapId:56, vId:856603c7c91b898df07ce131d98aba97, source:fs, cls:news, title:Chevy雪佛兰2012超级碗广告：Joy, picturePath:2129054, timeLen:30139, plots:Chevy雪佛兰2012超级碗广告：Joy 动物也飙车，动物也快乐！, types:[汽车], tags:[超级碗广告, 雪佛兰, 汽车, 创意], files:[FileStruct(hashId:64145DE26267DCD3423421EA9DBD7DA624237ECB, fileName:1378b57d1b2d1ebd6b5ef3a869efefd93d57708e.mp4, fileFormat:mp4, bitRateKbps:491520, clarity:tv, fileSizeByte:2087217)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:7.428571428571429, scoreNum:7, commentNum:7, dayNum:1, weekNum:1, monthNum:1, playNum:8, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, pl
+retCode: 500
+retMsg: null:Unexpected ':' character @position 4
+total: 0
+usedTime: 0.0
+fsql: ayIndex:0.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1328735954, modifyDate:1383142790, lastNum:0, lastIndex:0, isVideo:1, recommend:1, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1668435, mapId:421, vId:2449e8b21802beb46b8c5f91de3fdaed, source:kankan, cls:news, title:特大新型地沟油案一审开庭：产销有毒有害食品最高可判死刑, picturePath:2956174, timeLen:36870, plots:特大新型地沟油案一审开庭：产销有毒有害食品最高可判死刑 
+                  , types:[社会], tags:[社会新闻, 特大新型地沟油案, 食品, 死刑], files:[FileStruct(hashId:0B1A9DB968138FD21892065509884CB10F6F858C, fileName:179879_smooth.m
+retCode: 500
+retMsg: null:Unexpected ':' character @position 8
+total: 0
+usedTime: 0.0
+fsql: p4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:1174114), FileStruct(hashId:0B1A9DB968138FD21892065509884CB10F6F858C, fileName:179879_standard.mp4, fileFormat:mp4, bitRateKbps:491520, clarity:dvd, fileSizeByte:2186732), FileStruct(hashId:0B1A9DB968138FD21892065509884CB10F6F858C, fileName:179879_high.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:3099975)], relateVideoIds:[], relateSpecialIds:[8478], videoEventIds:[], score:7.0, scoreNum:2, commentNum:0, dayNum:0, weekNum:0, monthNum:0, playNum:25, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:52.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1378795598, modifyDate:1378803519, lastNum:25, lastIndex:52, isVideo:1, recommend:1, isRank:1, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:
+retCode: 500
+retMsg: null:Unexpected ':' character @position 15
+total: 0
+usedTime: 0.0
+fsql: 0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1668433, mapId:420, vId:0080bd595ed6d9d080e17eac8c8d9ac0, source:kankan, cls:news, title:两融市场和大宗交易市场, picturePath:2956082, timeLen:202320, plots:两融市场和大宗交易市场 
+                  , types:[财经], tags:[融资净买入额, 融资净卖出量], files:[FileStruct(hashId:92F581C3AB5357FCD00AADD8EC6C4E9C69A74EED, fileName:178083_standard.mp4, fileFormat:mp4, bitRateKbps:491520, clarity:dvd, fileSizeByte:14080560), FileStruct(hashId:92F581C3AB5357FCD00AADD8EC6C4E9C69A74EED, fileName:178083_high.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:20349848), FileStruct(hashId:92F581C3AB5357FCD00AADD8EC6C4E9C69A74EED, fileName:178083_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:7197778)], relateVideoIds:[], relateSpecialIds:[8478], videoEventIds:[], score:7.0, scoreNum:4, commentNum:0, dayNum:0, weekNum:0, monthNum:0, playN
+retCode: 500
+retMsg: null:Unknown token type @num
+total: 0
+usedTime: 0.0
+fsql: um:90, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:189.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1378795510, modifyDate:1381550500, lastNum:90, lastIndex:189, isVideo:1, recommend:1, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:2000664, mapId:2000664, vId:c2ba4b2b93e85d96a845a055a73a457b, source:fs, cls:ugc, title: 宝宝认字, picturePath:3165252, timeLen:306780, plots: 宝宝认字
+                  , types:[生活], tags:[可爱, 搞笑], files:[FileStruct(hashId:4E9FE23764C51A19CF7E5C26A0EA92D9382C7BD8, fileName:416232_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:10756455)], relateVideoIds:[], relateSpecialIds:[], v
+retCode: 500
+retMsg: null:Unexpected ':' character @position 3
+total: 0
+usedTime: 0.0
+fsql: ideoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:1, monthNum:1, playNum:63, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:0.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1383011902, modifyDate:1383515002, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:38, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:计奎健, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1668547, mapId:317, vId:87b21e133f10a09f06b620915c598ea6, source:kankan, cls:news, title:实拍：毒贩持枪疯狂拒捕 遭武警当场击毙, picturePath:2954133, timeLen:86240, plots:30日9点，毒贩张某被民警发现后持枪拒捕。经过近7小时僵持，毒贩与前来支援的武警支队发生枪战，被当场�
+retCode: 500
+retMsg: null:Unexpected ':' character @position 13
+total: 0
+usedTime: 0.0
+fsql: �毙。警方缴获自制手雷1枚、仿64式手 枪1支、弹夹2个、子弹3发、冰 毒1500克、麻古1000余粒。
+                  , types:[社会], tags:[毒贩, 武警, 击毙], files:[FileStruct(hashId:B18820C02DF5F15D545635B67B2B46BDE9C3921E, fileName:178075_high.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:7464474), FileStruct(hashId:B18820C02DF5F15D545635B67B2B46BDE9C3921E, fileName:178075_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:3149479), FileStruct(hashId:B18820C02DF5F15D545635B67B2B46BDE9C3921E, fileName:178075_standard.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:6230682)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:6.0, scoreNum:1, commentNum:0, dayNum:0, weekNum:0, monthNum:0, playNum:99, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:207.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1378794538, modifyDate:1378800783, lastNum:99, lastI
+retCode: 500
+retMsg: null:Unexpected '�' character @position 1
+total: 0
+usedTime: 0.0
+fsql: ndex:207, isVideo:1, recommend:1, isRank:1, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1668578, mapId:358, vId:082665e875689b462d631924fb829c18, source:kankan, cls:news, title:史上最粗鲁的云！苏格兰男子散步偶见逼真“中指云”, picturePath:2954760, timeLen:63070, plots:在苏格兰威廉堡，1名23岁男子日前在河边溜狗期间，发现天空一团云，形状极似举起中指的粗口手势，立即把难得一见的「中指云」拍下来，并上载到互联网。他形容「中指云」十分逼真，难以想像这是一团云，并表示日后会多加留意天空的云，现时最希望看到云的形状，是电影《狮子王》的木法沙。
+                  , types:
+retCode: 500
+retMsg: null:Unexpected ':' character @position 5
+total: 0
+usedTime: 0.0
+fsql: [国际], tags:[中指云, 粗鲁, 苏格兰], files:[FileStruct(hashId:F311C98FC95A9F2CDC3313D679188556402633CA, fileName:178034_high.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:5984190), FileStruct(hashId:F311C98FC95A9F2CDC3313D679188556402633CA, fileName:178034_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:2197514), FileStruct(hashId:F311C98FC95A9F2CDC3313D679188556402633CA, fileName:178034_standard.mp4, fileFormat:mp4, bitRateKbps:491520, clarity:dvd, fileSizeByte:4230460)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:6.0, scoreNum:1, commentNum:0, dayNum:0, weekNum:0, monthNum:0, playNum:30, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:63.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1378794857, modifyDate:1378802488, lastNum:30, lastIndex:63, isVideo:1, recommend:1, isRank:1, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userNa
+retCode: 500
+retMsg: null:Unexpected '[' character @position 1
+total: 0
+usedTime: 0.0
+fsql: me:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1668429, mapId:412, vId:86a2e35f1ca6d1d7c7cfcd47e34c51a7, source:kankan, cls:news, title:产业资本年内套现919亿, picturePath:2955591, timeLen:85240, plots:产业资本年内套现919亿 
+                  , types:[财经], tags:[产业, 资本], files:[FileStruct(hashId:FFF5A2867D12466AE918A6D8B53A98E12D1821AF, fileName:178119_standard.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:6105656), FileStruct(hashId:FFF5A2867D12466AE918A6D8B53A98E12D1821AF, fileName:178119_high.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:8730162), FileStruct(hashId:FFF5A2867D12466AE918A6D8B53A98E12D1821AF, fileName:178119_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:3090763)], relateVideoIds:[], relateSpecia
+retCode: 500
+retMsg: null:Unexpected ':' character @position 3
+total: 0
+usedTime: 0.0
+fsql: lIds:[], videoEventIds:[], score:6.0, scoreNum:1, commentNum:0, dayNum:0, weekNum:0, monthNum:0, playNum:69, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:144.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1378795356, modifyDate:1378887159, lastNum:69, lastIndex:144, isVideo:1, recommend:1, isRank:1, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1668563, mapId:333, vId:07f74801ff1185d5692ef5e5568d75f4, source:kankan, cls:news, title:国债期货淮备就绪  首批合约6日上市交易, picturePath:2954452, timeLen:114840, plots:国债期货淮备就绪  首批合约6日上市交易 
+                  , types:[财经], tags:[国债期货, 合约], files:[FileStruct
+retCode: 500
+retMsg: null:Unexpected ':' character @position 5
+total: 0
+usedTime: 0.0
+fsql: (hashId:78831374D124E8C024C9335777D4E2531AB1FBF2, fileName:178088_standard.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:8255816), FileStruct(hashId:78831374D124E8C024C9335777D4E2531AB1FBF2, fileName:178088_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:4213924), FileStruct(hashId:78831374D124E8C024C9335777D4E2531AB1FBF2, fileName:178088_high.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:11838881)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:6.0, scoreNum:1, commentNum:0, dayNum:0, weekNum:0, monthNum:0, playNum:97, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:203.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1378794746, modifyDate:1381550380, lastNum:97, lastIndex:203, isVideo:1, recommend:1, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecomm
+retCode: 500
+retMsg: null:Unexpected ':' character @position 8
+total: 0
+usedTime: 0.0
+fsql: end:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1668473, mapId:382, vId:1a3e5d2d3123cd152865d9bebe402cc5, source:kankan, cls:news, title:上市当日各合约涨停板幅度为挂盘基淮价±4％, picturePath:2955016, timeLen:325930, plots:上市当日各合约涨停板幅度为挂盘基淮价±4％ 
+                  , types:[财经], tags:[合约, 涨停板, 挂盘基淮价], files:[FileStruct(hashId:0B59927A4509B514601E1F01C953B5889770554E, fileName:178110_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:11612617), FileStruct(hashId:0B59927A4509B514601E1F01C953B5889770554E, fileName:178110_high.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:32827609), FileStruct(hashId:0B59927A4509B514601E1F01C953B5889770554E, fileName:178110_standard.mp4, fileFormat:mp4, bitRateKbps:491520, clarity:dvd, fileSizeByte:22710008)], relateVi
+retCode: 500
+retMsg: null:Unexpected ':' character @position 4
+total: 0
+usedTime: 0.0
+fsql: deoIds:[], relateSpecialIds:[], videoEventIds:[], score:6.0, scoreNum:2, commentNum:0, dayNum:0, weekNum:0, monthNum:0, playNum:82, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:172.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1378794984, modifyDate:1381721507, lastNum:82, lastIndex:172, isVideo:1, recommend:1, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:2005027, mapId:2005027, vId:b68edb4f0a9a5f4b4e7a9ae2df86b4a3, source:kankan, cls:news, title:双十一临近  电商大战硝烟再起, picturePath:3174873, timeLen:125740, plots:双十一临近 电商大战硝烟再起, types:[财经], tags:[电商], files:[FileStruct(hashId:6A08FB53561BE4D897A078C533E
+retCode: 500
+retMsg: null:Unexpected ':' character @position 7
+total: 0
+usedTime: 0.0
+fsql: 246C55B375541, fileName:418909_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:4431914), FileStruct(hashId:6A08FB53561BE4D897A078C533E246C55B375541, fileName:418909_standard.mp4, fileFormat:mp4, bitRateKbps:491520, clarity:dvd, fileSizeByte:8735063)], relateVideoIds:[], relateSpecialIds:[9570], videoEventIds:[], score:6.0, scoreNum:1, commentNum:1, dayNum:0, weekNum:0, monthNum:0, playNum:55, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:115.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1383187202, modifyDate:1383293511, lastNum:55, lastIndex:115, isVideo:1, recommend:0, isRank:1, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:2000702, mapId:
+retCode: 500
+retMsg: null:Unknown token type @num
+total: 0
+usedTime: 0.0
+fsql: 2000702, vId:5d75518d2de14f8f2a2f70bad090c2cb, source:fs, cls:ugc, title:我的DNF号刷图介绍, picturePath:3165300, timeLen:162080, plots:我的DNF号刷图介绍 狂战刷的不是很好
+                  , types:[游戏], tags:[DNF, 游戏], files:[FileStruct(hashId:09271607EB8BF02454D77EC1A12128C0D20F64F5, fileName:378392_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:5861839), FileStruct(hashId:09271607EB8BF02454D77EC1A12128C0D20F64F5, fileName:378392_standard.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:12133038)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:1, monthNum:1, playNum:53, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:0.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1383011801, modifyDate:1383514804, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:1, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:方华利, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1686998, mapId:18873, vId:adb3217d2a842b44f788876657f41196, source:kankan, cls:news, title:上海早晨:薄熙来案今天上午10点公开宣判, picturePath:3013270, timeLen:10870, plots:, types:[国内], tags:[薄熙来案], files:[FileStruct(hashId:09774BF4D9979DAEB82158676BD5898F423AA1EC, fileName:297481_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:368416), FileStruct(hashId:09774BF4D9979DAEB82158676BD5898F423AA1EC, fileName:297481_standard.mp4, fileFormat:mp4, bitRateKbps:491520, clarity:dvd, fileSizeByte:704873), FileStruct(hashId:09774BF4D9979DAEB82158676BD5898F423AA1EC, fileName:297481_high.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:1017487)], relateVideoIds
+retCode: 500
+retMsg: null:Unknown token type @num
+total: 0
+usedTime: 0.0
+fsql: :[], relateSpecialIds:[8708], videoEventIds:[], score:2.0, scoreNum:1, commentNum:0, dayNum:0, weekNum:0, monthNum:0, playNum:15, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:31.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1379817069, modifyDate:1379944723, lastNum:15, lastIndex:31, isVideo:1, recommend:1, isRank:1, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1687265, mapId:19142, vId:3f025b6beee8239856a35a728900eefa, source:kankan, cls:news, title:新闻夜线:民政部：2012年中国慈善受捐总额下降3.31%, picturePath:3019576, timeLen:58120, plots:, types:[国内], tags:[民政部, 中国慈善受捐总额], files:[FileStruct(hashId:56D3BB6912CA6F815F8
+retCode: 500
+retMsg: null:Unexpected ':' character @position 1
+total: 0
+usedTime: 0.0
+fsql: F03FA8963D67975669669, fileName:297731_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:2445750), FileStruct(hashId:56D3BB6912CA6F815F8F03FA8963D67975669669, fileName:297731_high.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:6988169), FileStruct(hashId:56D3BB6912CA6F815F8F03FA8963D67975669669, fileName:297731_standard.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:4874437)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:2.0, scoreNum:2, commentNum:0, dayNum:0, weekNum:0, monthNum:0, playNum:55, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:115.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1379901189, modifyDate:1379971583, lastNum:55, lastIndex:115, isVideo:1, recommend:1, isRank:1, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tact
+retCode: 500
+retMsg: null:Unexpected ':' character @position 32
+total: 0
+usedTime: 0.0
+fsql: icArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1688202, mapId:20086, vId:d1bd0d47e0957dff59716c8126c765e4, source:kankan, cls:news, title:上海早晨:西班牙：国王换臂手术成功, picturePath:3036989, timeLen:47880, plots:, types:[国际], tags:[西班牙, 国王, 换臂手术], files:[FileStruct(hashId:A2B192F2B3E6AA2EC3F2B9F0609409DDF2997981, fileName:298435_standard.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:3357925), FileStruct(hashId:A2B192F2B3E6AA2EC3F2B9F0609409DDF2997981, fileName:298435_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:1714346), FileStruct(hashId:A2B192F2B3E6AA2EC3F2B9F0609409DDF2997981, fileName:298435_high.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:4831952)], relateVideoIds:[], relateSpecialIds:[8831], videoEventIds:[], score:2.0, scoreNum:1, commentNum:0, dayNum:0, weekNum:0, monthNum
+retCode: 500
+retMsg: null:Unexpected ':' character @position 7
+total: 0
+usedTime: 0.0
+fsql: :0, playNum:48, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:100.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1380164030, modifyDate:1380169043, lastNum:48, lastIndex:100, isVideo:1, recommend:1, isRank:1, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1688604, mapId:20489, vId:fd0cd9e5b033909f37c21bc5418b7d7f, source:kankan, cls:news, title:看东方:香港反非法劳工行动拘10名内地旅客, picturePath:3044043, timeLen:78560, plots:, types:[国内], tags:[香港, 反非法劳工行动, 内地旅客], files:[FileStruct(hashId:9EA5AF93BA5BD32D606E6EF6812217E4F8F9E874, fileName:304995_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:30
+retCode: 500
+retMsg: null:Unexpected ':' character @position 1
+total: 0
+usedTime: 0.0
+fsql: 39327), FileStruct(hashId:9EA5AF93BA5BD32D606E6EF6812217E4F8F9E874, fileName:304995_standard.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:5943667), FileStruct(hashId:9EA5AF93BA5BD32D606E6EF6812217E4F8F9E874, fileName:304995_high.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:8476426)], relateVideoIds:[], relateSpecialIds:[8848], videoEventIds:[], score:2.0, scoreNum:1, commentNum:0, dayNum:0, weekNum:0, monthNum:0, playNum:95, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:199.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1380251272, modifyDate:1380269312, lastNum:95, lastIndex:199, isVideo:1, recommend:1, isRank:1, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~
+retCode: 500
+retMsg: null:Unknown token type @num
+total: 0
+usedTime: 0.0
+fsql: ~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1688414, mapId:20275, vId:c103d319b3214308837d392051660283, source:kankan, cls:news, title:东方新闻:北京：李某某等5人强奸案一审宣判, picturePath:http://183.61.240.180:6532/ugc/304142/pictures/pictures6/high/304142_high_2.jpg, timeLen:449680, plots:, types:[国内], tags:[北京, 李某某, 强奸案], files:[FileStruct(hashId:D58FD510AA1F0D68D88FB5DF2EB1143633E80DE6, fileName:304142_high.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:47227215), FileStruct(hashId:D58FD510AA1F0D68D88FB5DF2EB1143633E80DE6, fileName:304142_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:16656575), FileStruct(hashId:D58FD510AA1F0D68D88FB5DF2EB1143633E80DE6, fileName:304142_standard.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:32836424)], relateVideoIds:[], relateSpecialIds:[8849], videoEventIds:[], score:2.0, scoreNum:2, commentNum:0, dayNum:0, weekNum:0, monthNum:0, playNum:7, dayIndex:0.0
+retCode: 500
+retMsg: null:Unexpected '~' character @position 1
+total: 0
+usedTime: 0.0
+fsql: , weekIndex:0.0, monthIndex:0.0, playIndex:14.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1380244571, modifyDate:1380338652, lastNum:7, lastIndex:14, isVideo:1, recommend:1, isRank:1, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1688981, mapId:20868, vId:cf3a5105f2778ee21e8c21e9528597a7, source:kankan, cls:news, title:看东方:新华社：中国首批援助物资运抵巴基斯坦, picturePath:3052687, timeLen:34680, plots:, types:[国际], tags:[新华社, 中国, 援助物资, 巴基斯坦], files:[FileStruct(hashId:0074C544121A1A892A03C7B5D5D3518EC9D4843A, fileName:320691_high.mp4, fileFormat:mp4, bitRateKbps:737280, clarity:high-dvd, fileSizeByte:3475549), FileStruct
+retCode: 500
+retMsg: null:Unknown token type @,
+total: 0
+usedTime: 0.0
+fsql: (hashId:0074C544121A1A892A03C7B5D5D3518EC9D4843A, fileName:320691_smooth.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:1233319), FileStruct(hashId:0074C544121A1A892A03C7B5D5D3518EC9D4843A, fileName:320691_standard.mp4, fileFormat:mp4, bitRateKbps:491520, clarity:dvd, fileSizeByte:2414518)], relateVideoIds:[], relateSpecialIds:[8834], videoEventIds:[], score:2.0, scoreNum:1, commentNum:0, dayNum:0, weekNum:0, monthNum:0, playNum:13, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:27.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1380422307, modifyDate:1380501393, lastNum:13, lastIndex:27, isVideo:1, recommend:1, isRank:1, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Vid
+retCode: 500
+retMsg: null:Unexpected ':' character @position 8
+total: 0
+usedTime: 0.0
+fsql: eoletInfo(videoId:2000736, mapId:159, vId:00de896960b6de3d16a0aa919b763e4e, source:kankan, cls:news, title:IGS蟠桃盛宴捕鱼游戏机价格捕鱼游戏机厂家新款万炮蟠桃盛宴, picturePath:1058207, timeLen:53280, plots:IGS蟠桃盛宴捕鱼游戏机价格捕鱼游戏机厂家新款万炮蟠桃盛宴 稍后补充视频简介
+                  , types:[游戏], tags:[原创], files:[FileStruct(hashId:838690934EE66E9EFF9DC86581D27091DD840A08, fileName:c10a8565303e50de4b45c1f4afcdefda7eadd9a3.mp4, fileFormat:mp4, bitRateKbps:327680, clarity:tv, fileSizeByte:2049625)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:1.3333333333333333, scoreNum:3, commentNum:3, dayNum:0, weekNum:0, monthNum:0, playNum:4, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:0.0, videoIndexes:, showAd:1, votable:1, ordering:0, publishFlag:published, createDate:1378362121, modifyDate:1383142791, lastNum:8, lastIndex:0, isVideo:1, recommend:1, isRank:1, playNumInit:0, commentNumFunshion:{}, transmitNum:
+retCode: 500
+retMsg: null:not support function!
+total: 0
+usedTime: 0.0
+fsql: 0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:0, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1030754, mapId:12620, vId:9f78caf6fb3ae7ade0757ce3ebf74bc8, source:tvm, cls:normal, title:女神卡卡抵菲亵渎宗教遭抗议, picturePath:638016, timeLen:12, plots:, types:[star], tags:[女神卡卡, 菲律宾, 宗教, 抗议], files:[FileStruct(hashId:2ADC817B346ED84CF957FE98D14F062B1A20252B, fileName:MP4FS_PhoenixTV_20120521_175745867_769319_61489.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:1030676)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:2, weekNum:2, monthNum:2, playNum:32, dayIndex:4.0, weekIndex:4.0, monthIndex:4.0, playIndex:67.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:133767902
+retCode: 500
+retMsg: null:Unknown token type @num
+total: 0
+usedTime: 0.0
+fsql: 5, modifyDate:1337738299, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337738299, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071576, mapId:12555, vId:f7f249edb83946b908c3714f1f50df57, source:tvm, cls:normal, title:黄舒骏微博晒喂奶照, picturePath:638030, timeLen:44, plots:, types:[star], tags:[黄舒骏, 微博, 喂奶照], files:[FileStruct(hashId:8624CA0AFF57DAAF37E2E0866017E9B0245C1A97, fileName:MP4FS_SHDongFangTV_20120521_171332686_769304_71240.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:2963707)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:1, monthNum:2, playNum:69, dayIndex:2.0, weekIndex:2.0,
+retCode: 500
+retMsg: null:Unknown token type @num
+total: 0
+usedTime: 0.0
+fsql: monthIndex:4.0, playIndex:145.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337678997, modifyDate:1337742260, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[362136], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337742260, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071572, mapId:12595, vId:d97985aea4e7374b672d3b9a762c867d, source:tvm, cls:normal, title:德国队备战欧锦赛  拜仁国脚重新正名, picturePath:638048, timeLen:49, plots:, types:[society], tags:[体育, 欧锦赛, 德国队], files:[FileStruct(hashId:2ADC817B346ED84CF957FE98D14F062B1A20252B, fileName:MP4FS_SHSport_20120521_222730731_769393_122520.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:4082581)], relateVideoIds:[]
+retCode: 500
+retMsg: null:Unexpected ':' character @position 11
+total: 0
+usedTime: 0.0
+fsql: , relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:1, monthNum:1, playNum:12, dayIndex:2.0, weekIndex:2.0, monthIndex:2.0, playIndex:25.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337679015, modifyDate:1337744505, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337744505, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071573, mapId:12592, vId:b63c748b829ab5326c8e07321cd85d4c, source:tvm, cls:normal, title:阿内尔卡将面临是否退役, picturePath:638049, timeLen:204, plots:, types:[society], tags:[体育, 阿内尔卡退役], files:[FileStruct(hashId:2ADC817B346ED84CF957FE98D14F062B1A20252B, fileName:MP4FS_SHSport_
+retCode: 500
+retMsg: null:Unknown token type @,
+total: 0
+usedTime: 0.0
+fsql: 20120521_220030731_769384_167879.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:16895098)], relateVideoIds:[26820], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:2, weekNum:3, monthNum:3, playNum:4, dayIndex:4.0, weekIndex:6.0, monthIndex:6.0, playIndex:8.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337679009, modifyDate:1337744755, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337744755, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071574, mapId:12591, vId:ce57cd53d87125a0a2e2e0de7c04188e, source:tvm, cls:normal, title:英冠升降级附加赛将开幕 “铁锤帮”西汉姆联重返英超, picturePath:
+retCode: 500
+retMsg: null:Unknown token type @num
+total: 0
+usedTime: 0.0
+fsql: 638052, timeLen:45, plots:, types:[society], tags:[西汉姆联, 英冠升降级附加赛], files:[FileStruct(hashId:2ADC817B346ED84CF957FE98D14F062B1A20252B, fileName:MP4FS_SHSport_20120521_222130731_769391_112400.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:3769034)], relateVideoIds:[23822, 26942], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:1, monthNum:1, playNum:3, dayIndex:2.0, weekIndex:2.0, monthIndex:2.0, playIndex:6.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337679008, modifyDate:1337745238, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337745238, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletIn
+retCode: 500
+retMsg: null:Unknown token type @num
+total: 0
+usedTime: 0.0
+fsql: fo(videoId:1071581, mapId:12521, vId:cd0e94397f1eb4d86e25bc437c501513, source:tvm, cls:normal, title:巴甲开幕  博塔弗戈登上头名, picturePath:638059, timeLen:95, plots:, types:[society], tags:[体育, 足球, 巴甲], files:[FileStruct(hashId:7BF412F9C7E276AF876987A51E855FA37929B0D4, fileName:MP4FS_BTV6_20120521_185036287_769334_66120.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:7829900)], relateVideoIds:[24747], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:1, monthNum:4, playNum:6, dayIndex:2.0, weekIndex:2.0, monthIndex:8.0, playIndex:13.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337678983, modifyDate:1337749778, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClass
+retCode: 500
+retMsg: null:not support function!
+total: 0
+usedTime: 0.0
+fsql: es:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337749778, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071582, mapId:12519, vId:ebee56bfe83c6a29ecb7543bf02efbf4, source:tvm, cls:normal, title:北京国际数独大奖赛落幕, picturePath:638060, timeLen:138, plots:, types:[society], tags:[体育, 北京, 数度大赛], files:[FileStruct(hashId:7BF412F9C7E276AF876987A51E855FA37929B0D4, fileName:MP4FS_BTV6_20120521_192336287_769345_33080.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:11495323)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:2, weekNum:2, monthNum:2, playNum:2, dayIndex:4.0, weekIndex:4.0, monthIndex:4.0, playIndex:4.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337678983, modifyDate:1337749902, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], user
+retCode: 500
+retMsg: null:Unexpected ':' character @position 3
+total: 0
+usedTime: 0.0
+fsql: Id:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337749902, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071583, mapId:12518, vId:97849feca1956e3beb82958ccaf9b64a, source:tvm, cls:normal, title:预备队卡鲁建功  国安却遭逆转, picturePath:638061, timeLen:126, plots:, types:[society], tags:[体育, 卡鲁, 国安], files:[FileStruct(hashId:7BF412F9C7E276AF876987A51E855FA37929B0D4, fileName:MP4FS_BTV6_20120521_191736287_769343_116233.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:10594599)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:1, monthNum:1, playNum:3, dayIndex:2.0, weekIndex:2.0, monthIndex:2.0, playIndex:6.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337678983, modifyDate:1337750043, lastNum:0, lastIndex:0, is
+retCode: 500
+retMsg: null:Unexpected ':' character @position 3
+total: 0
+usedTime: 0.0
+fsql: Video:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337750043, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071584, mapId:12517, vId:a3765fd1aaa0a8f7a8700dd2d3019327, source:tvm, cls:normal, title:争议点球绝杀  气走天津泰达, picturePath:638062, timeLen:291, plots:, types:[society], tags:[体育, 北京, 天津, 足球], files:[FileStruct(hashId:7BF412F9C7E276AF876987A51E855FA37929B0D4, fileName:MP4FS_BTV6_20120521_212936287_769387_165353.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:24237024)], relateVideoIds:[23141, 23760], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:1, monthNum:43, playNum:51, dayIndex:2.0, weekIndex:2.0, monthIndex:90.0, playIndex:1
+retCode: 500
+retMsg: null:Unexpected ':' character @position 6
+total: 0
+usedTime: 0.0
+fsql: 07.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337678984, modifyDate:1337750246, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337750246, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071585, mapId:12516, vId:fc103b3b77ce408e297941f3486edb2a, source:tvm, cls:normal, title:奥运冠军助威李宁旗舰店, picturePath:638063, timeLen:40, plots:, types:[society], tags:[体育, 北京, 李宁旗舰店, 奥运冠军], files:[FileStruct(hashId:7BF412F9C7E276AF876987A51E855FA37929B0D4, fileName:MP4FS_BTV6_20120521_192336287_769345_171193.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:3364507)], relateVideoIds:[], relateSpecialIds:[], videoEventIds
+retCode: 500
+retMsg: null:Unknown token type @num
+total: 0
+usedTime: 0.0
+fsql: :[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:0, monthNum:3, playNum:8, dayIndex:2.0, weekIndex:0.0, monthIndex:6.0, playIndex:17.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337678983, modifyDate:1337750501, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337750501, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071588, mapId:12493, vId:7fe24c5bddf9343eecacfb619386de2c, source:tvm, cls:normal, title:高峰  魏群助阵业余足球赛, picturePath:638065, timeLen:26, plots:, types:[society], tags:[体育, 足球, 高峰, 魏群], files:[FileStruct(hashId:7BF412F9C7E276AF876987A51E855FA37929B0D4, fileName:MP4FS_BTV6_20120521_192636287_769346_76280.mp4
+retCode: 500
+retMsg: null:Unexpected ':' character @position 1
+total: 0
+usedTime: 0.0
+fsql: , fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:2174767)], relateVideoIds:[26948], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:2, monthNum:2, playNum:17, dayIndex:2.0, weekIndex:4.0, monthIndex:4.0, playIndex:36.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337678975, modifyDate:1337751397, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337751397, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071587, mapId:12498, vId:e8fc264ecb40ede2735d0c27e53958b9, source:tvm, cls:normal, title:王哲林砍下两双  邓华德炮轰裁判, picturePath:638066, timeLen:181, plots:, types:[society], tags:[体育, 篮�
+retCode: 500
+retMsg: null:Unknown token type @,
+total: 0
+usedTime: 0.0
+fsql: ��, 邓华德], files:[FileStruct(hashId:7BF412F9C7E276AF876987A51E855FA37929B0D4, fileName:MP4FS_BTV6_20120521_185936287_769337_130393.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:14985260)], relateVideoIds:[25491], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:1, monthNum:1, playNum:32, dayIndex:2.0, weekIndex:2.0, monthIndex:2.0, playIndex:67.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337678975, modifyDate:1337751529, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337751529, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071586, mapId:12507, vId:22a69b2bd24b32e198acc68c91b16e8a, source:tvm,
+retCode: 500
+retMsg: null:Unexpected '�' character @position 1
+total: 0
+usedTime: 0.0
+fsql: cls:normal, title:零封对手  国羽喜获开门红, picturePath:638067, timeLen:105, plots:, types:[society], tags:[体育, 超级丹, 羽毛球], files:[FileStruct(hashId:7BF412F9C7E276AF876987A51E855FA37929B0D4, fileName:MP4FS_BTV6_20120521_184136287_769331_21040.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:8854193)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:0, weekNum:0, monthNum:0, playNum:0, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:0.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337678976, modifyDate:1337751735, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337751735, extend:)
+~~~~~
+retCode: 500
+retMsg: null:Unexpected ':' character @position 4
+total: 0
+usedTime: 0.0
+fsql: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071589, mapId:12492, vId:07b5696147ca522b83480cd2576d1f38, source:tvm, cls:normal, title:国安新老名将  心系梯队建设, picturePath:638068, timeLen:150, plots:, types:[society], tags:[体育, 北京, 国安, 老将], files:[FileStruct(hashId:7BF412F9C7E276AF876987A51E855FA37929B0D4, fileName:MP4FS_BTV6_20120521_192036287_769344_63113.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:12415098)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:0, monthNum:3, playNum:3, dayIndex:2.0, weekIndex:0.0, monthIndex:6.0, playIndex:6.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337678974, modifyDate:1337751935, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, rec
+retCode: 500
+retMsg: null:Unexpected '~' character @position 1
+total: 0
+usedTime: 0.0
+fsql: ommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337751935, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071590, mapId:12488, vId:a8f3d612dfb281521ff2bb6feeda4f63, source:tvm, cls:normal, title:梦幻欧洲杯北京赛区决出冠军, picturePath:638070, timeLen:45, plots:, types:[society], tags:[体育, 足球, 梦幻欧洲杯], files:[FileStruct(hashId:52B9CCEC380EB18080B7FA331B3F740CA58B2770, fileName:MP4FS_BTV6_20120521_192636287_769346_31240.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:3751114)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:1, monthNum:1, playNum:1, dayIndex:2.0, weekIndex:2.0, monthIndex:2.0, playIndex:2.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337678909, modifyDate:1337752217, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, tran
+retCode: 500
+retMsg: null:Unexpected ':' character @position 11
+total: 0
+usedTime: 0.0
+fsql: smitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337752217, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071591, mapId:12453, vId:c5483ed132a9ef5ce9a3be7600c96c78, source:tvm, cls:normal, title:废话聊天公司 聊天业务范围广, picturePath:638071, timeLen:52, plots:, types:[society], tags:[新鲜词汇, 聊天公司, 社会], files:[FileStruct(hashId:8624CA0AFF57DAAF37E2E0866017E9B0245C1A97, fileName:MP4FS_JiangXiTV_20120522_124931167_769695_74667.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:4251760)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:1, monthNum:1, playNum:3, dayIndex:2.0, weekIndex:2.0, monthIndex:2.0, playIndex:6.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, create
+retCode: 500
+retMsg: null:Unexpected ':' character @position 8
+total: 0
+usedTime: 0.0
+fsql: Date:1337678900, modifyDate:1337752472, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337752472, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071592, mapId:12445, vId:99805d98688275bff5278c3af28fd3a1, source:tvm, cls:normal, title:“代付求婚”成为新型求婚方式, picturePath:638073, timeLen:53, plots:, types:[society], tags:[新鲜事, 求婚方式, 社会], files:[FileStruct(hashId:6D5B7AC0161802F96530DB9B948E1F5BFB7E9585, fileName:MP4FS_JiangXiTV_20120522_125231167_769696_13833.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:3810343)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:1, monthNum:1, playNum:3
+retCode: 500
+retMsg: null:Unexpected ':' character @position 5
+total: 0
+usedTime: 0.0
+fsql: , dayIndex:2.0, weekIndex:2.0, monthIndex:2.0, playIndex:6.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337678705, modifyDate:1337752757, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337752757, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071593, mapId:12444, vId:c9d82aab6eac2ee83b6c77c14a533cfe, source:tvm, cls:normal, title:“死亡字”引来古典文学风, picturePath:638074, timeLen:38, plots:, types:[society], tags:[新鲜事, 死亡字], files:[FileStruct(hashId:6D5B7AC0161802F96530DB9B948E1F5BFB7E9585, fileName:MP4FS_JiangXiTV_20120522_124931167_769695_155663.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:3079496)], relateVideoIds
+retCode: 500
+retMsg: null:Unknown token type @,
+total: 0
+usedTime: 0.0
+fsql: :[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:6, weekNum:6, monthNum:6, playNum:28, dayIndex:13.0, weekIndex:13.0, monthIndex:13.0, playIndex:59.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337678705, modifyDate:1337752921, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337752921, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071595, mapId:12442, vId:1633c4eb65157eac0ac60b86c22436d1, source:tvm, cls:normal, title:办公桌成紧俏产品 千名员工用270张桌椅, picturePath:638077, timeLen:69, plots:, types:[society], tags:[社会, 新鲜事, 办工作紧俏], files:[FileStruct(hashId:6D5B7AC0161802F96530DB9B948E1F5BF
+retCode: 500
+retMsg: null:Unexpected ':' character @position 1
+total: 0
+usedTime: 0.0
+fsql: B7E9585, fileName:MP4FS_JiangXiTV_20120522_124931167_769695_5667.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:5365318)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:1, monthNum:1, playNum:3, dayIndex:2.0, weekIndex:2.0, monthIndex:2.0, playIndex:6.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337678706, modifyDate:1337753347, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337753347, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071596, mapId:12441, vId:8319949be10b1b147ef33e006cdf379f, source:tvm, cls:normal, title:职场问题繁多 受害人心态作祟, picturePath:638079,
+retCode: 500
+retMsg: null:Unexpected ':' character @position 18
+total: 0
+usedTime: 0.0
+fsql: timeLen:29, plots:, types:[society], tags:[社会, 新鲜事, 职场压力], files:[FileStruct(hashId:6D5B7AC0161802F96530DB9B948E1F5BFB7E9585, fileName:MP4FS_JiangXiTV_20120522_124931167_769695_126500.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:2360578)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:2, weekNum:2, monthNum:1, playNum:8, dayIndex:4.0, weekIndex:4.0, monthIndex:2.0, playIndex:17.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337678704, modifyDate:1337753541, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337753541, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071499, map
+retCode: 500
+retMsg: null:Unexpected ':' character @position 8
+total: 0
+usedTime: 0.0
+fsql: Id:12745, vId:86f945136500cff2f748e8ffdaa62437, source:tvm, cls:normal, title:胡康健称巴蒂斯塔最快周末抵沪, picturePath:638081, timeLen:107, plots:, types:[society], tags:[胡康健, 巴蒂斯塔], files:[FileStruct(hashId:6CEFA352929A5DA6013D1B236D3A477455BC9843, fileName:MP4FS_SHSport_20120522_215808602_769863_169558.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:9016977)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:1, monthNum:1, playNum:1, dayIndex:2.0, weekIndex:2.0, monthIndex:2.0, playIndex:2.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337752821, modifyDate:1337753933, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], h
+retCode: 500
+retMsg: null:Unexpected ':' character @position 3
+total: 0
+usedTime: 0.0
+fsql: ot:0.0, copyright:, picTitleModifydate:1337753933, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071500, mapId:12744, vId:c12ea6166700cc99c6c8ab79e1c49098, source:tvm, cls:normal, title:瑞典球星伊布拉希莫维奇的传奇生涯, picturePath:638082, timeLen:62, plots:, types:[society], tags:[体育, 足球明星, 伊布拉希莫维奇], files:[FileStruct(hashId:6CEFA352929A5DA6013D1B236D3A477455BC9843, fileName:MP4FS_SHSport_20120522_222808602_769873_133118.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:4954401)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:1, monthNum:2, playNum:28, dayIndex:2.0, weekIndex:2.0, monthIndex:4.0, playIndex:59.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337752820, modifyDate:1337754005, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateSt
+retCode: 500
+retMsg: null:Unexpected ':' character @position 3
+total: 0
+usedTime: 0.0
+fsql: affIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337754005, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071502, mapId:12742, vId:15df6c0da19ac257f7da1506e93f2bff, source:tvm, cls:normal, title:复旦VS交大 名校上演“巅峰对决”, picturePath:638093, timeLen:138, plots:, types:[society], tags:[社会, 名校对决], files:[FileStruct(hashId:6CEFA352929A5DA6013D1B236D3A477455BC9843, fileName:MP4FS_SHSport_20120522_224008602_769877_107798.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:11399773)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:1, monthNum:1, playNum:22, dayIndex:2.0, weekIndex:2.0, monthIndex:2.0, playIndex:46.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337752821, modifyDate:1337754853, last
+retCode: 500
+retMsg: null:Unexpected ':' character @position 7
+total: 0
+usedTime: 0.0
+fsql: Num:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337754853, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071494, mapId:12750, vId:839544d38da21e4ee2d7785f235a5ad2, source:tvm, cls:normal, title:大象西塔担当欧锦赛“官方”预测员, picturePath:638094, timeLen:53, plots:, types:[society], tags:[欧锦赛, 预测员, 西欧塔], files:[FileStruct(hashId:6CEFA352929A5DA6013D1B236D3A477455BC9843, fileName:MP4FS_SHSport_20120522_223108602_769874_15000.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:4469094)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:0, monthNum:1, playNum:1, dayIndex:2.0, weekIndex:0.0, monthInde
+retCode: 500
+retMsg: null:Unexpected ':' character @position 4
+total: 0
+usedTime: 0.0
+fsql: x:2.0, playIndex:2.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337752824, modifyDate:1337755066, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337755066, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071427, mapId:12858, vId:192a203af49b7b653016c44966ec041e, source:tvm, cls:normal, title:安室奈美惠9月开唱纪念出道20年, picturePath:638095, timeLen:12, plots:, types:[star, music], tags:[安室奈美惠, 个唱], files:[FileStruct(hashId:6BA2E4EF26652B025226AC35EDF3DF6FB41681BF, fileName:MP4FS_PhoenixTV_20120522_175745867_769799_105080.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:1037533)], relateVideoIds:[22878], relateSpecialIds:
+retCode: 500
+retMsg: null:Unexpected ':' character @position 2
+total: 0
+usedTime: 0.0
+fsql: [], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:2, weekNum:2, monthNum:2, playNum:68, dayIndex:4.0, weekIndex:4.0, monthIndex:4.0, playIndex:143.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337752855, modifyDate:1337755135, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[90738], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337755135, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071503, mapId:12741, vId:52a44a52f0bac6970d6f08a9873fc8e5, source:tvm, cls:normal, title:奥运“飞鱼”菲尔普斯的成名之路, picturePath:638097, timeLen:177, plots:, types:[society], tags:[体育, 奥运冠军, 菲尔普斯], files:[FileStruct(hashId:6CEFA352929A5DA6013D1B236D3A477455BC9843, fileName:MP4FS_S
+retCode: 500
+retMsg: null:Unexpected '[' character @position 1
+total: 0
+usedTime: 0.0
+fsql: HSport_20120522_223408602_769875_29398.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:14578932)], relateVideoIds:[25465], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:1, monthNum:2, playNum:15, dayIndex:2.0, weekIndex:2.0, monthIndex:4.0, playIndex:32.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337752820, modifyDate:1337755174, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337755174, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071492, mapId:12752, vId:f41b2b1e5084dde07ebe1068e9d2dc10, source:tvm, cls:normal, title:重振蓝色雄风  意大利最终名单渐趋明朗, picturePath:638098, time
+retCode: 500
+retMsg: null:Unexpected '.' character @position 39
+total: 0
+usedTime: 0.0
+fsql: Len:93, plots:, types:[society], tags:[意大利], files:[FileStruct(hashId:6CEFA352929A5DA6013D1B236D3A477455BC9843, fileName:MP4FS_SHSport_20120522_222508602_769872_64400.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:7800233)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:0, monthNum:1, playNum:1, dayIndex:2.0, weekIndex:0.0, monthIndex:2.0, playIndex:2.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337752825, modifyDate:1337755310, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337755310, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071428, mapId:12857, vId:18bd0fdbc4da88737
+retCode: 500
+retMsg: null:Unexpected ':' character @position 4
+total: 0
+usedTime: 0.0
+fsql: e1a614a4995ebf8, source:tvm, cls:normal, title:美国告示牌奖致敬惠特妮休斯顿, picturePath:638101, timeLen:116, plots:, types:[music], tags:[美国, 告示牌奖, 组惠特妮休斯顿], files:[FileStruct(hashId:6BA2E4EF26652B025226AC35EDF3DF6FB41681BF, fileName:MP4FS_PhoenixTV_20120522_181545867_769805_50680.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:9744253)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:1, monthNum:3, playNum:30, dayIndex:2.0, weekIndex:2.0, monthIndex:6.0, playIndex:63.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337752855, modifyDate:1337755414, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, co
+retCode: 500
+retMsg: null:Unexpected ':' character @position 24
+total: 0
+usedTime: 0.0
+fsql: pyright:, picTitleModifydate:1337755414, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071504, mapId:12740, vId:f15e430fd9bd301eb32f18248f89cdf2, source:tvm, cls:normal, title:奥运A标成天堑  张琳离伦敦越来越远, picturePath:638099, timeLen:71, plots:, types:[society], tags:[体育, 张琳], files:[FileStruct(hashId:6CEFA352929A5DA6013D1B236D3A477455BC9843, fileName:MP4FS_SHSport_20120522_223108602_769874_138438.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:5874524)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:0, monthNum:1, playNum:1, dayIndex:2.0, weekIndex:0.0, monthIndex:2.0, playIndex:2.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337752820, modifyDate:1337755469, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:
+retCode: 500
+retMsg: null:Unexpected ':' character @position 8
+total: 0
+usedTime: 0.0
+fsql: 0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337755469, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071466, mapId:12787, vId:6fa6355482e53f87acc9672cd2ff3172, source:tvm, cls:normal, title:男篮为备战奥运二次裁员  朱彦西杨鸣离队, picturePath:638102, timeLen:97, plots:, types:[society], tags:[男篮, 裁员, 朱彦西, 离队, 奥运], files:[FileStruct(hashId:4AB9730CAAB04EBE22E10E87C4EF97FA2BD5CB5B, fileName:MP4FS_BTV6_20120522_212336287_769865_150713.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:7920328)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:1, monthNum:1, playNum:1, dayIndex:2.0, weekIndex:2.0, monthIndex:2.0, playIndex:2.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337752843, modifyDate:1337755488, lastNum:0, lastIndex
+retCode: 500
+retMsg: null:Unknown token type @num
+total: 0
+usedTime: 0.0
+fsql: :0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337755488, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071505, mapId:12739, vId:dff5380c696fa01f36c542c6e68b7321, source:tvm, cls:normal, title:欧锦赛球队巡礼之波兰, picturePath:638106, timeLen:105, plots:, types:[society], tags:[体育, 足球, 波兰队], files:[FileStruct(hashId:6CEFA352929A5DA6013D1B236D3A477455BC9843, fileName:MP4FS_SHSport_20120522_222508602_769872_157678.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:8607025)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:2, weekNum:2, monthNum:2, playNum:2, dayIndex:4.0, weekIndex:4.0, monthIndex:4.0, playIndex:4.0, videoIndexes:, s
+retCode: 500
+retMsg: null:Unexpected ':' character @position 1
+total: 0
+usedTime: 0.0
+fsql: howAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337752820, modifyDate:1337755609, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337755609, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071506, mapId:12738, vId:4f0a21a205dbe16099983aec881f3c1e, source:tvm, cls:normal, title:“国民小媳妇”李小璐戏里戏外谈甜蜜, picturePath:638108, timeLen:305, plots:, types:[star], tags:[明星, 娱乐, 李小璐, 媳妇专业户], files:[FileStruct(hashId:6CEFA352929A5DA6013D1B236D3A477455BC9843, fileName:MP4FS_SHFashion_20120522_223618052_769882_5358.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:25575763)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[],
+retCode: 500
+retMsg: null:Unexpected ':' character @position 6
+total: 0
+usedTime: 0.0
+fsql: score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:1, monthNum:1, playNum:59, dayIndex:2.0, weekIndex:2.0, monthIndex:2.0, playIndex:124.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337752820, modifyDate:1337755903, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337755903, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071490, mapId:12755, vId:48f19b4074830a0e6b77c115d1dd5c99, source:tvm, cls:normal, title:皇马与穆里尼奥续约至2016年, picturePath:638112, timeLen:14, plots:, types:[society], tags:[皇马, 穆里尼奥], files:[FileStruct(hashId:6CEFA352929A5DA6013D1B236D3A477455BC9843, fileName:MP4FS_SHSport_20120522_222508602_769872_5840.mp4, fileFor
+retCode: 500
+retMsg: null:Unexpected ':' character @position 6
+total: 0
+usedTime: 0.0
+fsql: mat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:1111930)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:1, monthNum:3, playNum:21, dayIndex:2.0, weekIndex:2.0, monthIndex:6.0, playIndex:44.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337752825, modifyDate:1337755949, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337755949, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1038349, mapId:12702, vId:5f1c34662b3c7479fdb903406aff03d3, source:tvm, cls:normal, title:惊现波兰大象帝 准确预测欧冠决赛, picturePath:638107, timeLen:168, plots:, types:[society], tags:[大象帝, 欧冠决赛,
+retCode: 500
+retMsg: null:Unexpected ':' character @position 4
+total: 0
+usedTime: 0.0
+fsql: 欧洲杯], files:[FileStruct(hashId:F862958E98580DAAC241DC3BC64ED0218800E8B4, fileName:MP4FS_LiaoNingTV_20120523_120108988_770157_164760.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:14160514)], relateVideoIds:[39851], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:1, monthNum:1, playNum:23, dayIndex:2.0, weekIndex:2.0, monthIndex:2.0, playIndex:48.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337752811, modifyDate:1337756107, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337756107, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071507, mapId:12737, vId:daf2c0c2c0d06c29e3ef863509f199e4, source:tv
+retCode: 500
+retMsg: null:Unexpected '欧' character @position 1
+total: 0
+usedTime: 0.0
+fsql: m, cls:normal, title:领略温网上的体坛盛宴, picturePath:638114, timeLen:117, plots:, types:[society], tags:[体育, 温网, 美食], files:[FileStruct(hashId:6CEFA352929A5DA6013D1B236D3A477455BC9843, fileName:MP4FS_SHSport_20120522_221908602_769870_74918.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:9638383)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:0, monthNum:1, playNum:3, dayIndex:2.0, weekIndex:0.0, monthIndex:2.0, playIndex:6.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337752819, modifyDate:1337756213, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337756213, extend:)
+~~~~~~~~~~
+retCode: 500
+retMsg: null:Unexpected ':' character @position 7
+total: 0
+usedTime: 0.0
+fsql: ~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1054687, mapId:12853, vId:68f8c97ff6fded5c28fba17ad887ebf3, source:tvm, cls:normal, title:汤姆克鲁斯获邀演《豪勇七蛟龙》, picturePath:638117, timeLen:16, plots:, types:[star, movie], tags:[汤姆克鲁斯, 豪勇七蛟龙], files:[FileStruct(hashId:6BA2E4EF26652B025226AC35EDF3DF6FB41681BF, fileName:MP4FS_PhoenixTV_20120522_175745867_769799_173880.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:1366118)], relateVideoIds:[25853, 57387, 59323, 65603], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:1, monthNum:3, playNum:55, dayIndex:2.0, weekIndex:2.0, monthIndex:6.0, playIndex:116.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337752854, modifyDate:1337756254, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position
+retCode: 500
+retMsg: null:Unexpected '~' character @position 1
+total: 0
+usedTime: 0.0
+fsql: :, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337756254, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071431, mapId:12851, vId:e0c453ab6208e51476921e407633edfd, source:tvm, cls:normal, title:SMAP参与直播兴奋欣赏日环食, picturePath:638121, timeLen:12, plots:, types:[star], tags:[SMAP, 日环食], files:[FileStruct(hashId:6BA2E4EF26652B025226AC35EDF3DF6FB41681BF, fileName:MP4FS_PhoenixTV_20120522_175745867_769799_117240.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:988131)], relateVideoIds:[26032, 29321, 29892], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:1, monthNum:1, playNum:73, dayIndex:2.0, weekIndex:2.0, monthIndex:2.0, playIndex:153.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337752851, modifyDate:1337756437, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRan
+retCode: 500
+retMsg: null:Unexpected ':' character @position 1
+total: 0
+usedTime: 0.0
+fsql: k:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337756437, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071508, mapId:12736, vId:58a987b9eab19606482c40978b616f3b, source:tvm, cls:normal, title:资深专家教您欣赏“风筝冲浪”, picturePath:638120, timeLen:115, plots:, types:[society], tags:[体育, 风筝冲浪运动], files:[FileStruct(hashId:6CEFA352929A5DA6013D1B236D3A477455BC9843, fileName:MP4FS_SHSport_20120522_223708602_769876_172358.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:9653806)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:0, monthNum:1, playNum:1, dayIndex:2.0, weekIndex:0.0, monthIndex:2.0, playIndex:2.0, videoIndexes:, showAd:0, votable:0,
+retCode: 500
+retMsg: null:Unexpected ':' character @position 2
+total: 0
+usedTime: 0.0
+fsql: ordering:0, publishFlag:published, createDate:1337752819, modifyDate:1337756449, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337756449, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071510, mapId:12734, vId:c83dd8f007098f39ee4c45888de75b5e, source:tvm, cls:normal, title:库泽面临下课风险  德罗西接近恒大, picturePath:638130, timeLen:114, plots:, types:[society], tags:[体育, 教练下课, 库泽], files:[FileStruct(hashId:6CEFA352929A5DA6013D1B236D3A477455BC9843, fileName:MP4FS_SHSport_20120522_220708602_769866_171518.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:9457669)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0,
+retCode: 500
+retMsg: null:Unexpected ':' character @position 9
+total: 0
+usedTime: 0.0
+fsql: dayNum:1, weekNum:0, monthNum:14, playNum:14, dayIndex:2.0, weekIndex:0.0, monthIndex:29.0, playIndex:29.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337752819, modifyDate:1337757012, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337757012, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071485, mapId:12761, vId:d614803f5195db82684371ea8b13ff16, source:tvm, cls:normal, title:李宗伟：因伤退出汤姆斯杯, picturePath:638131, timeLen:70, plots:, types:[society], tags:[李宗伟, 汤姆斯杯], files:[FileStruct(hashId:6CEFA352929A5DA6013D1B236D3A477455BC9843, fileName:MP4FS_SHSport_20120522_221308602_769868_37640.mp4, fileFormat:mp4, bitRateKbps:716800, cla
+retCode: 500
+retMsg: null:Unexpected ':' character @position 7
+total: 0
+usedTime: 0.0
+fsql: rity:tv, fileSizeByte:5858644)], relateVideoIds:[25755, 25837], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:1, monthNum:1, playNum:80, dayIndex:2.0, weekIndex:2.0, monthIndex:2.0, playIndex:168.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337752826, modifyDate:1337757091, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337757091, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1042720, mapId:12699, vId:f579a03fca830a2b03ae02a3a9645035, source:tvm, cls:normal, title:汪峰跨界出书《晚安北京》  纪录坎坷心路, picturePath:638132, timeLen:104, plots:, types:[star, music], tags:[汪峰, 晚安北京, 作家,
+retCode: 500
+retMsg: null:Unexpected ':' character @position 5
+total: 0
+usedTime: 0.0
+fsql: 摇滚], files:[FileStruct(hashId:F862958E98580DAAC241DC3BC64ED0218800E8B4, fileName:MP4FS_LiaoNingTV_20120523_121008988_770160_169872.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:8701659)], relateVideoIds:[25578, 29550, 43471], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:1, monthNum:4, playNum:86, dayIndex:2.0, weekIndex:2.0, monthIndex:8.0, playIndex:181.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337752808, modifyDate:1337757167, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337757167, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071511, mapId:12733, vId:1f727fa1ad9b2b42467972527bdb8749
+retCode: 500
+retMsg: null:Unexpected '摇' character @position 1
+total: 0
+usedTime: 0.0
+fsql: , source:tvm, cls:normal, title:巴斯单节18分  凯尔特人逆转夺赛点, picturePath:638135, timeLen:102, plots:, types:[society], tags:[体育, 美国, 篮球, 凯尔特人队], files:[FileStruct(hashId:6CEFA352929A5DA6013D1B236D3A477455BC9843, fileName:MP4FS_SHSport_20120522_221608602_769869_152878.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:8512404)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:1, monthNum:1, playNum:8, dayIndex:2.0, weekIndex:2.0, monthIndex:2.0, playIndex:17.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337752819, modifyDate:1337757272, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTi
+retCode: 500
+retMsg: null:Unknown token type @,
+total: 0
+usedTime: 0.0
+fsql: tleModifydate:1337757272, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071483, mapId:12763, vId:9c7dce2446bcdb14b204989d6b3973ce, source:tvm, cls:normal, title:中国男篮宣布朱彦西、杨鸣被裁, picturePath:638142, timeLen:31, plots:, types:[society], tags:[中国男篮, 朱彦西, 杨鸣], files:[FileStruct(hashId:6CEFA352929A5DA6013D1B236D3A477455BC9843, fileName:MP4FS_SHSport_20120522_221008602_769867_106000.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:2504230)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:2, weekNum:2, monthNum:3, playNum:15, dayIndex:4.0, weekIndex:4.0, monthIndex:6.0, playIndex:32.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337752826, modifyDate:1337757512, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0,
+retCode: 500
+retMsg: null:Unexpected ':' character @position 14
+total: 0
+usedTime: 0.0
+fsql: position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337757512, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1030746, mapId:12764, vId:037ee5c6a72bbb85913c109ccbd574b5, source:tvm, cls:normal, title:5月22日集结哨, picturePath:638144, timeLen:1244, plots:, types:[society], tags:[足坛, 集结哨], files:[FileStruct(hashId:6CEFA352929A5DA6013D1B236D3A477455BC9843, fileName:MP4FS_BTV6_20120522_213236287_769868_60713.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:103236054)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:1, monthNum:1, playNum:2, dayIndex:2.0, weekIndex:2.0, monthIndex:2.0, playIndex:4.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337752826, modifyDate:1337757650, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentN
+retCode: 500
+retMsg: null:Unexpected ':' character @position 9
+total: 0
+usedTime: 0.0
+fsql: umFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337757650, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071447, mapId:12824, vId:37f540c33e5c93dd52fe8eb43bee73da, source:tvm, cls:normal, title:老李首谈“被下课”感受, picturePath:638146, timeLen:434, plots:, types:[society], tags:[老李, 被下课, 感受], files:[FileStruct(hashId:3DB506DEB5BED8C1AFFBCA475DB58DCCADFF0CDA, fileName:MP4FS_BTV6_20120522_185036287_769814_78633.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:36340316)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:1, monthNum:1, playNum:2, dayIndex:2.0, weekIndex:2.0, monthIndex:2.0, playIndex:4.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, create
+retCode: 500
+retMsg: null:Unexpected ':' character @position 11
+total: 0
+usedTime: 0.0
+fsql: Date:1337752847, modifyDate:1337757677, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337757677, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071513, mapId:12730, vId:3fc8dac79fcf6fca3eaaf3ae2fbdd52f, source:tvm, cls:normal, title:明星教你用珠宝配饰扮靓精彩夏日, picturePath:638150, timeLen:345, plots:, types:[star], tags:[明星, 服饰搭配, 娱乐], files:[FileStruct(hashId:F862958E98580DAAC241DC3BC64ED0218800E8B4, fileName:MP4FS_SHFashion_20120522_225118052_769887_14958.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:28849582)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:1, monthNum:1, playNum:10
+retCode: 500
+retMsg: null:Unexpected ':' character @position 5
+total: 0
+usedTime: 0.0
+fsql: , dayIndex:2.0, weekIndex:2.0, monthIndex:2.0, playIndex:21.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337752819, modifyDate:1337757922, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337757922, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1030745, mapId:12766, vId:c4034a0fee29fe745ca0a24bf385031b, source:tvm, cls:normal, title:申花确认换帅  本轮即见分晓, picturePath:638155, timeLen:157, plots:, types:[society], tags:[申花, 换帅], files:[FileStruct(hashId:4AB9730CAAB04EBE22E10E87C4EF97FA2BD5CB5B, fileName:MP4FS_BTV6_20120522_220536287_769879_162113.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:13109983)], relateVideoIds:[], r
+retCode: 500
+retMsg: null:Unknown token type @,
+total: 0
+usedTime: 0.0
+fsql: elateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:0, weekNum:0, monthNum:0, playNum:0, dayIndex:0.0, weekIndex:0.0, monthIndex:0.0, playIndex:0.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337752826, modifyDate:1337758070, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337758070, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071463, mapId:12792, vId:e8d4f89a879d54cb8e400e82c12943bd, source:tvm, cls:normal, title:地道西安风味  什锦烩麻食, picturePath:638156, timeLen:511, plots:, types:[society], tags:[西安, 美食, 地道, 风味, 什锦, 烩麻食], files:[FileStruct(hashId:4AB9730CAAB04EBE22E10E87C4EF97FA2BD5CB5B, fil
+retCode: 500
+retMsg: null:Unexpected ':' character @position 16
+total: 0
+usedTime: 0.0
+fsql: eName:MP4FS_SHFashion_20120522_194818052_769826_120838.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:42917002)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:1, monthNum:4, playNum:68, dayIndex:2.0, weekIndex:2.0, monthIndex:8.0, playIndex:143.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337752844, modifyDate:1337758144, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337758144, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071481, mapId:12767, vId:379afa43acc2674322d3394e6138bb18, source:tvm, cls:normal, title:北京市电脑体育彩票“33选7”第12136期开奖结果, pic
+retCode: 500
+retMsg: null:Unexpected ':' character @position 6
+total: 0
+usedTime: 0.0
+fsql: turePath:638160, timeLen:12, plots:, types:[society], tags:[彩票], files:[FileStruct(hashId:4AB9730CAAB04EBE22E10E87C4EF97FA2BD5CB5B, fileName:MP4FS_BTV6_20120522_221136287_769881_150320.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:898283)], relateVideoIds:[23132, 23459], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:1, monthNum:2, playNum:25, dayIndex:2.0, weekIndex:2.0, monthIndex:4.0, playIndex:53.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337752826, modifyDate:1337758275, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337758275, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071514, mapId
+retCode: 500
+retMsg: null:Unexpected ':' character @position 9
+total: 0
+usedTime: 0.0
+fsql: :12729, vId:9ebecb23071b1132838197b93163c205, source:tvm, cls:normal, title:汤姆斯杯小组赛结束 中国3:0击败印尼, picturePath:638159, timeLen:80, plots:, types:[society], tags:[体育, 羽毛球, 汤姆斯杯], files:[FileStruct(hashId:F862958E98580DAAC241DC3BC64ED0218800E8B4, fileName:MP4FS_SHSport_20120522_221008602_769867_137198.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:6607622)], relateVideoIds:[25755, 25837], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:1, monthNum:3, playNum:11, dayIndex:2.0, weekIndex:2.0, monthIndex:6.0, playIndex:23.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337752818, modifyDate:1337758289, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoConte
+retCode: 500
+retMsg: null:Unexpected ':' character @position 1
+total: 0
+usedTime: 0.0
+fsql: ntClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337758289, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1030744, mapId:12768, vId:9ee24c8a7879c3dbbad08cef2574184f, source:tvm, cls:normal, title:张琳：给自己一个交代, picturePath:638163, timeLen:186, plots:, types:[society], tags:[张琳], files:[FileStruct(hashId:4AB9730CAAB04EBE22E10E87C4EF97FA2BD5CB5B, fileName:MP4FS_BTV6_20120522_215336287_769875_54953.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:15579900)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:0, monthNum:1, playNum:2, dayIndex:2.0, weekIndex:0.0, monthIndex:2.0, playIndex:4.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337752827, modifyDate:1337758387, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, m
+retCode: 500
+retMsg: null:Unexpected ':' character @position 10
+total: 0
+usedTime: 0.0
+fsql: oduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337758387, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071515, mapId:12728, vId:41f84f3d16235520518f7ef7c6312806, source:tvm, cls:normal, title:传言四起真假难辨  阿爷深陷舆论漩涡, picturePath:638165, timeLen:106, plots:, types:[society], tags:[体育, 足球, 阿内尔卡], files:[FileStruct(hashId:F862958E98580DAAC241DC3BC64ED0218800E8B4, fileName:MP4FS_SHSport_20120522_220108602_769864_97318.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:8617939)], relateVideoIds:[], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:0, monthNum:2, playNum:2, dayIndex:2.0, weekIndex:0.0, monthIndex:4.0, playIndex:4.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337752818, modifyDate:1337758494, lastNum:0, lastIndex:0, isVi
+retCode: 500
+retMsg: null:Unexpected ':' character @position 8
+total: 0
+usedTime: 0.0
+fsql: deo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337758494, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071445, mapId:12828, vId:a2c9549e5dc957174aecbfc8340246f0, source:tvm, cls:normal, title:阿比达尔出院国王杯声援巴萨, picturePath:638166, timeLen:78, plots:, types:[society], tags:[阿比达尔, 国王杯, 巴萨], files:[FileStruct(hashId:3DB506DEB5BED8C1AFFBCA475DB58DCCADFF0CDA, fileName:MP4FS_BTV6_20120522_184136287_769811_157753.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:6585217)], relateVideoIds:[27676], relateSpecialIds:[], videoEventIds:[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:0, monthNum:1, playNum:1, dayIndex:2.0, weekIndex:0.0, monthIndex:2.0, playIndex:2.0, videoInd
+retCode: 500
+retMsg: null:Unexpected ':' character @position 4
+total: 0
+usedTime: 0.0
+fsql: exes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337752848, modifyDate:1337758507, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337758507, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VideoletInfo(videoId:1071462, mapId:12793, vId:bce117709e52af371ad82d7483e37521, source:tvm, cls:normal, title:小鱼干发挥大作用 野生鱼干煲出醇汤嫩肉, picturePath:638169, timeLen:391, plots:, types:[society], tags:[鱼干, 煲汤, 嫩肉, 野生], files:[FileStruct(hashId:4AB9730CAAB04EBE22E10E87C4EF97FA2BD5CB5B, fileName:MP4FS_SHFashion_20120522_193918052_769823_146520.mp4, fileFormat:mp4, bitRateKbps:716800, clarity:tv, fileSizeByte:32817873)], relateVideoIds:[], relateSpecialIds:[], videoEventIds
+retCode: 500
+retMsg: null:Unexpected ':' character @position 5
+total: 0
+usedTime: 0.0
+fsql: :[], score:0.0, scoreNum:0, commentNum:0, dayNum:1, weekNum:1, monthNum:1, playNum:36, dayIndex:2.0, weekIndex:2.0, monthIndex:2.0, playIndex:76.0, videoIndexes:, showAd:0, votable:0, ordering:0, publishFlag:published, createDate:1337752843, modifyDate:1337758632, lastNum:0, lastIndex:0, isVideo:0, recommend:0, isRank:0, playNumInit:0, commentNumFunshion:{}, transmitNum:0, relateMediaIds:[], relateStaffIds:[], userId:0, userName:, moduleId:0, position:, picF:, picV:, isBottomRecommend:0, recommendDate:0, tacticArea:{}, videoContentClasses:{}, tagIds:[], hot:0.0, copyright:, picTitleModifydate:1337758632, extend:)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+retCode: 500
+retMsg: null:Unexpected ':' character @position 1
+total: 0
+usedTime: 0.0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fsql: not(score>=10) || playNum<100 order by timelen desc limit 10
+retCode: 200
+retMsg: OK
+total: 453203
+usedTime: 24.177
+
+fsql: not(score>=10) || playNum<100 order by timelen desc limit 100
+retCode: 200
+retMsg: OK
+total: 453203
+usedTime: 21.36
+fsql: not(score>=10) || playNum<100 order by score desc limit 100
+retCode: 200
+retMsg: OK
+total: 453203
+usedTime: 18.961
+>>boot at
+
+date: 12月13日:16-15-01
+fsql: not(timelen<0) && playnum>1 order by score desc limit 10
+retCode: 200
+retMsg: OK
+total: 560445
+usedTime: 195.412
+
+date: 12月13日:16-16-03
+fsql: not(score<5) && playnum>10 order by score desc limit 10
+retCode: 200
+retMsg: OK
+total: 15555
+usedTime: 29.506
+
+date: 12月13日:16-16-35
+fsql: not(score>=5) && playnum>10 order by score desc limit 10
+retCode: 200
+retMsg: OK
+total: 411330
+usedTime: 18.468
+
+date: 12月13日:16-23-06
+fsql: tags='宝贝' order by videoid limit 5
+retCode: 200
+retMsg: OK
+total: 610
+usedTime: 97.867
+
+date: 12月13日:16-27-20
+fsql: title search '男' && tagids=232 order and videoid>1000000 order by createdate limit 5
+retCode: 500
+retMsg: null:Expecting type by but got @&& at col 41
+total: 0
+usedTime: 0.0
+
+date: 12月13日:16-27-46
+fsql: title search '男' && tagids=232 and videoid>1000000 order by createdate limit 5
+retCode: 200
+retMsg: OK
+total: 0
+usedTime: 120.37
+
+date: 12月13日:16-28-13
+fsql: tagids=232 and videoid>1000000 order by createdate limit 5
+retCode: 200
+retMsg: OK
+total: 3
+usedTime: 6.162
+
+date: 12月13日:16-28-50
+fsql: title search '超' && tagids=232 and videoid>1000000 order by createdate limit 5
+retCode: 200
+retMsg: OK
+total: 2
+usedTime: 12.384
+
+date: 12月13日:16-31-32
+fsql: types='focus' && !(source='fs') order by videoid limit 5
+retCode: 500
+retMsg: null:Error ConjunctNode after ConjunctNode: @(,'('
+total: 0
+usedTime: 0.0
+
+date: 12月13日:16-32-06
+fsql: (types='focus') && !(source='fs') order by videoid limit 5
+retCode: 500
+retMsg: null:Error ConjunctNode after ConjunctNode: @(,'('
+total: 0
+usedTime: 0.0
+
+date: 12月13日:16-32-26
+fsql: (types='focus') && not(source='fs') order by videoid limit 5
+retCode: 500
+retMsg: null:Error ConjunctNode after ConjunctNode: @(,'('
+total: 0
+usedTime: 0.0
+
+date: 12月13日:16-32-44
+fsql: not(source='fs') && (types='focus') order by videoid limit 5
+retCode: 200
+retMsg: OK
+total: 1258
+usedTime: 16.695
+
+date: 12月13日:16-34-26
+fsql: types='m_kandian' && playnum>800 && playnum<880 order by videoid limit 3
+retCode: 200
+retMsg: OK
+total: 0
+usedTime: 0.813
+
+date: 12月13日:16-34-35
+fsql: types='m_kandian' && playnum>800 order by videoid limit 3
+retCode: 200
+retMsg: OK
+total: 0
+usedTime: 0.903
+
+date: 12月13日:16-35-24
+fsql: (types='focus') && (playnum>800) order by videoid limit 3
+retCode: 200
+retMsg: OK
+total: 7564
+usedTime: 5.529
+
+date: 12月13日:16-36-48
+fsql: (types='m_kandian') && (playnum>800) order by videoid limit 3
+retCode: 200
+retMsg: OK
+total: 0
+usedTime: 1.034
+
+date: 12月13日:16-37-12
+fsql: types='focus' && playnum>800 order by videoid limit 3
+retCode: 200
+retMsg: OK
+total: 7564
+usedTime: 4.191
+
+date: 12月13日:16-37-24
+fsql: types='variety' && playnum>800 order by videoid limit 3
+retCode: 200
+retMsg: OK
+total: 13350
+usedTime: 7.527
+
+date: 12月13日:16-38-06
+fsql: videoid=2001125 && types='focus' && playnum>800 order by videoid limit 3
+retCode: 200
+retMsg: OK
+total: 1
+usedTime: 1.948
+
+date: 12月13日:16-39-00
+fsql: videoid=2001125 && types='m_kandian' && playnum>800 order by videoid limit 3
+retCode: 200
+retMsg: OK
+total: 0
+usedTime: 1.011
+
+date: 12月13日:16-40-03
+fsql: tags='兄弟' order by videoid limit 5
+retCode: 200
+retMsg: OK
+total: 157
+usedTime: 1.182
+
+date: 12月13日:16-40-35
+fsql: timelen>50 && tags='寒战' order by videoid limit 5
+retCode: 200
+retMsg: OK
+total: 92
+usedTime: 6.625
+
+date: 12月13日:16-40-52
+fsql: not(source='fs')
+retCode: 500
+retMsg: null:Expecting type order but didn't get a token
+total: 0
+usedTime: 0.0
+
+date: 12月13日:16-41-20
+fsql: not(source='fs'||source='tvm') && tags='寒战' order by videoid limit 1
+retCode: 200
+retMsg: OK
+total: 0
+usedTime: 1.774
+
+date: 12月13日:16-41-33
+fsql: not(source='fs') && tags='寒战' order by videoid limit 10
+retCode: 200
+retMsg: OK
+total: 38
+usedTime: 1.492
+
+date: 12月13日:16-42-07
+fsql: not(source='fs'||source='tvm') && videoid>0 order by score limit 10
+retCode: 200
+retMsg: OK
+total: 29073
+usedTime: 65.095
+
+date: 12月13日:16-42-51
+fsql: title like '怒火' order by videoid limit 3
+retCode: 200
+retMsg: OK
+total: 29
+usedTime: 33.045
+
+date: 12月13日:16-44-01
+fsql: not(source='fs'||source='tvm') && title='怒火' order by videoid limit 3
+retCode: 500
+retMsg: null:when compile to BooleanQuery, aText is not support for ' AND title = 怒火'
+total: 0
+usedTime: 0.0
+
+date: 12月13日:16-44-26
+fsql: not(source='fs'||source='tvm') && title search'怒火' order by videoid limit 3
+retCode: 200
+retMsg: OK
+total: 2
+usedTime: 2.932
+>>boot at
+
+date: 12月17日:09-53-07
+fsql: not(score>=10) || playNum<100 order by timelen desc limit 10
+retCode: 200
+retMsg: OK
+total: 453209
+usedTime: 149.31
+
+date: 12月17日:09-54-07
+fsql: not(score>=10) || playNum<100 order by score desc limit 10
+retCode: 200
+retMsg: OK
+total: 453209
+usedTime: 73.313
+>>boot at
+
+date: 12月17日:12-23-54
+fsql: playNum<100 && score > 0 && published
+retCode: 500
+retMsg: null:Expecting tokenClass RELATION but didn't get a token
+total: 0
+usedTime: 0.0
+
+date: 12月17日:12-24-29
+fsql: playNum<100 && score > 0 && published order by score limit 50
+retCode: 500
+retMsg: null:Expecting tokenClass RELATION but got 'order' at col 44
+total: 0
+usedTime: 0.0
+>>boot at
+
+date: 12月17日:12-25-46
+fsql: playNum<100 && score > 0 && published='published' order by score limit 50
+retCode: 500
+retMsg: null:unknown field name published
+total: 0
+usedTime: 0.0
+
+date: 12月17日:12-26-19
+fsql: playNum<100 && score > 0 && publishflag='published' order by score limit 50
+retCode: 200
+retMsg: OK
+total: 0
+usedTime: 88.576
+
+date: 12月17日:12-28-56
+fsql: playNum<100 && score > 0 && publishflag='published' order by playnum limit 50
+retCode: 200
+retMsg: OK
+total: 0
+usedTime: 51.385
+
+date: 12月17日:12-29-05
+fsql: score > 0 && publishflag='published' order by playnum limit 50
+retCode: 200
+retMsg: OK
+total: 0
+usedTime: 1.031
+
+date: 12月17日:12-29-17
+fsql: score > 0 order by playnum limit 50
+retCode: 200
+retMsg: OK
+total: 17338
+usedTime: 12.619
+
+date: 12月17日:12-30-11
+fsql: publishflag='published' order by videoid limit 10
+retCode: 200
+retMsg: OK
+total: 0
+usedTime: 213.422
+>>boot at
+
+date: 12月17日:15-02-34
+fsql: title search '空' order by videoid limit 2
+retCode: 200
+retMsg: OK
+total: 875
+usedTime: 2601.503
+
+date: 12月17日:15-02-40
+fsql: title = '空' order by videoid limit 2
+retCode: 500
+retMsg: null:when compile to BooleanQuery, aText is not support for ' AND title = 空'
+total: 0
+usedTime: 0.0
+
+date: 12月17日:15-03-05
+fsql: videoid=2001125 && types='m_kandian' && playnum>800 order by videoid limit 3
+retCode: 200
+retMsg: OK
+total: 0
+usedTime: 12.76
+
+date: 12月17日:15-03-35
+fsql: types='m_kandian' && playnum>800 order by videoid limit 3
+retCode: 200
+retMsg: OK
+total: 0
+usedTime: 114.579
+
+date: 12月17日:15-03-51
+fsql: types='m_kandian' order by videoid limit 3
+retCode: 200
+retMsg: OK
+total: 0
+usedTime: 0.674

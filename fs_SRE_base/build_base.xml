@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<project name="base" default="junit" basedir=".">
+	<property name="jar_name" value="fsSREBase-1.0.jar" />
+	<property name="src_dir" value="src" />
+	<property name="build_dir" value="build" />
+	<property name="build_classdir" value="${build_dir}/classes" />
+	<property name="tmpdir" value="search"></property>
+	<property name="report_dir" value="unitReports" />
+	
+	<path id="build_libs">
+		<fileset dir="lib">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+	
+	<target name="init">
+        <delete dir="${build_dir}"/>
+		<mkdir dir ="${build_classdir}"/>
+	<delete file="${jar_name}" />
+	<delete file="./success.xml" />
+	<delete file="./fail.xml" />
+	<delete file="${report_dir}/TEST-*" />
+    </target>
+        
+    <target name="jar_base"  depends ="init">
+		<echo message ="starting build base" />
+	    <javac destdir ="${build_classdir}">
+			<src path="${src_dir}/configurableLucene" />
+	    	<src path="${src_dir}/htmlps" />
+	    	<src path="${src_dir}/utils" />
+			<classpath refid="build_libs" />
+		</javac>
+		
+		<jar destfile="${jar_name}" basedir="${build_classdir}" />
+    </target>
+	
+	<target name="junit" depends="jar_base">
+		<junit printsummary="true" failureproperty="hasFailed" fork="yes" maxmemory="512m">
+			<classpath>
+				<pathelement path="${build_classdir}"/>
+				<path refid="build_libs" />
+			</classpath>
+			<batchtest todir="${report_dir}">
+				<fileset dir="${build_classdir}">
+					<include name="**/*Test.class" />
+					<exclude name="**/InnerAtddTest.class" />
+				</fileset>
+				<formatter type="plain" />
+				<formatter type="xml" />
+			</batchtest>
+		</junit>
+		<antcall target="successAndReport" />
+		<antcall target="failAndReport" />
+	</target>
+	
+	<target name="successAndReport" unless="hasFailed">
+		<junitreport tofile="./success.xml"></junitreport>
+	</target>
+	
+	<target name="failAndReport" if="hasFailed">
+		<junitreport tofile="./fail.xml"></junitreport>
+	</target>
+</project>

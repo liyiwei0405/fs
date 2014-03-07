@@ -1,0 +1,6 @@
+升级目的：支持类型过滤，对微视频中特定类型的过滤(不允许其在搜索结果中出现)
+
+操作过程：
+1.pach-1.1.sh增加可执行权限
+2.配置pach-1.1.sh文件中“sphinx_dir=”项，令其指向sphinx目录
+3.在 $sphinx_dir/bin/videolet-daemon 目录下进行验证： cat logs/export.log  |grep FBDTYPE，若看到多条日志提示则说明系统升级成功

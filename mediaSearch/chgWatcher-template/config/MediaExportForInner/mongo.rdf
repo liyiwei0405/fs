@@ -1,0 +1,6 @@
+#fs_video's mongodb config
+[fs_video]
+ip = 192.168.16.161
+port = 27077
+database = corsair_video
+table = fs_video

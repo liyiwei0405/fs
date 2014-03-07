@@ -1,0 +1,1 @@
+java -cp .:lib/* com.funshion.gamma.atdd.healthWatcher.OnlineThriftShell

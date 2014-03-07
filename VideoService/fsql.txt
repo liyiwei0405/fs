@@ -1,0 +1,372 @@
+>>boot at
+fsql: timelen <=100 order by videoid limit 5
+retCode: 200
+retMsg: OK
+
+date: 12月19日:18-59-07
+fsql: videoid > 0 order by timeLen limit 2
+retCode: 200
+retMsg: OK
+total: 623411
+usedTime ms: 103.075
+usedTime ms: 117 (client side aware)
+
+date: 01月09日:09-50-58
+fsql: videoid > 100 order by videoid limit 10
+retCode: 500
+retMsg: null:null
+total: 0
+usedTime ms: 0.0
+usedTime ms: 456 (client side aware)
+
+date: 01月09日:10-20-22
+fsql: videoid > 100 order by videoid limit 10
+retCode: 500
+retMsg: null:Already closed: MMapIndexInput(path="D:\usr\local\search\var\videolet\indexPath\2014-01-09_10_12_40.737.vlssIdx\_15_Lucene41_0.tim")
+total: 0
+usedTime ms: 0.0
+usedTime ms: 71873 (client side aware)
+
+date: 01月09日:12-14-36
+fsql: videoid > 100 order by videoid limit 10
+retCode: 500
+retMsg: null:null
+total: 0
+usedTime ms: 0.0
+usedTime ms: 384 (client side aware)
+
+date: 01月09日:12-17-04
+fsql: videoid > 100 order by videoid limit 10
+retCode: 500
+retMsg: null:this IndexReader is closed
+total: 0
+usedTime ms: 0.0
+usedTime ms: 123736 (client side aware)
+
+date: 01月09日:12-17-58
+fsql: videoid > 100 order by videoid limit 10
+retCode: 500
+retMsg: null:this IndexReader is closed
+total: 0
+usedTime ms: 0.0
+usedTime ms: 40556 (client side aware)
+
+date: 01月09日:12-20-43
+fsql: videoid > 100 order by videoid limit 10
+retCode: 500
+retMsg: null:null
+total: 0
+usedTime ms: 0.0
+usedTime ms: 2362 (client side aware)
+
+date: 01月09日:12-21-15
+fsql: videoid > 100 order by videoid limit 10
+retCode: 500
+retMsg: null:null
+total: 0
+usedTime ms: 0.0
+usedTime ms: 21783 (client side aware)
+
+date: 01月09日:12-21-44
+fsql: videoid > 100 order by videoid limit 10
+retCode: 500
+retMsg: null:null
+total: 0
+usedTime ms: 0.0
+usedTime ms: 3154 (client side aware)
+
+date: 01月09日:14-00-10
+fsql: videoid > 100 order by videoid limit 10
+retCode: 200
+retMsg: OK
+total: 717325
+usedTime ms: 17397.12
+usedTime ms: 20163 (client side aware)
+
+date: 01月09日:14-00-30
+fsql: videoid > 100 order by videoid limit 10
+retCode: 200
+retMsg: OK
+total: 717325
+usedTime ms: 16.21
+usedTime ms: 3212 (client side aware)
+
+date: 01月09日:14-24-06
+fsql: moduleid > 100 order by videoid limit 10
+retCode: 200
+retMsg: OK
+total: 0
+usedTime ms: 299.93
+usedTime ms: 4532 (client side aware)
+
+date: 01月09日:14-24-13
+fsql: moduleid > 100 order by videoid limit 10
+retCode: 200
+retMsg: OK
+total: 0
+usedTime ms: 1.21
+usedTime ms: 3 (client side aware)
+
+date: 01月09日:14-25-12
+fsql: moduleid = 0 order by videoid limit 10
+retCode: 200
+retMsg: OK
+total: 709215
+usedTime ms: 223.74
+usedTime ms: 226 (client side aware)
+
+date: 01月09日:14-25-15
+fsql: moduleid = 0 order by videoid limit 10
+retCode: 200
+retMsg: OK
+total: 709215
+usedTime ms: 15.0
+usedTime ms: 16 (client side aware)
+
+date: 01月09日:14-25-41
+fsql: moduleid = 0 order by videoid desc limit 10
+retCode: 200
+retMsg: OK
+total: 709215
+usedTime ms: 15.12
+usedTime ms: 17 (client side aware)
+
+date: 01月09日:14-28-08
+fsql: moduleid = 1 order by videoid desc limit 10
+retCode: 200
+retMsg: OK
+total: 419
+usedTime ms: 87.32
+usedTime ms: 89 (client side aware)
+
+date: 01月09日:15-58-07
+fsql: moduleid = 1 order by videoid desc limit 10
+retCode: 200
+retMsg: OK
+total: 419
+usedTime ms: 102.0
+usedTime ms: 264 (client side aware)
+
+date: 01月09日:15-59-36
+fsql: title like 'bieke' order by videoid desc limit 10
+retCode: 500
+retMsg: null:'like' only support FIELD 'TITLE'
+total: 0
+usedTime ms: 0.0
+usedTime ms: 24 (client side aware)
+
+date: 01月09日:15-59-40
+fsql: title like 'bie' order by videoid desc limit 10
+retCode: 500
+retMsg: null:'like' only support FIELD 'TITLE'
+total: 0
+usedTime ms: 0.0
+usedTime ms: 11 (client side aware)
+
+date: 01月09日:15-59-54
+fsql: TITLE like 'bie' order by videoid desc limit 10
+retCode: 500
+retMsg: null:'like' only support FIELD 'TITLE'
+total: 0
+usedTime ms: 0.0
+usedTime ms: 2 (client side aware)
+
+date: 01月09日:16-00-46
+fsql: TITLE like 'bie' order by videoid desc limit 10
+retCode: 500
+retMsg: null:'like' only support FIELD 'TITLE', now is TITLELIKE
+total: 0
+usedTime ms: 0.0
+usedTime ms: 2 (client side aware)
+
+date: 01月09日:16-01-32
+fsql: TITLE like 'bie' order by videoid desc limit 10
+retCode: 500
+retMsg: null:'like' only support FIELD 'TITLE', now is TITLE
+total: 0
+usedTime ms: 0.0
+usedTime ms: 6 (client side aware)
+
+date: 01月09日:16-02-07
+fsql: TITLE like 'bie' order by videoid desc limit 10
+retCode: 200
+retMsg: OK
+total: 312
+usedTime ms: 308.88
+usedTime ms: 327 (client side aware)
+
+date: 01月09日:16-02-16
+fsql: TITLE like 'like' order by videoid desc limit 10
+retCode: 200
+retMsg: OK
+total: 359
+usedTime ms: 58.51
+usedTime ms: 102 (client side aware)
+
+date: 01月09日:16-02-31
+fsql: TITLE like 'weib' order by videoid desc limit 10
+retCode: 200
+retMsg: OK
+total: 7
+usedTime ms: 10.31
+usedTime ms: 11 (client side aware)
+
+date: 01月09日:16-36-39
+fsql: TITLE like 'weib' order by videoid desc limit 10
+retCode: 200
+retMsg: OK
+total: 7
+usedTime ms: 101.77
+usedTime ms: 104 (client side aware)
+
+date: 01月09日:16-38-10
+fsql: TITLE like 'weib' order by videoid desc limit 10
+retCode: 200
+retMsg: OK
+total: 7
+usedTime ms: 100.9
+usedTime ms: 102 (client side aware)
+
+date: 01月09日:17-57-08
+fsql: TITLE like 'iOS6' order by videoid desc limit 10
+retCode: 200
+retMsg: OK
+total: 136
+usedTime ms: 109.77
+usedTime ms: 122 (client side aware)
+
+date: 01月09日:17-57-12
+fsql: TITLE like 'iOS6' order by videoid desc limit 10
+retCode: 200
+retMsg: OK
+total: 136
+usedTime ms: 8.56
+usedTime ms: 11 (client side aware)
+
+date: 01月10日:09-21-54
+fsql: TITLE like 'iOS6' order by videoid desc limit 10
+retCode: 200
+retMsg: OK
+total: 136
+usedTime ms: 339.35
+usedTime ms: 359 (client side aware)
+
+date: 01月10日:09-22-04
+fsql: TITLE like 'win7' order by videoid desc limit 10
+retCode: 200
+retMsg: OK
+total: 93
+usedTime ms: 100.68
+usedTime ms: 93 (client side aware)
+
+date: 01月10日:09-22-18
+fsql: TITLE like 'aphone' order by videoid desc limit 10
+retCode: 200
+retMsg: OK
+total: 21
+usedTime ms: 11.51
+usedTime ms: 16 (client side aware)
+
+date: 01月10日:09-22-28
+fsql: TITLE like 'sex' order by videoid desc limit 10
+retCode: 200
+retMsg: OK
+total: 458
+usedTime ms: 76.97
+usedTime ms: 78 (client side aware)
+
+date: 01月10日:09-22-41
+fsql: TITLE like 'sextual' order by videoid desc limit 10
+retCode: 200
+retMsg: OK
+total: 0
+usedTime ms: 8.28
+usedTime ms: 0 (client side aware)
+
+date: 01月10日:09-22-51
+fsql: TITLE like 'ok' order by videoid desc limit 10
+retCode: 200
+retMsg: OK
+total: 3470
+usedTime ms: 5.81
+usedTime ms: 15 (client side aware)
+
+date: 01月10日:10-59-51
+fsql: TITLE like 'ok' order by videoid desc limit 10
+retCode: 200
+retMsg: OK
+total: 3470
+usedTime ms: 79.26
+usedTime ms: 86 (client side aware)
+
+date: 01月10日:11-05-23
+fsql: TITLE like 'ok' order by videoid desc limit 10
+retCode: 200
+retMsg: OK
+total: 3470
+usedTime ms: 76.56
+usedTime ms: 78 (client side aware)
+
+date: 01月10日:13-33-31
+fsql: TITLE like 'ok' order by videoid desc limit 10
+retCode: 200
+retMsg: OK
+total: 3472
+usedTime ms: 78.15
+usedTime ms: 79 (client side aware)
+
+date: 01月10日:13-34-32
+fsql: TITLE like 'ok' order by videoid desc limit 10
+retCode: 200
+retMsg: OK
+total: 3472
+usedTime ms: 5.67
+usedTime ms: 7 (client side aware)
+
+date: 01月10日:13-34-40
+fsql: TITLE like 'woman' order by videoid desc limit 10
+retCode: 200
+retMsg: OK
+total: 103
+usedTime ms: 8.68
+usedTime ms: 10 (client side aware)
+
+date: 01月10日:14-20-06
+fsql: TITLE like 'woman' order by videoid desc limit 10
+retCode: 200
+retMsg: OK
+total: 103
+usedTime ms: 96.59
+usedTime ms: 98 (client side aware)
+
+date: 01月10日:14-22-06
+fsql: TITLE like 'sex' order by videoid desc limit 10
+retCode: 200
+retMsg: OK
+total: 459
+usedTime ms: 6.25
+usedTime ms: 16 (client side aware)
+
+date: 01月10日:14-26-12
+fsql: TITLE like 'sex' order by videoid desc limit 10
+retCode: 200
+retMsg: OK
+total: 459
+usedTime ms: 73.58
+usedTime ms: 78 (client side aware)
+
+date: 01月13日:10-16-08
+fsql: TITLE like 'sex' order by videoid desc limit 10
+retCode: 200
+retMsg: OK
+total: 458
+usedTime ms: 244.73
+usedTime ms: 353 (client side aware)
+
+date: 01月15日:16-14-26
+fsql: TITLE like 'sex' order by videoid desc limit 10
+retCode: 200
+retMsg: OK
+total: 459
+usedTime ms: 971.1
+usedTime ms: 1621 (client side aware)

@@ -1,0 +1,9 @@
+class@com.funshion.gamma.atdd.thrift.tacticFilter.MediaIdList @Return{
+	int retCode: 404
+	string retMsg: Unavilable ucs
+	list mediaIds: @Null
+}
+
+
+
+##

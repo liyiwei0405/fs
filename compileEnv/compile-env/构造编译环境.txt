@@ -1,0 +1,28 @@
+#本文介绍如何构建encfee下java项目
+
+1.如果服务器已经安装java 1.7，请确认环境变量JAVA_HOME、CLASSPATH已经被正确设置，否则请遵循1.1 1.2安装java jdk，设置环境变量
+	1.1.server-jre-7u45-linux-x64.tar.gz上传至服务器/usr/java目录下
+		tar -xvf 
+	1.2 编辑/etc/profile, 追加如下行, 以便设置环境变量
+		export JAVA_HOME=/usr/java/jdk1.7.0_45
+		export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+
+2.安装ant并设置ant环境变量
+	2.1 上传ant-1.9.0.zip至/usr目录下,解压缩压缩包： unzip ant-1.9.0.zip 
+	2.2 进入ant-1.9.0目录，给予ant脚本可执行权限：chmod +x bin/ant 
+	2.3 编辑/etc/profile, 追加如下行
+		export ANT_HOME=/usr/ant-1.9.0
+		export PATH=$JAVA_HOME/bin/:$ANT_HOME/bin:$PATH
+		source /etc/profile 使配置生效
+		
+3.验证java与ant安装(初次安装需确认环境变量生效--重建一个ssh连接)
+	3.1 任意位置输入命令：java -version 若获得类似下文输出，则java安装成功
+		java version "1.7.0_45"
+		Java(TM) SE Runtime Environment (build 1.7.0_45-b01)
+		Java HotSpot(TM) 64-Bit Server VM (build 20.14-b01, mixed mode)
+
+	3.2 任意位置输入命令：ant -version   若获得类似下文输出，则ant安装成功
+		Apache Ant(TM) version 1.9.0 compiled on March 5 2013
+		
+		
+若步骤3验证成功，则java与ant已经被正确安装

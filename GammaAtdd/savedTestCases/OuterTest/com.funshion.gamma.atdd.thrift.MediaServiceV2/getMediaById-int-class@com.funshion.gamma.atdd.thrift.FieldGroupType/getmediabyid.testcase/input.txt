@@ -1,0 +1,6 @@
+int @Para1: 100946
+
+class@com.funshion.gamma.atdd.thrift.FieldGroupType @Para2: base
+
+
+##

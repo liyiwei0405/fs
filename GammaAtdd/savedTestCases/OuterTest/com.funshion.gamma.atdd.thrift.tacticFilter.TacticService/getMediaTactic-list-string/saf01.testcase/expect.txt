@@ -1,0 +1,15 @@
+class@com.funshion.gamma.atdd.thrift.tacticFilter.MediaTacticList @Return{
+	int retCode: 200
+	string retMsg: Ok
+	list mediaTactic
+	[
+		class@com.funshion.gamma.atdd.thrift.tacticFilter.MediaTactic {
+			int mediaid: 2
+			bool hasTactic: false
+		}
+	]
+}
+
+
+
+##

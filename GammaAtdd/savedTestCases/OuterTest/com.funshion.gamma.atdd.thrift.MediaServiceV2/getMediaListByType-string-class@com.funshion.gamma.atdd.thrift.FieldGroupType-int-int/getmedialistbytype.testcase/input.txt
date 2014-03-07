@@ -1,0 +1,10 @@
+string @Para1: movie
+
+class@com.funshion.gamma.atdd.thrift.FieldGroupType @Para2: all
+
+int @Para3: 10
+
+int @Para4: 10
+
+
+##

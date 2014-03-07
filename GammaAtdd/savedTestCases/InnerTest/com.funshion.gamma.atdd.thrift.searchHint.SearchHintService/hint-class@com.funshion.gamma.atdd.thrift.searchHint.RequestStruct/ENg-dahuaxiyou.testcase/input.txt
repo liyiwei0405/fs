@@ -1,0 +1,10 @@
+class@com.funshion.gamma.atdd.thrift.searchHint.RequestStruct @Para1{
+	string word: dahuax
+	int limit: 10
+	int offset: 1
+	bool includeStaff: false
+	bool filterCopyRight: false
+}
+
+
+##

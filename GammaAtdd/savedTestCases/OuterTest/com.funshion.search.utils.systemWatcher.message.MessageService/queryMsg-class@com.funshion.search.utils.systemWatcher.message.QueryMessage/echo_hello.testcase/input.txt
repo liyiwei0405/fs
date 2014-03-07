@@ -1,0 +1,11 @@
+class@com.funshion.search.utils.systemWatcher.message.QueryMessage @Para1{
+	string messageName: echo
+	string ienv: 
+	list messageBody
+	[
+		string : hello
+	]
+}
+
+
+##

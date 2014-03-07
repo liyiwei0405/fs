@@ -1,0 +1,63 @@
+[schema_main]
+version = 2000
+businessName = videoletISN
+mapFields = videoOrUgc=a, videoid=b, title=c, tags=d, playnum=e, createdate=f, modifydate=g
+load_01 = field_videoletOrUgc
+load_02 = field_videoid
+load_03 = title_and_tags_noToken
+load_04 = title_and_tags
+load_05 = playnum
+load_06 = createdate
+load_07 = modifydate
+
+
+[field_videoletOrUgc]
+name = a
+indexAs = IntField
+store = 1
+tokenBy = noToken
+useFields = videoOrUgc * 1
+
+[field_videoid]
+name = b
+indexAs = IntField
+store = 1
+tokenBy = noToken
+useFields = videoid * 1
+
+[title_and_tags_noToken]
+name = c
+indexAs = textField
+store = 0
+tokenBy = noToken
+useFields = title * 20, tags * 1
+
+[title_and_tags]
+name = d
+indexAs = textField
+store = 0
+tokenBy = segment
+useFields = title * 20, tags * 1
+
+[playnum]
+name = e
+indexAs = IntField
+store = 1
+tokenBy = noToken
+useFields = videoOrUgc * 1
+
+[createdate]
+name = f
+indexAs = LongField
+store = 1
+tokenBy = noToken
+useFields = createdate * 1
+
+[modifydate]
+name = g
+indexAs = LongField
+store = 1
+tokenBy = noToken
+useFields = modifydate * 1
+
+

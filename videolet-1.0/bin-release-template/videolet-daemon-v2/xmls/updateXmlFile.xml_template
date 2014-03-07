@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sphinx:docset>
+<sphinx:schema>
+<sphinx:attr name="videoOrUgc" type="int"  bits="8"/>
+<sphinx:attr name="videoid" type="int"  bits="32"/>
+<sphinx:field name="title" />
+<sphinx:field name="tags" />
+<sphinx:attr name="isdel" type="int"  bits="8"/>
+<sphinx:attr name="playnum" type="int"  bits="32"/>
+<sphinx:attr name="modifydate" type="timestamp" />
+</sphinx:schema>
+</sphinx:docset>
